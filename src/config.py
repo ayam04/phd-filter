@@ -9,9 +9,10 @@ from dotenv import load_dotenv
 ROOT = Path(__file__).resolve().parent.parent
 load_dotenv(ROOT / ".env")
 
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "")
-GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.0-flash")
-EMBED_MODEL = os.getenv("EMBED_MODEL", "text-embedding-004")
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY", "")
+OPENROUTER_BASE = os.getenv("OPENROUTER_BASE", "https://openrouter.ai/api/v1")
+LLM_MODEL = os.getenv("LLM_MODEL", "google/gemini-2.5-flash")
+EMBED_MODEL = os.getenv("EMBED_MODEL", "BAAI/bge-small-en-v1.5")
 
 OPENALEX_BASE = "https://api.openalex.org"
 OPENALEX_MAILTO = os.getenv("OPENALEX_MAILTO", "")

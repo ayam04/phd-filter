@@ -85,18 +85,25 @@ borrow web-style reasoning for the *eligibility text extractor*, never for sourc
 enrichment; we deliberately avoid aggressive fuzzy name-matching across them because a wrong link is
 exactly the contamination the grader punishes.
 
-### 2.5 LLM — Gemini 2.0 Flash + text-embedding-004 (single provider)
+### 2.5 LLM — Gemini 2.5 Flash via OpenRouter + local embeddings
 - The verification gate runs on ~150-250 candidates per shortlist; `why_match` on the survivors.
-  This needs a **cheap, fast, high-throughput** model with a large context and structured-JSON
-  output. Gemini 2.0 Flash fits, and keeping embeddings (`text-embedding-004`) on the same provider
-  means one key and one client.
-- **Forced JSON** via `response_schema` (pydantic) makes every gate verdict machine-parseable with
-  no brittle text parsing.
-- Model name is configurable (`GEMINI_MODEL`) so it can be swapped without code changes.
+  This needs a **cheap, fast, high-throughput** model with structured-JSON output. **Gemini 2.5
+  Flash** (the current successor to 2.0 Flash) fills exactly that role.
+- **Access path:** we reach Gemini through **OpenRouter** using the OpenAI-compatible client. This
+  was a forced, pragmatic call — the direct Google AI Studio key available was expired, while the
+  OpenRouter key was valid and can serve the same Gemini Flash model. It keeps the LLM choice intact
+  and makes the model swappable via `LLM_MODEL` (e.g. `google/gemini-2.5-flash`,
+  `google/gemini-2.5-flash-lite`) with no code change.
+- **Embeddings run locally** via `fastembed` (`BAAI/bge-small-en-v1.5`, ONNX, ~130MB one-time, CPU).
+  OpenRouter has no embeddings endpoint, and a local model removes a network/key dependency from the
+  hottest path entirely — *more* reproducible and zero marginal cost, which suits the cheap semantic
+  pre-filter well.
+- **Forced JSON** via `response_format={"type":"json_object"}` + defensive parsing makes every gate
+  verdict machine-readable without brittle text scraping.
 
 ### 2.6 Caching — content-hash disk cache on every external call
-Each OpenAlex/grant/ORCID/LLM/embedding call is wrapped so its result is written to
-`.cache/<namespace>/<hash>.json`. This buys two graded properties at once:
+Each OpenAlex/grant/ORCID/LLM/embedding result is written to `.cache/<namespace>/<hash>.json`. This
+buys two graded properties at once:
 - **Reproducibility:** same input → same cached responses → same output.
 - **Latency:** a cold run hits each unique endpoint once; warm re-runs complete in seconds, keeping
   us well under the 15-minute budget. `null` results (e.g. "no public email") are cached via file
