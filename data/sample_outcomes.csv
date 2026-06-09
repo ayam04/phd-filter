@@ -1,0 +1,17 @@
+student_id,supervisor_id,institution,area,sent_at,outcome
+106419,A5060026865,King's College London,Computational Psychiatry & PTSD Prediction,2026-07-12,ADMIT
+106419,A5007964297,University of Michigan,Neurobiology of Trauma & Stress,2026-07-12,INTERVIEW
+106419,A5052016436,Icahn School of Medicine at Mount Sinai,Single-cell & Psychiatric Genomics,2026-07-12,POSITIVE_REPLY
+106419,A5074488210,Icahn School of Medicine at Mount Sinai,Single-cell & Psychiatric Genomics,2026-07-12,POSITIVE_REPLY
+106419,A5007623614,Edinburgh Cancer Research,Single-cell & Psychiatric Genomics,2026-07-12,REJECT
+106419,A5084562941,"University of California, San Diego",Single-cell & Psychiatric Genomics,2026-07-12,NO_REPLY
+106419,A5086852785,Wellcome Centre for Human Neuroimaging,Computational Psychiatry & PTSD Prediction,2026-07-12,NO_REPLY
+106419,A5071039477,Yale University,Single-cell & Psychiatric Genomics,2026-07-12,REJECT
+106419,A5007077090,Oxford Health NHS Foundation Trust,Computational Psychiatry & PTSD Prediction,2026-07-12,WRONG_PERSON
+106419,A5002201058,"University of California, Los Angeles",Neurobiology of Trauma & Stress,2026-07-12,BOUNCE
+106419,A5007752410,King's College London,Single-cell & Psychiatric Genomics,2026-07-12,NOT_RECRUITING
+106419,A5064741640,University of Queensland,Single-cell & Psychiatric Genomics,2026-07-12,INTERVIEW
+106419,A5053558359,"Rutgers, The State University of New Jersey",Single-cell & Psychiatric Genomics,2026-07-12,NO_REPLY
+106419,A5057810294,Harvard University,Computational Psychiatry & PTSD Prediction,2026-07-12,POSITIVE_REPLY
+106419,A5053035402,Augsburg University,Single-cell & Psychiatric Genomics,2026-07-12,REJECT
+106419,A5107596541,Broad Institute,Single-cell & Psychiatric Genomics,2026-07-12,NO_REPLY

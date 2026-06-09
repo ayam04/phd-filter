@@ -59,13 +59,21 @@ def _complete_raw(model: str, system: str, user: str, temperature: float) -> str
     return resp.choices[0].message.content or "{}"
 
 
+def _coerce_dict(obj) -> dict:
+    if isinstance(obj, dict):
+        return obj
+    if isinstance(obj, list) and obj and isinstance(obj[0], dict):
+        return obj[0]
+    return {}
+
+
 @cached("llm_json")
 def _complete_cached(model: str, system: str, user: str, temperature: float) -> dict:
     raw = _complete_raw(model, system, user, temperature)
     try:
-        return json.loads(_strip_fences(raw))
+        return _coerce_dict(json.loads(_strip_fences(raw)))
     except json.JSONDecodeError:
-        return json.loads(_strip_fences(_complete_raw(model, system, user, temperature)))
+        return _coerce_dict(json.loads(_strip_fences(_complete_raw(model, system, user, temperature))))
 
 
 def complete_json(system: str, user: str, temperature: float = 0.0) -> dict:

@@ -19,7 +19,9 @@ def evidence_score(cand: Candidate) -> float:
 def apply_adjustments(base: float, cand: Candidate, adj: dict) -> float:
     if not adj:
         return base
-    if cand.author_id in set(adj.get("suppress", [])):
+    short_id = cand.author_id.rsplit("/", 1)[-1]
+    suppress = set(adj.get("suppress", []))
+    if short_id in suppress or cand.author_id in suppress:
         return base * 0.01
     uplift = adj.get("area_institution_uplift", {})
     for area in cand.matched_areas:

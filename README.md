@@ -116,8 +116,9 @@ extractor, and schema validation.
 
 ## Latency
 
-Cold run (full network + LLM, single laptop): **~__FILL__ minutes** for the sample profile. Warm
-re-runs (cache hit): seconds. Well within the < 15-minute target.
+Cold run (empty cache, full network + LLM, single laptop): **~4 minutes** (241 s measured) for the
+sample profile — 400 candidate authors enriched, 240 verification-gate calls, 70 `why_match`
+generations. Warm re-runs (cache hit): **~15-50 s**. Well within the < 15-minute target.
 
 ## Repository layout
 

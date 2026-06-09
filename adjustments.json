@@ -1,0 +1,32 @@
+{
+  "suppress": [
+    "A5002201058",
+    "A5007077090",
+    "A5007752410"
+  ],
+  "wrong_person_ids": [
+    "A5007077090"
+  ],
+  "area_institution_uplift": {
+    "Computational Psychiatry & PTSD Prediction::King's College London": 0.1,
+    "Neurobiology of Trauma & Stress::University of Michigan": 0.1,
+    "Single-cell & Psychiatric Genomics::Icahn School of Medicine at Mount Sinai": 0.15,
+    "Single-cell & Psychiatric Genomics::Edinburgh Cancer Research": -0.06,
+    "Single-cell & Psychiatric Genomics::University of California, San Diego": -0.06,
+    "Computational Psychiatry & PTSD Prediction::Wellcome Centre for Human Neuroimaging": -0.06,
+    "Single-cell & Psychiatric Genomics::Yale University": -0.06,
+    "Computational Psychiatry & PTSD Prediction::Oxford Health NHS Foundation Trust": -0.1,
+    "Neurobiology of Trauma & Stress::University of California, Los Angeles": -0.1,
+    "Single-cell & Psychiatric Genomics::King's College London": -0.1,
+    "Single-cell & Psychiatric Genomics::University of Queensland": 0.1,
+    "Single-cell & Psychiatric Genomics::Rutgers, The State University of New Jersey": -0.06,
+    "Computational Psychiatry & PTSD Prediction::Harvard University": 0.1,
+    "Single-cell & Psychiatric Genomics::Augsburg University": -0.06,
+    "Single-cell & Psychiatric Genomics::Broad Institute": -0.06
+  },
+  "counts": {
+    "outcomes": 16,
+    "suppressed": 3,
+    "scored_pairs": 15
+  }
+}
