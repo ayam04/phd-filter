@@ -134,8 +134,13 @@ not gate the whole pipeline on scraping live vacancies (which is brittle in 72h)
 
 ### 3.2 Country adherence — structural, not scored
 Target countries are a hard constraint, so they are enforced as a **structural filter** on the
-institution's `country_code` at the candidate stage and re-checked at emit. It is impossible for an
-out-of-country supervisor to appear in the output. (Hard-fail axis → zero tolerance.)
+institution's `country_code`. Crucially, country is decided from the author's **current primary
+academic affiliation** (most-recent-active, most-tenured academic institution in OpenAlex), not a
+single co-authored paper's institution — a candidate whose primary academic home is outside the
+target countries is dropped even if a stray paper carries a target-country co-affiliation. This was
+hardened after our own audit found researchers based in the Netherlands/Norway leaking in via spurious
+US co-affiliations (see DECISIONS §7). It is impossible for an out-of-country supervisor to reach the
+output. (Hard-fail axis → zero tolerance.)
 
 ### 3.3 Who counts as a PI (career-stage, failure mode 6.2)
 A name in an author list is not a supervisor. We compute a **multi-signal PI score**:

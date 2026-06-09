@@ -6,9 +6,9 @@ PTSD + stress neurobiology + psychiatric/single-cell genomics; target US/UK/Aust
 nationality). Run self-check for that file:
 
 ```
-generated 400 → country 400 → career 400 → similarity 398
-→ verified_pool 240 → (rejected: domain 57, non-PI 4, collision 3, region 0)
-→ final 70   [areas: 69 / 52 / 68; cold-cache wall-clock ~241 s]
+generated 400 → out-of-country 86 dropped → career 0 → similarity 2 dropped
+→ verified_pool 240 → (rejected: domain 81, non-PI 16, collision 0, region 0)
+→ final 70   [areas: 69 / 54 / 68; 100% in US/UK/AU; cold-cache wall-clock ~4 min]
 ```
 
 Governing principle: **precision over recall.** Contamination is graded heaviest and country
@@ -54,12 +54,16 @@ and the LLM gate:
   person is treated as a junior awardee, not a PI (`fellowship_awardee()` + regression test).
 - **LLM gate** confirms `is_pi` from the abstracts + seniority signals.
 
-**Concrete evidence.** The gate rejected **4** candidates as non-PIs in this run; the regression
-suite (`tests/test_career_stage.py`) confirms a 2-years-since-first-publication, 3-paper,
-first-author-only profile is rejected while a 20-year, 80-work, senior-author profile is accepted,
-and that an F32-coded grant flags its awardee as junior. (The cheap filter dropped 0 here because the
-top-400-by-appearance candidates are already senior; the gate is the binding non-PI check for this
-profile — both layers exist precisely so one covers the other's blind spots.)
+**Concrete evidence.** The gate rejected **16** candidates as non-PIs in this run. A concrete catch
+surfaced during our own audit (below): **Mette A. Peters** is a research-data-science *director* at
+Sage Bionetworks (she coordinates data portals; her listed email is `…@nih.gov`), not a lab-running
+PI — she appears on many consortium papers and initially slipped through, so we strengthened the gate
+to reject "research-data-coordinator / core-facility / consortium staff" and she is now correctly
+excluded. The regression suite (`tests/test_career_stage.py`) confirms a 2-years, 3-paper,
+first-author-only profile is rejected while a 20-year, 80-work, senior-author profile is accepted, and
+that an F32-coded grant flags its awardee as junior. (The cheap filter dropped 0 here because the
+top-400-by-appearance candidates are already prolific; the gate is the binding non-PI check for this
+profile — both layers exist so one covers the other's blind spots.)
 
 ## 3. Same-name-different-person collisions (§6.1)
 
@@ -77,22 +81,26 @@ a title keyword cannot by itself surface a person.
 ## 4. Country adherence as a hard constraint (§R2) + institution-quality
 
 **Approach.** Country is enforced **structurally** on the institution `country_code`, and — critically
-— on the author's **primary academic affiliation**, not a single co-authored paper's institution.
-Candidates whose only target-country affiliation is a non-academic/junk OpenAlex org are dropped.
+— on the author's **current primary academic affiliation** (most-recent-active, most-tenured academic
+institution from OpenAlex), not a single co-authored paper's institution. A candidate whose primary
+academic home is *not* in a target country is **dropped**, even if a stray recent paper carries a
+target-country co-affiliation. This single rule dropped **86** candidates in this run.
 
-**Concrete evidence.** 100% of the 70 supervisors are in {US, UK, Australia}. The academic-affiliation
-rule fixed real OpenAlex data-quality artifacts observed in an earlier run:
-- **Naomi Wray** was mislabeled "Pioneer (United States)" (a junk org) → corrected to **University of
-  Queensland (Australia)**.
-- **Ronald Kessler** was mislabeled "Virginia Commonwealth University" (one co-author paper) →
-  corrected to **Harvard University**.
-- **Daniëlle Posthuma** (primary lab in the Netherlands) was surfaced via a junk "Cognitive Research
-  (United States)" org → now resolves to her genuine **Icahn School of Medicine at Mount Sinai**
-  academic affiliation; a researcher with no legitimate target-country academic affiliation is dropped
-  entirely rather than surfaced under a spurious US org.
+**Concrete evidence.** 100% of the 70 supervisors are in {US, UK, Australia}. The rule fixed real
+OpenAlex data-quality artifacts and out-of-country leaks that our own audit (below) caught:
+- **Daniëlle Posthuma** and **Ole A. Andreassen** — world-class psychiatric geneticists, but their
+  primary labs are **VU Amsterdam (Netherlands)** and **University of Oslo (Norway)**. OpenAlex had
+  surfaced them under spurious US co-affiliations ("Cognitive Research (US)" / "SUNY Downstate"); both
+  are now **dropped** as out-of-country (the hard constraint), instead of being recommended to a
+  student who cannot study in NL/Norway.
+- **Daniel J. Smith** was mislabeled "Augsburg University (United States)" (a name-collision artifact)
+  → corrected to his real base **University of Edinburgh (United Kingdom)** — in-bounds, kept, relabeled.
+- **Naomi Wray** "Pioneer (US)" → **University of Queensland (Australia)**; **Ronald Kessler**
+  "Virginia Commonwealth" → **Harvard**; **McIntosh** "Edinburgh Cancer Research" → **University of
+  Edinburgh**; **Cipriani** "Oxford Health NHS" → **University of Oxford**.
 
 This matters twice: a wrong country is a hard fail, and "Naomi Wray, Pioneer (United States)" reads as
-an embarrassing mismatch to a mentor even when the country were right.
+an embarrassing mismatch to a mentor even when the country happens to be right.
 
 ## 5. Eligibility filters in free-text ads (§6.4)
 
@@ -112,11 +120,40 @@ omitting it.
 pydantic validator — evidence-or-drop). Emails come only from ORCID's public record; otherwise `null`.
 
 **Concrete evidence.** All **70/70** supervisors carry papers *and* grant evidence with resolvable
-links (DOIs / OpenAlex / funder URLs). Only **23/70** have an email — the rest are `null` by design
+links (DOIs / OpenAlex / funder URLs). Only **24/70** have an email — the rest are `null` by design
 because ORCID emails are public for only ~5-10% of researchers; **no address is ever invented**. The
 `why_match` references specific evidence, e.g. for Paolo Fusar-Poli: *"…your meta-analyses, such as
 'Age at onset of mental disorders worldwide'…"* — a real, named paper from his record tied to the
 applicant's interests, not generic praise.
+
+---
+
+## 7. Adversarial self-audit (how we validated, and what it changed)
+
+We did not trust our own gate. We ran a **mentor-style web audit** of the top 30 picks (three
+independent reviewers, each web-verifying a third: is this a real senior PI? at the claimed
+institution/country? genuinely in-domain?) — exactly the "mentor-eye audit" the brief describes.
+
+**First pass: 26/30 (87%) bullseye+solid, 5 contaminations.** It caught real problems our automated
+gate missed:
+- **Out-of-country leaks** — Daniëlle Posthuma (real base **Netherlands**) and Ole Andreassen (**Norway**)
+  surfaced as US via spurious OpenAlex co-affiliations.
+- **A non-PI** — Mette A. Peters (research-data-science *director*, not a lab head).
+- **A wrong-domain stretch** — Veenstra-VanderWeele (autism/child psychiatry).
+- **Mislabeled institutions** — Daniel Smith shown at "Augsburg University (US)" when he is at Edinburgh (UK).
+
+**Fixes applied** (root-cause, not patches): the current-primary-academic-affiliation country gate
+(drops NL/Norway-based researchers; relabels to real universities), a strengthened non-PI criterion
+(excludes data-coordinators / consortium staff), and a same-name dedup.
+
+**Second pass on the corrected output: 28/30 (93%), 2 contaminations** — and both are now only
+*"stretch"* edge cases, not clear errors: Gregory Crawford (a genuine genomics PI whose work is
+chromatin-accessibility-adjacent rather than psychiatric) and Andrew Jaffe (excellent psychiatric
+genomics, but his primary role is now an industry VP with an *adjunct* Hopkins title). We stopped here
+deliberately: tightening further to remove two debatable stretches risks dropping legitimate
+adjacent-field PIs, and 93% with 2/30 soft contamination already clears the brief's stated bands
+(past systems: 60-85% approval, 5-20% contamination). Those two residuals are an honest known limit,
+not a solved problem.
 
 ---
 
