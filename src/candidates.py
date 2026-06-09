@@ -125,11 +125,14 @@ async def _enrich(top: list[tuple[str, dict]]) -> dict:
 
 
 def _build(aid: str, rec: dict, author: dict, countries: list[str]) -> Candidate:
-    prim = openalex.best_affiliation(author, countries)
-    inst_id = prim.get("id")
-    inst_name = prim.get("display_name", "")
-    inst_country = (prim.get("country_code") or "").lower()
-    if not inst_id or inst_country not in countries:
+    prim = openalex.dominant_affiliation(author)
+    if prim:
+        inst_id = prim.get("id")
+        inst_name = prim.get("display_name", "")
+        inst_country = (prim.get("country_code") or "").lower()
+        if inst_country not in countries:
+            inst_id, inst_name, inst_country = None, "", ""
+    else:
         academic = {
             k: v
             for k, v in rec["target_insts"].items()

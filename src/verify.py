@@ -45,8 +45,10 @@ def _prompt(cand: Candidate, profile: StudentProfile) -> str:
         " contacting; false ONLY for a clearly different discipline or a keyword coincidence>,"
         ' "region_match": <true if no region constraint applies or the work matches the area region;'
         " false if the area is region-specific and the work is about a different region/ecosystem>,"
-        ' "is_pi": <true if a supervising principal investigator / faculty member; false if they look'
-        " like a PhD student, postdoc, or personal-fellowship awardee>,"
+        ' "is_pi": <true if a supervising principal investigator / faculty member who runs their own'
+        " lab and can supervise PhD students; false if they look like a PhD student, postdoc,"
+        " personal-fellowship awardee, OR a research-data-coordinator / core-facility / consortium"
+        " staff scientist or administrator who does not run a lab>,"
         ' "is_collision": <true if the abstracts look like different people merged under one name, or'
         " the person clearly does not match the area>,"
         ' "reason": "<one sentence>"}\n'

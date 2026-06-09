@@ -116,17 +116,18 @@ def primary_affiliation(author: dict) -> dict:
 ACADEMIC_TYPES = {"education", "healthcare", "facility", "government", "nonprofit"}
 
 
-def best_affiliation(author: dict, countries: list[str]) -> dict:
-    target_academic = []
-    for a in author.get("affiliations", []):
-        inst = a.get("institution", {})
-        cc = (inst.get("country_code") or "").lower()
-        if cc in countries and inst.get("type") in ACADEMIC_TYPES:
-            target_academic.append((max(a.get("years", [0]) or [0]), inst))
-    if not target_academic:
+def dominant_affiliation(author: dict) -> dict:
+    affs = [
+        a
+        for a in author.get("affiliations", [])
+        if a.get("institution", {}).get("type") in ACADEMIC_TYPES and a.get("years")
+    ]
+    if not affs:
         return {}
-    target_academic.sort(key=lambda t: t[0], reverse=True)
-    return target_academic[0][1]
+    most_recent = max(max(a["years"]) for a in affs)
+    recent = [a for a in affs if most_recent in a["years"]] or affs
+    best = max(recent, key=lambda a: len(a["years"]))
+    return best.get("institution", {})
 
 
 def h_index(author: dict) -> int:

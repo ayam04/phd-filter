@@ -1,6 +1,6 @@
 {
   "student_id": "106419",
-  "generated_at": "2026-06-09T16:15:43.841864+00:00",
+  "generated_at": "2026-06-09T16:31:49.619181+00:00",
   "target_countries": [
     "United States",
     "United Kingdom",
@@ -9,25 +9,25 @@
   "summary": {
     "total": 70,
     "by_tier": {
-      "target": 24,
-      "reach": 25,
-      "safety": 21
+      "target": 32,
+      "reach": 23,
+      "safety": 15
     },
     "by_area": {
-      "Computational Psychiatry & PTSD Prediction": 69,
-      "Neurobiology of Trauma & Stress": 52,
+      "Computational Psychiatry & PTSD Prediction": 70,
+      "Neurobiology of Trauma & Stress": 53,
       "Single-cell & Psychiatric Genomics": 68
     },
     "contamination_self_check": {
       "generated": 400,
-      "dropped_out_of_country": 0,
+      "dropped_out_of_country": 86,
       "dropped_career_stage": 0,
       "dropped_low_similarity": 2,
       "verified_pool": 240,
-      "rejected_domain": 57,
-      "rejected_non_pi": 4,
+      "rejected_domain": 81,
+      "rejected_non_pi": 16,
       "rejected_region": 0,
-      "rejected_collision": 3,
+      "rejected_collision": 0,
       "final": 70
     }
   },
@@ -111,7 +111,7 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Psychiatry; The candidate's work focuses on prediction models in psychiatry, transdiagnostic approaches, and risk factors for mental disorders, aligning with the Computational Psychiatry & PTSD Prediction area."
+        "reason": "discipline=Psychiatry; The candidate's work focuses on clinical prediction models and systematic reviews in psychiatry, aligning with the Computational Psychiatry & PTSD Prediction area, particularly the prediction aspect."
       }
     },
     {
@@ -193,88 +193,7 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Neuroscience; The abstracts clearly indicate work in neurobiology of stress and neuroendocrine regulation, which aligns with the 'Neurobiology of Trauma & Stress' area, and the career signals suggest a senior PI."
-      }
-    },
-    {
-      "supervisor_id": "A5052016436",
-      "name": "Daniëlle Posthuma",
-      "institution": "Icahn School of Medicine at Mount Sinai",
-      "country": "United States",
-      "contact_email": "d.posthuma@vu.nl",
-      "research_focus": "Genetic Associations and Epidemiology, Cognitive Abilities and Testing, Bioinformatics and Genomic Networks",
-      "matched_areas": [
-        "Single-cell & Psychiatric Genomics",
-        "Computational Psychiatry & PTSD Prediction"
-      ],
-      "tier": "target",
-      "evidence": {
-        "papers": [
-          {
-            "title": "Genome-wide meta-analysis identifies new loci and functional pathways influencing Alzheimer’s disease risk",
-            "year": 2019,
-            "doi": "https://doi.org/10.1038/s41588-018-0311-9",
-            "url": "https://doi.org/10.1038/s41588-018-0311-9",
-            "citations": 2516
-          },
-          {
-            "title": "Association studies of up to 1.2 million individuals yield new insights into the genetic etiology of tobacco and alcohol use",
-            "year": 2019,
-            "doi": "https://doi.org/10.1038/s41588-018-0307-5",
-            "url": "https://doi.org/10.1038/s41588-018-0307-5",
-            "citations": 2136
-          },
-          {
-            "title": "Genome-wide association studies",
-            "year": 2021,
-            "doi": "https://doi.org/10.1038/s43586-021-00056-9",
-            "url": "https://doi.org/10.1038/s43586-021-00056-9",
-            "citations": 1765
-          }
-        ],
-        "grants": [
-          {
-            "title": "FP7 Health award 278367",
-            "funder": "FP7 Health",
-            "award_id": "278367",
-            "url": "https://openalex.org/F4320338377",
-            "is_personal_fellowship": false
-          },
-          {
-            "title": "Vetenskapsrådet award R01MH119084",
-            "funder": "Vetenskapsrådet",
-            "award_id": "R01MH119084",
-            "url": "https://openalex.org/F4320322581",
-            "is_personal_fellowship": false
-          },
-          {
-            "title": "National Institutes of Health award K01MH106675",
-            "funder": "National Institutes of Health",
-            "award_id": "K01MH106675",
-            "url": "https://openalex.org/F4320332161",
-            "is_personal_fellowship": false
-          }
-        ]
-      },
-      "why_match": "My research interests in computational psychiatry and the neurobiology of trauma align with your lab's focus on psychiatric genomics. I am particularly drawn to your work on identifying genetic etiologies of complex traits, as exemplified by your 2019 paper, \"Genome-wide meta-analysis identifies new loci and functional pathways influencing Alzheimer’s disease risk,\" and believe my quantitative background could contribute to similar investigations in stress-related disorders.",
-      "linked_programs": [
-        {
-          "name": "PhD programs at Icahn School of Medicine at Mount Sinai",
-          "url": "https://openalex.org/I98704320",
-          "eligibility_note": null
-        }
-      ],
-      "scores": {
-        "similarity": 0.7986,
-        "evidence": 1.0,
-        "final": 0.8993
-      },
-      "verification": {
-        "domain_match": true,
-        "region_match": true,
-        "is_pi": true,
-        "collision_checked": true,
-        "reason": "discipline=Genetics; The candidate's work focuses on Genome-Wide Association Studies (GWAS) and genetic variants, which directly aligns with the applicant's interest in 'Single-cell & Psychiatric Genomics'."
+        "reason": "discipline=Neuroscience; The abstracts clearly indicate a focus on neurobiology of stress and neuroendocrine regulation, which aligns with the Neurobiology of Trauma & Stress area. The researcher's extensive career and h-index suggest a PI role."
       }
     },
     {
@@ -355,13 +274,13 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Genomics; Panos Roussos's work focuses on psychiatric genomics, single-cell transcriptomics, and genetic associations in psychiatric disorders, directly aligning with the applicant's interest in Single-cell & Psychiatric Genomics."
+        "reason": "discipline=Genomics; The abstracts clearly indicate a focus on psychiatric genomics, single-cell transcriptomics, and genetic associations in psychiatric disorders, directly aligning with the applicant's interest in 'Single-cell & Psychiatric Genomics'."
       }
     },
     {
       "supervisor_id": "A5007623614",
       "name": "Andrew M. McIntosh",
-      "institution": "Edinburgh Cancer Research",
+      "institution": "University of Edinburgh",
       "country": "United Kingdom",
       "contact_email": "andrew.mcintosh@ed.ac.uk",
       "research_focus": "Genetic Associations and Epidemiology, Epigenetics and DNA Methylation, Functional Brain Connectivity Studies",
@@ -370,7 +289,7 @@
         "Computational Psychiatry & PTSD Prediction",
         "Neurobiology of Trauma & Stress"
       ],
-      "tier": "safety",
+      "tier": "target",
       "evidence": {
         "papers": [
           {
@@ -419,11 +338,11 @@
           }
         ]
       },
-      "why_match": "My interest in the neurobiology and genomics of stress-related disorders, particularly PTSD treatment-outcome prediction, aligns well with your lab's focus. Your work, such as the \"Genome-wide meta-analysis of depression identifies 102 independent variants...\" paper and the Medical Research Council grant MC_PC_17209, demonstrates a strong commitment to unraveling the genetic architecture of psychiatric conditions, which directly complements my background in computational biology and clinical psychology.",
+      "why_match": "My research interests in computational psychiatry and the neurobiology of trauma align perfectly with your lab's focus. I am particularly drawn to your work on the genetic architecture of complex traits, as exemplified by your 2019 paper on genomic structural equation modeling, and its potential application to understanding PTSD treatment outcomes. My background in quantitative research and machine learning would be well-suited to contribute to projects like those supported by your Medical Research Council grants.",
       "linked_programs": [
         {
-          "name": "PhD programs at Edinburgh Cancer Research",
-          "url": "https://openalex.org/I2802581871",
+          "name": "PhD programs at University of Edinburgh",
+          "url": "https://openalex.org/I98677209",
           "eligibility_note": null
         }
       ],
@@ -437,7 +356,7 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Psychiatric Genomics; The candidate's work heavily focuses on genetic associations, epigenetics, and large-scale genomic studies for psychiatric disorders like depression and schizophrenia, which aligns with the 'Single-cell & Psychiatric Genomics' area."
+        "reason": "discipline=Psychiatric Genomics; The abstracts clearly demonstrate expertise in psychiatric genomics, particularly in large-scale genetic studies of depression and schizophrenia, which aligns with the applicant's interest in Single-cell & Psychiatric Genomics."
       }
     },
     {
@@ -519,13 +438,13 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Psychiatry; The abstracts clearly indicate research in PTSD genetics, epigenetics, and early life stress, aligning well with Computational Psychiatry, Neurobiology of Trauma & Stress, and Single-cell & Psychiatric Genomics."
+        "reason": "discipline=Psychiatric Genomics; The abstracts clearly demonstrate expertise in psychiatric genomics, specifically focusing on PTSD genetics and epigenetics, which aligns with the applicant's interest in 'Single-cell & Psychiatric Genomics' and 'Computational Psychiatry & PTSD Prediction'."
       }
     },
     {
       "supervisor_id": "A5086852785",
       "name": "Karl Friston",
-      "institution": "Wellcome Centre for Human Neuroimaging",
+      "institution": "University College London",
       "country": "United Kingdom",
       "contact_email": null,
       "research_focus": "Neural dynamics and brain function, Functional Brain Connectivity Studies, Embodied and Extended Cognition",
@@ -533,7 +452,7 @@
         "Computational Psychiatry & PTSD Prediction",
         "Neurobiology of Trauma & Stress"
       ],
-      "tier": "safety",
+      "tier": "reach",
       "evidence": {
         "papers": [
           {
@@ -582,11 +501,11 @@
           }
         ]
       },
-      "why_match": "My interest in computational psychiatry and predicting treatment outcomes for PTSD aligns with your work on computational models of brain function. Specifically, your paper \"REBUS and the Anarchic Brain: Toward a Unified Model of the Brain Action of Psychedelics\" and your Wellcome Trust grant 088130 suggest a framework for understanding complex brain states that could be highly relevant to my goal of integrating machine learning with the neurobiology of trauma.",
+      "why_match": "My research interests in computational psychiatry and PTSD treatment-outcome prediction align well with your work. Specifically, your paper \"REBUS and the Anarchic Brain: Toward a Unified Model of the Brain Action of Psychedelics\" (2019) and your grant work on Wellcome Trust 088130/Z/09/Z demonstrate a compelling approach to understanding complex brain states and their clinical implications, which I aim to explore through machine learning and genomic data in stress-related disorders.",
       "linked_programs": [
         {
-          "name": "PhD programs at Wellcome Centre for Human Neuroimaging",
-          "url": "https://openalex.org/I165524941",
+          "name": "PhD programs at University College London",
+          "url": "https://openalex.org/I45129253",
           "eligibility_note": null
         }
       ],
@@ -600,7 +519,7 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Computational Neuroscience; The abstracts clearly indicate a focus on computational approaches to understanding brain function and psychiatric conditions, aligning with computational psychiatry and neurobiology of trauma/stress through theoretical modeling."
+        "reason": "discipline=Computational Neuroscience; The abstracts clearly indicate expertise in computational approaches to brain function, mood disorders, and psychopathology, aligning with Computational Psychiatry and Neurobiology of Trauma/Stress."
       }
     },
     {
@@ -682,20 +601,102 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Psychiatry; John H. Krystal's work directly addresses PTSD, MDD, and psychiatric biomarkers using neuroimaging and molecular assays, aligning with the applicant's interests in Computational Psychiatry, Neurobiology of Trauma, and Psychiatric Genomics."
+        "reason": "discipline=Psychiatry; The abstracts clearly indicate research in psychiatric disorders, including PTSD, with a focus on neuroimaging and biomarkers, aligning with Computational Psychiatry and Neurobiology of Trauma & Stress."
+      }
+    },
+    {
+      "supervisor_id": "A5000331489",
+      "name": "Matthew Hotopf",
+      "institution": "King's College London",
+      "country": "United Kingdom",
+      "contact_email": null,
+      "research_focus": "Fibromyalgia and Chronic Fatigue Syndrome Research, Digital Mental Health Interventions, Mental Health Treatment and Access",
+      "matched_areas": [
+        "Single-cell & Psychiatric Genomics",
+        "Computational Psychiatry & PTSD Prediction",
+        "Neurobiology of Trauma & Stress"
+      ],
+      "tier": "target",
+      "evidence": {
+        "papers": [
+          {
+            "title": "Multidisciplinary research priorities for the COVID-19 pandemic: a call for action for mental health science",
+            "year": 2020,
+            "doi": "https://doi.org/10.1016/s2215-0366(20)30168-1",
+            "url": "https://doi.org/10.1016/s2215-0366(20)30168-1",
+            "citations": 6046
+          },
+          {
+            "title": "Mental health before and during the COVID-19 pandemic: a longitudinal probability sample survey of the UK population",
+            "year": 2020,
+            "doi": "https://doi.org/10.1016/s2215-0366(20)30308-4",
+            "url": "https://doi.org/10.1016/s2215-0366(20)30308-4",
+            "citations": 2775
+          },
+          {
+            "title": "Mental health in UK Biobank – development, implementation and results from an online questionnaire completed by 157 366 participants: a reanalysis",
+            "year": 2020,
+            "doi": "https://doi.org/10.1192/bjo.2019.100",
+            "url": "https://doi.org/10.1192/bjo.2019.100",
+            "citations": 397
+          }
+        ],
+        "grants": [
+          {
+            "title": "Medical Research Council award MC_PC_17209",
+            "funder": "Medical Research Council",
+            "award_id": "MC_PC_17209",
+            "url": "https://openalex.org/F4320334626",
+            "is_personal_fellowship": false
+          },
+          {
+            "title": "Medical Research Council award 10436/Z/14/Z",
+            "funder": "Medical Research Council",
+            "award_id": "10436/Z/14/Z",
+            "url": "https://openalex.org/F4320334626",
+            "is_personal_fellowship": false
+          },
+          {
+            "title": "Maudsley Charity award TR130505",
+            "funder": "Maudsley Charity",
+            "award_id": "TR130505",
+            "url": "https://openalex.org/F4320313345",
+            "is_personal_fellowship": false
+          }
+        ]
+      },
+      "why_match": "My research interests in computational psychiatry and PTSD treatment-outcome prediction align well with your work. I am particularly interested in how your research, such as the 'Mental health in UK Biobank' study, utilizes large-scale data to understand mental health trajectories, which connects with my desire to apply machine learning to clinical and EHR data. I am also keen to explore the neurobiological basis of trauma, which I believe could be integrated with your group's focus on psychiatric genomics.",
+      "linked_programs": [
+        {
+          "name": "PhD programs at King's College London",
+          "url": "https://openalex.org/I183935753",
+          "eligibility_note": null
+        }
+      ],
+      "scores": {
+        "similarity": 0.7589,
+        "evidence": 1.0,
+        "final": 0.8795
+      },
+      "verification": {
+        "domain_match": true,
+        "region_match": true,
+        "is_pi": true,
+        "collision_checked": true,
+        "reason": "discipline=Psychiatry; The abstracts describe research on mental health questionnaires and disorders within a large biobank, which aligns with Computational Psychiatry and Neurobiology of Trauma & Stress, particularly given the focus on genetics and environmental data."
       }
     },
     {
       "supervisor_id": "A5007077090",
       "name": "Andrea Cipriani",
-      "institution": "Oxford Health NHS Foundation Trust",
+      "institution": "University of Oxford",
       "country": "United Kingdom",
       "contact_email": null,
       "research_focus": "Treatment of Major Depression, Schizophrenia research and treatment, Meta-analysis and systematic reviews",
       "matched_areas": [
         "Computational Psychiatry & PTSD Prediction"
       ],
-      "tier": "safety",
+      "tier": "reach",
       "evidence": {
         "papers": [
           {
@@ -744,11 +745,11 @@
           }
         ]
       },
-      "why_match": "My research interests in computational psychiatry and PTSD treatment-outcome prediction align well with your work. I am particularly drawn to your systematic reviews and network meta-analyses, such as \"Comparative Efficacy and Acceptability of 21 Antidepressant Drugs for the Acute Treatment of Adults With Major Depressive Disorder,\" which demonstrate a rigorous approach to understanding treatment effectiveness that I aim to apply to trauma-related disorders using machine learning and genomic data.",
+      "why_match": "My research interests in computational psychiatry and PTSD treatment-outcome prediction align perfectly with your work. Your systematic reviews and network meta-analyses, such as \"Comparative Efficacy and Acceptability of 21 Antidepressant Drugs for the Acute Treatment of Adults With Major Depressive Disorder,\" demonstrate a rigorous approach to evaluating treatment effectiveness that I aim to apply to trauma-related disorders. I am particularly interested in how your methodologies could be extended to predict individual responses to PTSD interventions, integrating molecular and neurobiological data.",
       "linked_programs": [
         {
-          "name": "PhD programs at Oxford Health NHS Foundation Trust",
-          "url": "https://openalex.org/I2802171185",
+          "name": "PhD programs at University of Oxford",
+          "url": "https://openalex.org/I40120149",
           "eligibility_note": null
         }
       ],
@@ -762,7 +763,7 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Psychiatry; Andrea Cipriani's work focuses on mental health conditions, including depression and bipolar disorder, using computational methods and meta-analysis, which aligns with Computational Psychiatry and Neurobiology of Trauma & Stress, and potentially Single-cell & Psychiatric Genom"
+        "reason": "discipline=Computational Psychiatry; The abstracts clearly indicate work in computational approaches to mental health, including NLP for bipolar disorder and AI/ML in psychiatry, which aligns with Computational Psychiatry."
       }
     },
     {
@@ -844,7 +845,7 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Psychoneuroimmunology; The abstracts consistently focus on the interplay between psychosocial stress, biological processes (e.g., immune system, cortisol), and health outcomes, which aligns with the Neurobiology of Trauma & Stress area."
+        "reason": "discipline=Psychology; The abstracts focus on stress, health, and psychological/physiological reactivity, aligning with the Neurobiology of Trauma & Stress area, although more from a psychological perspective than pure neurobiology."
       }
     },
     {
@@ -926,7 +927,89 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Psychiatric Genomics; The abstracts clearly demonstrate expertise in psychiatric genomics, including PTSD genetics and single-cell transcriptomics applied to brain disorders, aligning well with the applicant's interests in Computational Psychiatry, Neurobiology of Trauma, and Single-cell "
+        "reason": "discipline=Psychiatric Genomics; The abstracts clearly demonstrate expertise in psychiatric genomics, including PTSD genetics and single-cell transcriptomics in brain disorders, aligning well with the applicant's interests."
+      }
+    },
+    {
+      "supervisor_id": "A5018481303",
+      "name": "Daniel H. Geschwind",
+      "institution": "University of California, Los Angeles",
+      "country": "United States",
+      "contact_email": null,
+      "research_focus": "Autism Spectrum Disorder Research, Genetics and Neurodevelopmental Disorders, Alzheimer's disease research and treatments",
+      "matched_areas": [
+        "Single-cell & Psychiatric Genomics",
+        "Computational Psychiatry & PTSD Prediction",
+        "Neurobiology of Trauma & Stress"
+      ],
+      "tier": "reach",
+      "evidence": {
+        "papers": [
+          {
+            "title": "Identification of common genetic risk variants for autism spectrum disorder",
+            "year": 2019,
+            "doi": "https://doi.org/10.1038/s41588-019-0344-8",
+            "url": "https://doi.org/10.1038/s41588-019-0344-8",
+            "citations": 2615
+          },
+          {
+            "title": "Large-Scale Exome Sequencing Study Implicates Both Developmental and Functional Changes in the Neurobiology of Autism",
+            "year": 2020,
+            "doi": "https://doi.org/10.1016/j.cell.2019.12.036",
+            "url": "https://doi.org/10.1016/j.cell.2019.12.036",
+            "citations": 2430
+          },
+          {
+            "title": "Discovery of the first genome-wide significant risk loci for attention deficit/hyperactivity disorder",
+            "year": 2018,
+            "doi": "https://doi.org/10.1038/s41588-018-0269-7",
+            "url": "https://doi.org/10.1038/s41588-018-0269-7",
+            "citations": 2309
+          }
+        ],
+        "grants": [
+          {
+            "title": "Medical Research Council award MR/L023784/2",
+            "funder": "Medical Research Council",
+            "award_id": "MR/L023784/2",
+            "url": "https://openalex.org/F4320334626",
+            "is_personal_fellowship": false
+          },
+          {
+            "title": "Vetenskapsrådet award 538-2013-8864",
+            "funder": "Vetenskapsrådet",
+            "award_id": "538-2013-8864",
+            "url": "https://openalex.org/F4320322581",
+            "is_personal_fellowship": false
+          },
+          {
+            "title": "National Institute of Mental Health award R00MH101367",
+            "funder": "National Institute of Mental Health",
+            "award_id": "R00MH101367",
+            "url": "https://openalex.org/F4320337346",
+            "is_personal_fellowship": false
+          }
+        ]
+      },
+      "why_match": "My research interests in computational psychiatry and the neurobiology of trauma align with your lab's work, particularly your contributions to identifying genetic risk variants for neurodevelopmental disorders, as exemplified by \"Identification of common genetic risk variants for autism spectrum disorder\" (2019). I am eager to explore how similar genomic approaches, combined with machine learning, could be applied to PTSD treatment-outcome prediction and understanding the molecular basis of stress-related disorders.",
+      "linked_programs": [
+        {
+          "name": "PhD programs at University of California, Los Angeles",
+          "url": "https://openalex.org/I161318765",
+          "eligibility_note": null
+        }
+      ],
+      "scores": {
+        "similarity": 0.8206,
+        "evidence": 1.0,
+        "final": 0.8728
+      },
+      "verification": {
+        "domain_match": true,
+        "region_match": true,
+        "is_pi": true,
+        "collision_checked": true,
+        "reason": "discipline=Neuroscience; Daniel H. Geschwind's work focuses on the genetics of neurodevelopmental and psychiatric disorders, including schizophrenia and autism, which aligns with the Neurobiology of Trauma & Stress and Single-cell & Psychiatric Genomics areas, particularly through the lens of geneti"
       }
     },
     {
@@ -1008,82 +1091,7 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Psychiatric Genomics; The abstracts clearly demonstrate expertise in psychiatric genomics, particularly in depression and schizophrenia, which aligns with the applicant's interest in Single-cell & Psychiatric Genomics."
-      }
-    },
-    {
-      "supervisor_id": "A5053558359",
-      "name": "Jeremy Veenstra‐VanderWeele",
-      "institution": "Rutgers, The State University of New Jersey",
-      "country": "United States",
-      "contact_email": null,
-      "research_focus": "Autism Spectrum Disorder Research, Genetics and Neurodevelopmental Disorders, Child Nutrition and Feeding Issues",
-      "matched_areas": [
-        "Single-cell & Psychiatric Genomics",
-        "Computational Psychiatry & PTSD Prediction",
-        "Neurobiology of Trauma & Stress"
-      ],
-      "tier": "target",
-      "evidence": {
-        "papers": [
-          {
-            "title": "Autism spectrum disorder",
-            "year": 2020,
-            "doi": "https://doi.org/10.1038/s41572-019-0138-4",
-            "url": "https://doi.org/10.1038/s41572-019-0138-4",
-            "citations": 1663
-          },
-          {
-            "title": "Candidate biomarkers in psychiatric disorders: state of the field",
-            "year": 2023,
-            "doi": "https://doi.org/10.1002/wps.21078",
-            "url": "https://doi.org/10.1002/wps.21078",
-            "citations": 329
-          }
-        ],
-        "grants": [
-          {
-            "title": "National Institute of Mental Health award R01MH114965",
-            "funder": "National Institute of Mental Health",
-            "award_id": "R01MH114965",
-            "url": "https://openalex.org/F4320337346",
-            "is_personal_fellowship": false
-          },
-          {
-            "title": "National Institute on Drug Abuse award R01DA049733",
-            "funder": "National Institute on Drug Abuse",
-            "award_id": "R01DA049733",
-            "url": "https://openalex.org/F4320337347",
-            "is_personal_fellowship": false
-          },
-          {
-            "title": "National Institute of Mental Health award R01MH114972",
-            "funder": "National Institute of Mental Health",
-            "award_id": "R01MH114972",
-            "url": "https://openalex.org/F4320337346",
-            "is_personal_fellowship": false
-          }
-        ]
-      },
-      "why_match": "My research interests in computational psychiatry and the neurobiology of trauma align well with your work. Specifically, your R01MH114965 grant on psychiatric disorders and your paper, \"Candidate biomarkers in psychiatric disorders: state of the field\" (2023), resonate with my goal of applying machine learning to clinical and genomic data for understanding and predicting treatment outcomes in stress-related disorders like PTSD.",
-      "linked_programs": [
-        {
-          "name": "PhD programs at Rutgers, The State University of New Jersey",
-          "url": "https://openalex.org/I102322142",
-          "eligibility_note": null
-        }
-      ],
-      "scores": {
-        "similarity": 0.7593,
-        "evidence": 0.9748,
-        "final": 0.8721
-      },
-      "verification": {
-        "domain_match": true,
-        "region_match": true,
-        "is_pi": true,
-        "collision_checked": true,
-        "reason": "discipline=Psychiatric Neuroscience; The abstracts clearly indicate research in psychiatric neuroscience, including biomarkers for PTSD, which aligns with the applicant's interest in Computational Psychiatry & PTSD Prediction and Neurobiology of Trauma & Stress."
+        "reason": "discipline=Psychiatric Genomics; The abstracts clearly demonstrate expertise in psychiatric genomics, particularly focusing on the genetic underpinnings of depression and schizophrenia, which aligns with the applicant's interest in 'Single-cell & Psychiatric Genomics' and 'Computational Psychiatry &"
       }
     },
     {
@@ -1165,14 +1173,14 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Psychiatric Genomics; The abstracts clearly demonstrate work in psychiatric genomics, PTSD prediction, and mental health research, aligning with the applicant's interests."
+        "reason": "discipline=Psychiatry; The abstracts clearly demonstrate work in computational psychiatry, PTSD prediction, and psychiatric genomics, aligning with the applicant's interests."
       }
     },
     {
       "supervisor_id": "A5053035402",
       "name": "Daniel J. Smıth",
-      "institution": "Augsburg University",
-      "country": "United States",
+      "institution": "University of Edinburgh",
+      "country": "United Kingdom",
       "contact_email": "d.smith@ed.ac.uk",
       "research_focus": "Bipolar Disorder and Treatment, Genetic Associations and Epidemiology, Schizophrenia research and treatment",
       "matched_areas": [
@@ -1180,7 +1188,7 @@
         "Computational Psychiatry & PTSD Prediction",
         "Neurobiology of Trauma & Stress"
       ],
-      "tier": "safety",
+      "tier": "target",
       "evidence": {
         "papers": [
           {
@@ -1229,11 +1237,11 @@
           }
         ]
       },
-      "why_match": "My interest in computational psychiatry and PTSD treatment-outcome prediction aligns well with your work, particularly your use of large-scale datasets in studies like \"Mental health in UK Biobank – development, implementation and results from an online questionnaire completed by 157 366 participants: a reanalysis.\" I am also drawn to your research on the neurobiology of stress-related disorders, as evidenced by your grant MC_PC_17209, and believe my background in combining machine learning with molecular and neurobiological data would be a strong fit for your lab's focus.",
+      "why_match": "My research interests in computational psychiatry and the neurobiology of trauma align perfectly with your lab's focus. I am particularly drawn to your work on large-scale genomic analyses of psychiatric conditions, such as your 2019 meta-analysis of depression, and believe my background in machine learning and clinical data can contribute to predicting PTSD treatment outcomes within this framework.",
       "linked_programs": [
         {
-          "name": "PhD programs at Augsburg University",
-          "url": "https://openalex.org/I119916105",
+          "name": "PhD programs at University of Edinburgh",
+          "url": "https://openalex.org/I98677209",
           "eligibility_note": null
         }
       ],
@@ -1247,7 +1255,7 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Psychiatric Genomics; The abstracts clearly demonstrate work in psychiatric genomics, specifically large-scale genetic association studies for depression, which aligns with the applicant's interest in 'Single-cell & Psychiatric Genomics'."
+        "reason": "discipline=Psychiatric Genomics; The abstracts clearly demonstrate expertise in psychiatric genomics, specifically large-scale genetic association studies of depression, which aligns with the applicant's interest in 'Single-cell & Psychiatric Genomics'."
       }
     },
     {
@@ -1329,95 +1337,13 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Genomics; Mark J. Daly's work focuses heavily on genetic variants, exome analysis, and polygenic risk scores, which directly aligns with the applicant's interest in Single-cell & Psychiatric Genomics."
-      }
-    },
-    {
-      "supervisor_id": "A5020215901",
-      "name": "Ole A. Andreassen",
-      "institution": "SUNY Downstate Health Sciences University",
-      "country": "United States",
-      "contact_email": null,
-      "research_focus": "Genetic Associations and Epidemiology, Schizophrenia research and treatment, Functional Brain Connectivity Studies",
-      "matched_areas": [
-        "Single-cell & Psychiatric Genomics",
-        "Computational Psychiatry & PTSD Prediction",
-        "Neurobiology of Trauma & Stress"
-      ],
-      "tier": "safety",
-      "evidence": {
-        "papers": [
-          {
-            "title": "Identification of common genetic risk variants for autism spectrum disorder",
-            "year": 2019,
-            "doi": "https://doi.org/10.1038/s41588-019-0344-8",
-            "url": "https://doi.org/10.1038/s41588-019-0344-8",
-            "citations": 2615
-          },
-          {
-            "title": "Genome-wide meta-analysis identifies new loci and functional pathways influencing Alzheimer’s disease risk",
-            "year": 2019,
-            "doi": "https://doi.org/10.1038/s41588-018-0311-9",
-            "url": "https://doi.org/10.1038/s41588-018-0311-9",
-            "citations": 2516
-          },
-          {
-            "title": "Discovery of the first genome-wide significant risk loci for attention deficit/hyperactivity disorder",
-            "year": 2018,
-            "doi": "https://doi.org/10.1038/s41588-018-0269-7",
-            "url": "https://doi.org/10.1038/s41588-018-0269-7",
-            "citations": 2309
-          }
-        ],
-        "grants": [
-          {
-            "title": "Deutsche Forschungsgemeinschaft award ER724/4-1",
-            "funder": "Deutsche Forschungsgemeinschaft",
-            "award_id": "ER724/4-1",
-            "url": "https://openalex.org/F4320320879",
-            "is_personal_fellowship": false
-          },
-          {
-            "title": "National Institutes of Health award R01 MH117601",
-            "funder": "National Institutes of Health",
-            "award_id": "R01 MH117601",
-            "url": "https://openalex.org/F4320332161",
-            "is_personal_fellowship": false
-          },
-          {
-            "title": "National Institute of Neurological Disorders and Stroke award R01 NS107739",
-            "funder": "National Institute of Neurological Disorders and Stroke",
-            "award_id": "R01 NS107739",
-            "url": "https://openalex.org/F4320337359",
-            "is_personal_fellowship": false
-          }
-        ]
-      },
-      "why_match": "My research interests in computational psychiatry and the neurobiology of trauma align well with your lab's focus on psychiatric genomics. Specifically, your work on identifying genetic risk variants for complex disorders, as demonstrated in \"Identification of common genetic risk variants for autism spectrum disorder,\" suggests a strong foundation for exploring the genetic underpinnings of PTSD and predicting treatment outcomes. I am eager to contribute to projects that integrate machine learning with genomic data to understand stress-related disorders.",
-      "linked_programs": [
-        {
-          "name": "PhD programs at SUNY Downstate Health Sciences University",
-          "url": "https://openalex.org/I181697535",
-          "eligibility_note": null
-        }
-      ],
-      "scores": {
-        "similarity": 0.7998,
-        "evidence": 1.0,
-        "final": 0.8624
-      },
-      "verification": {
-        "domain_match": true,
-        "region_match": true,
-        "is_pi": true,
-        "collision_checked": true,
-        "reason": "discipline=Psychiatric Genomics; The abstracts clearly indicate work in psychiatric genomics, particularly integrating GWAS with single-cell transcriptomics for psychiatric disorders, which aligns with 'Single-cell & Psychiatric Genomics'."
+        "reason": "discipline=Genomics; Mark J. Daly's work focuses on genetic variants, exome analysis, and polygenic risk scores, which directly aligns with the applicant's interest in Single-cell & Psychiatric Genomics."
       }
     },
     {
       "supervisor_id": "A5069078473",
       "name": "Ian B. Hickie",
-      "institution": "University of Technology Sydney",
+      "institution": "The University of Sydney",
       "country": "Australia",
       "contact_email": "ian.hickie@sydney.edu.au",
       "research_focus": "Mental Health Treatment and Access, Child and Adolescent Psychosocial and Emotional Development, Digital Mental Health Interventions",
@@ -1475,11 +1401,11 @@
           }
         ]
       },
-      "why_match": "My research interests in computational psychiatry and the neurobiology of trauma align perfectly with your lab's focus. I am particularly drawn to your work on the genetic architecture of psychiatric disorders, as exemplified by your paper \"Genome-wide association analyses identify 44 risk variants and refine the genetic architecture of major depression,\" and its implications for understanding stress-related conditions. My background in quantitative research, bridging clinical psychology and computational biology, would allow me to contribute to projects like those supported by your NIH R01MH106595 grant, integrating machine learning with molecular and neurobiological data to predict PTSD treatment outcomes.",
+      "why_match": "My interest in the neurobiology of trauma and stress, particularly in the context of computational psychiatry and PTSD prediction, aligns well with your lab's focus. Your work on the genetic architecture of major depression, as evidenced by your 2018 paper \"Genome-wide association analyses identify 44 risk variants and refine the genetic architecture of major depression,\" is particularly exciting to me, given my background in psychiatric genomics and machine learning for mental health.",
       "linked_programs": [
         {
-          "name": "PhD programs at University of Technology Sydney",
-          "url": "https://openalex.org/I114017466",
+          "name": "PhD programs at The University of Sydney",
+          "url": "https://openalex.org/I129604602",
           "eligibility_note": null
         }
       ],
@@ -1493,13 +1419,13 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Psychiatric Genomics; The abstracts clearly demonstrate work in psychiatric genomics, particularly related to PTSD and depression, aligning well with the applicant's interest in Computational Psychiatry, Neurobiology of Trauma & Stress, and Single-cell & Psychiatric Genomics."
+        "reason": "discipline=Psychiatric Genomics; The abstracts clearly demonstrate expertise in psychiatric genomics, particularly in PTSD and depression, aligning with the applicant's interests in Computational Psychiatry, Neurobiology of Trauma, and Psychiatric Genomics."
       }
     },
     {
       "supervisor_id": "A5044047568",
       "name": "Joel Gelernter",
-      "institution": "United States Department of Veterans Affairs",
+      "institution": "Yale University",
       "country": "United States",
       "contact_email": null,
       "research_focus": "Genetic Associations and Epidemiology, Substance Abuse Treatment and Outcomes, Neurotransmitter Receptor Influence on Behavior",
@@ -1508,7 +1434,7 @@
         "Computational Psychiatry & PTSD Prediction",
         "Neurobiology of Trauma & Stress"
       ],
-      "tier": "target",
+      "tier": "reach",
       "evidence": {
         "papers": [
           {
@@ -1557,11 +1483,11 @@
           }
         ]
       },
-      "why_match": "My research interests lie at the intersection of computational psychiatry, PTSD treatment-outcome prediction, and the neurobiology of trauma. Your work, particularly the \"International meta-analysis of PTSD genome-wide association studies identifies sex- and ancestry-specific genetic risk loci\" (2019) paper, directly aligns with my goal of integrating machine learning on clinical data with the molecular and neurobiological underpinnings of stress-related disorders. I am particularly drawn to your lab's expertise in psychiatric genomics and its application to understanding complex conditions like PTSD.",
+      "why_match": "My research interests in computational psychiatry and PTSD treatment-outcome prediction align perfectly with your lab's focus, particularly as demonstrated by your work on \"International meta-analysis of PTSD genome-wide association studies identifies sex- and ancestry-specific genetic risk loci.\" I am eager to contribute my quantitative skills to unraveling the molecular and neurobiological underpinnings of trauma and stress, building on the foundation of your NIMH-funded projects like U01 MH094421.",
       "linked_programs": [
         {
-          "name": "PhD programs at United States Department of Veterans Affairs",
-          "url": "https://openalex.org/I1322918889",
+          "name": "PhD programs at Yale University",
+          "url": "https://openalex.org/I32971472",
           "eligibility_note": null
         }
       ],
@@ -1575,7 +1501,7 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Psychiatric Genomics; The abstracts clearly demonstrate expertise in psychiatric genomics, particularly in bipolar disorder, PTSD, and nicotine dependence, which aligns with the applicant's interest in Single-cell & Psychiatric Genomics and Computational Psychiatry & PTSD Prediction."
+        "reason": "discipline=Psychiatric Genomics; The abstracts clearly demonstrate expertise in psychiatric genomics, including PTSD genetics and bipolar disorder, aligning well with the applicant's interest in Single-cell & Psychiatric Genomics and PTSD Prediction."
       }
     },
     {
@@ -1657,7 +1583,89 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Neuroscience; The candidate's work focuses on the genetic and transcriptomic underpinnings of neuropsychiatric disorders, which aligns with the applicant's interest in Neurobiology of Trauma & Stress and Single-cell & Psychiatric Genomics, particularly regarding brain dysfunction and mole"
+        "reason": "discipline=Psychiatric Genomics; The candidate's work focuses on the genetic architecture and transcriptomic dysregulation in major psychiatric disorders, aligning with the 'Single-cell & Psychiatric Genomics' area."
+      }
+    },
+    {
+      "supervisor_id": "A5032537089",
+      "name": "Seena Fazel",
+      "institution": "University of Oxford",
+      "country": "United Kingdom",
+      "contact_email": null,
+      "research_focus": "Psychopathy, Forensic Psychiatry, Sexual Offending, Suicide and Self-Harm Studies, Criminal Justice and Corrections Analysis",
+      "matched_areas": [
+        "Computational Psychiatry & PTSD Prediction",
+        "Neurobiology of Trauma & Stress",
+        "Single-cell & Psychiatric Genomics"
+      ],
+      "tier": "reach",
+      "evidence": {
+        "papers": [
+          {
+            "title": "Long-term outcomes of childhood sexual abuse: an umbrella review",
+            "year": 2019,
+            "doi": "https://doi.org/10.1016/s2215-0366(19)30286-x",
+            "url": "https://doi.org/10.1016/s2215-0366(19)30286-x",
+            "citations": 776
+          },
+          {
+            "title": "The Lancet Psychiatry Commission on intimate partner violence and mental health: advancing mental health services, research, and policy",
+            "year": 2022,
+            "doi": "https://doi.org/10.1016/s2215-0366(22)00008-6",
+            "url": "https://doi.org/10.1016/s2215-0366(22)00008-6",
+            "citations": 284
+          },
+          {
+            "title": "Implementing Precision Psychiatry: A Systematic Review of Individualized Prediction Models for Clinical Practice",
+            "year": 2020,
+            "doi": "https://doi.org/10.1093/schbul/sbaa120",
+            "url": "https://doi.org/10.1093/schbul/sbaa120",
+            "citations": 212
+          }
+        ],
+        "grants": [
+          {
+            "title": "Wellcome Trust award 202836/Z/16/Z",
+            "funder": "Wellcome Trust",
+            "award_id": "202836/Z/16/Z",
+            "url": "https://openalex.org/F4320311904",
+            "is_personal_fellowship": false
+          },
+          {
+            "title": "Medical Research Council award MR/P005918",
+            "funder": "Medical Research Council",
+            "award_id": "MR/P005918",
+            "url": "https://openalex.org/F4320334626",
+            "is_personal_fellowship": false
+          },
+          {
+            "title": "Medical Research Council award P005918",
+            "funder": "Medical Research Council",
+            "award_id": "P005918",
+            "url": "https://openalex.org/F4320334626",
+            "is_personal_fellowship": false
+          }
+        ]
+      },
+      "why_match": "My interest in computational psychiatry and PTSD treatment-outcome prediction aligns well with your work, particularly your systematic review on \"Implementing Precision Psychiatry: A Systematic Review of Individualized Prediction Models for Clinical Practice.\" I am keen to explore how machine learning on clinical data, a focus of my background, can be integrated with the neurobiological underpinnings of trauma, building on your research into long-term outcomes of childhood adversity.",
+      "linked_programs": [
+        {
+          "name": "PhD programs at University of Oxford",
+          "url": "https://openalex.org/I40120149",
+          "eligibility_note": null
+        }
+      ],
+      "scores": {
+        "similarity": 0.829,
+        "evidence": 0.9468,
+        "final": 0.861
+      },
+      "verification": {
+        "domain_match": true,
+        "region_match": true,
+        "is_pi": true,
+        "collision_checked": true,
+        "reason": "discipline=Psychiatry; The abstracts demonstrate expertise in psychiatric prediction models, mental health conditions, and substance use disorders within a clinical and forensic psychiatry context, aligning with Computational Psychiatry and Neurobiology of Trauma & Stress."
       }
     },
     {
@@ -1739,7 +1747,7 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Psychiatric Genomics; Michael J. Gandal's work focuses on psychiatric genomics, specifically genome-wide association studies for bipolar disorder and suicidal behavior, which aligns with the applicant's interest in Single-cell & Psychiatric Genomics."
+        "reason": "discipline=Psychiatric Genomics; The abstracts clearly indicate research in psychiatric genomics, specifically focusing on genome-wide association studies for bipolar disorder and suicidal behavior, which aligns with the applicant's interest in Single-cell & Psychiatric Genomics."
       }
     },
     {
@@ -1753,7 +1761,7 @@
         "Single-cell & Psychiatric Genomics",
         "Computational Psychiatry & PTSD Prediction"
       ],
-      "tier": "reach",
+      "tier": "target",
       "evidence": {
         "papers": [
           {
@@ -1820,13 +1828,13 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Psychiatric Genomics; Hyejung Won's work focuses on psychiatric genomics, including schizophrenia and nicotine dependence, which aligns with the applicant's interest in Single-cell & Psychiatric Genomics."
+        "reason": "discipline=Psychiatric Genomics; Hyejung Won's work heavily involves psychiatric genomics, genetic associations with psychiatric disorders like schizophrenia, and functional genomics of the human brain, which aligns with the applicant's interest in Single-cell & Psychiatric Genomics."
       }
     },
     {
       "supervisor_id": "A5091224898",
       "name": "Alexander W. Charney",
-      "institution": "Mount Sinai Medical Center",
+      "institution": "Icahn School of Medicine at Mount Sinai",
       "country": "United States",
       "contact_email": null,
       "research_focus": "COVID-19 Clinical Research Studies, Genetic Associations and Epidemiology, Long-Term Effects of COVID-19",
@@ -1835,7 +1843,7 @@
         "Computational Psychiatry & PTSD Prediction",
         "Neurobiology of Trauma & Stress"
       ],
-      "tier": "safety",
+      "tier": "target",
       "evidence": {
         "papers": [
           {
@@ -1884,11 +1892,11 @@
           }
         ]
       },
-      "why_match": "My research interests in computational psychiatry and the neurobiology of trauma align perfectly with your lab's focus. Your work on identifying genetic loci associated with psychiatric disorders, such as in \"Genome-wide association study identifies 30 loci associated with bipolar disorder\" (2019), demonstrates a strong foundation in psychiatric genomics that I am eager to build upon. I am particularly interested in applying similar genomic and computational approaches to understand PTSD treatment-outcome prediction and the molecular underpinnings of stress-related disorders.",
+      "why_match": "My research interests in computational psychiatry and the neurobiology of trauma align perfectly with your work, particularly your contributions to understanding psychiatric disorders through large-scale genomic studies. Your \"Genome-wide association study identifies 30 loci associated with bipolar disorder\" (2019) and the NIMH U01 grants demonstrate a strong commitment to uncovering the genetic underpinnings of complex mental health conditions, which I aim to integrate with machine learning for PTSD treatment-outcome prediction.",
       "linked_programs": [
         {
-          "name": "PhD programs at Mount Sinai Medical Center",
-          "url": "https://openalex.org/I4210095266",
+          "name": "PhD programs at Icahn School of Medicine at Mount Sinai",
+          "url": "https://openalex.org/I98704320",
           "eligibility_note": null
         }
       ],
@@ -1902,7 +1910,7 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Psychiatric Genomics; The abstracts clearly focus on psychiatric genomics, specifically genome-wide association studies for bipolar disorder, which aligns with the applicant's interest in 'Single-cell & Psychiatric Genomics'."
+        "reason": "discipline=Psychiatric Genomics; The abstracts clearly indicate research in psychiatric genomics, specifically focusing on bipolar disorder, which aligns with the applicant's interest in 'Single-cell & Psychiatric Genomics'. The researcher's career signals and institution suggest a PI role."
       }
     },
     {
@@ -1983,13 +1991,13 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Genomics; The abstracts clearly indicate work in psychiatric genomics, specifically focusing on genetic associations with psychiatric disorders and the functional genomics of the human brain, which aligns with the applicant's interest in Single-cell & Psychiatric Genomics."
+        "reason": "discipline=Genomics; The abstracts clearly indicate work in psychiatric genomics, including single-cell transcriptomics and genetic associations with psychiatric disorders like depression, which aligns with the applicant's interest in Single-cell & Psychiatric Genomics."
       }
     },
     {
       "supervisor_id": "A5088479227",
       "name": "Dalila Pinto",
-      "institution": "Allen Institute for Brain Science",
+      "institution": "Icahn School of Medicine at Mount Sinai",
       "country": "United States",
       "contact_email": null,
       "research_focus": "Genomic variations and chromosomal abnormalities, Genetic Associations and Epidemiology, Genetics and Neurodevelopmental Disorders",
@@ -1997,7 +2005,7 @@
         "Single-cell & Psychiatric Genomics",
         "Computational Psychiatry & PTSD Prediction"
       ],
-      "tier": "safety",
+      "tier": "target",
       "evidence": {
         "papers": [
           {
@@ -2046,11 +2054,11 @@
           }
         ]
       },
-      "why_match": "My research interests in computational psychiatry and the neurobiology of trauma align with your work on the molecular underpinnings of psychiatric disorders. Specifically, your 2018 paper, \"Shared molecular neuropathology across major psychiatric disorders parallels polygenic overlap,\" and your R01MH123619 grant on psychiatric genomics, resonate with my goal of integrating machine learning with the molecular basis of stress-related disorders.",
+      "why_match": "My interest in computational psychiatry and predicting PTSD treatment outcomes aligns well with your lab's focus. Specifically, your work on \"Shared molecular neuropathology across major psychiatric disorders parallels polygenic overlap\" and your NIMH R01 grant (R01MH123619) on psychiatric genomics resonate with my goal of integrating machine learning with the molecular and neurobiological bases of trauma and stress.",
       "linked_programs": [
         {
-          "name": "PhD programs at Allen Institute for Brain Science",
-          "url": "https://openalex.org/I1314596251",
+          "name": "PhD programs at Icahn School of Medicine at Mount Sinai",
+          "url": "https://openalex.org/I98704320",
           "eligibility_note": null
         }
       ],
@@ -2064,7 +2072,7 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Psychiatric Genomics; Dalila Pinto's work focuses on the genetic underpinnings of psychiatric disorders, including suicidal behavior and neurodevelopmental disorders, which aligns with the applicant's interest in Psychiatric Genomics."
+        "reason": "discipline=Psychiatric Genomics; Dalila Pinto's work focuses on genetic associations with psychiatric disorders, including suicidal behavior and neurodevelopmental disorders, which aligns with the applicant's interest in Psychiatric Genomics."
       }
     },
     {
@@ -2145,7 +2153,7 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Psychiatric Genomics; The abstracts clearly focus on psychiatric disorders, genetic associations, and genomic analysis, aligning with the applicant's interest in Psychiatric Genomics."
+        "reason": "discipline=Psychiatric Genomics; The abstracts clearly indicate work in psychiatric genomics, focusing on genetic associations and molecular mechanisms of psychiatric disorders, which aligns with the applicant's interest in Single-cell & Psychiatric Genomics."
       }
     },
     {
@@ -2226,7 +2234,7 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Genomics; The abstracts clearly demonstrate expertise in psychiatric genomics, single-cell transcriptomics, and genetic associations with psychiatric disorders, directly aligning with the applicant's 'Single-cell & Psychiatric Genomics' interest."
+        "reason": "discipline=Genomics; The abstracts clearly indicate a focus on psychiatric genomics, particularly single-cell transcriptomics and genetic associations with psychiatric disorders, which aligns with the applicant's interest in 'Single-cell & Psychiatric Genomics'."
       }
     },
     {
@@ -2307,88 +2315,7 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Psychiatric Genomics; Fernando S. Goes's work focuses on the genetic underpinnings of psychiatric disorders, including depression and trauma exposure, aligning well with Psychiatric Genomics and Neurobiology of Trauma & Stress."
-      }
-    },
-    {
-      "supervisor_id": "A5062246108",
-      "name": "Mette A. Peters",
-      "institution": "Salk Institute for Biological Studies",
-      "country": "United States",
-      "contact_email": "mette.peters@nih.gov",
-      "research_focus": "Genetic Associations and Epidemiology, Bioinformatics and Genomic Networks, Genomic variations and chromosomal abnormalities",
-      "matched_areas": [
-        "Single-cell & Psychiatric Genomics",
-        "Computational Psychiatry & PTSD Prediction"
-      ],
-      "tier": "target",
-      "evidence": {
-        "papers": [
-          {
-            "title": "Shared molecular neuropathology across major psychiatric disorders parallels polygenic overlap",
-            "year": 2018,
-            "doi": "https://doi.org/10.1126/science.aad6469",
-            "url": "https://doi.org/10.1126/science.aad6469",
-            "citations": 1149
-          },
-          {
-            "title": "Comprehensive functional genomic resource and integrative model for the human brain",
-            "year": 2018,
-            "doi": "https://doi.org/10.1126/science.aat8464",
-            "url": "https://doi.org/10.1126/science.aat8464",
-            "citations": 1089
-          },
-          {
-            "title": "A multi-omic atlas of the human frontal cortex for aging and Alzheimer’s disease research",
-            "year": 2018,
-            "doi": "https://doi.org/10.1038/sdata.2018.142",
-            "url": "https://doi.org/10.1038/sdata.2018.142",
-            "citations": 683
-          }
-        ],
-        "grants": [
-          {
-            "title": "National Institute of Mental Health award R01 MH105472",
-            "funder": "National Institute of Mental Health",
-            "award_id": "R01 MH105472",
-            "url": "https://openalex.org/F4320337346",
-            "is_personal_fellowship": false
-          },
-          {
-            "title": "National Institute of Mental Health award R01 MH110927",
-            "funder": "National Institute of Mental Health",
-            "award_id": "R01 MH110927",
-            "url": "https://openalex.org/F4320337346",
-            "is_personal_fellowship": false
-          },
-          {
-            "title": "National Institute of Mental Health award R01 MH094714",
-            "funder": "National Institute of Mental Health",
-            "award_id": "R01 MH094714",
-            "url": "https://openalex.org/F4320337346",
-            "is_personal_fellowship": false
-          }
-        ]
-      },
-      "why_match": "My research interests in computational psychiatry and PTSD treatment-outcome prediction align well with your lab's focus. Specifically, your work on \"Shared molecular neuropathology across major psychiatric disorders parallels polygenic overlap\" and the R01 MH110927 grant on psychiatric genomics resonate with my goal of integrating machine learning with the molecular and neurobiological underpinnings of trauma and stress.",
-      "linked_programs": [
-        {
-          "name": "PhD programs at Salk Institute for Biological Studies",
-          "url": "https://openalex.org/I1307098950",
-          "eligibility_note": null
-        }
-      ],
-      "scores": {
-        "similarity": 0.8206,
-        "evidence": 0.9988,
-        "final": 0.8599
-      },
-      "verification": {
-        "domain_match": true,
-        "region_match": true,
-        "is_pi": true,
-        "collision_checked": true,
-        "reason": "discipline=Genomics; The abstracts clearly focus on psychiatric genomics, single-cell transcriptomics, and genetic associations with psychiatric disorders, directly aligning with the applicant's interest in 'Single-cell & Psychiatric Genomics'."
+        "reason": "discipline=Psychiatric Genomics; The abstracts clearly indicate research in psychiatric genomics, specifically focusing on genetic risk factors for depression and trauma exposure, and the functional genomics of the human brain, which aligns with the applicant's interest in 'Single-cell & Psychiatric"
       }
     },
     {
@@ -2403,7 +2330,7 @@
         "Computational Psychiatry & PTSD Prediction",
         "Neurobiology of Trauma & Stress"
       ],
-      "tier": "reach",
+      "tier": "target",
       "evidence": {
         "papers": [
           {
@@ -2470,7 +2397,7 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Genetics/Genomics, Epidemiology; The abstracts demonstrate strong expertise in psychiatric genomics, genetic associations with brain disorders, and the genetic underpinnings of trauma and depression, directly aligning with the applicant's interests in Computational Psychiatry, Neurobiolog"
+        "reason": "discipline=Genetics & Epidemiology; The abstracts demonstrate expertise in genetic epidemiology of psychiatric disorders, including depression and trauma exposure, which aligns with the applicant's interest in Computational Psychiatry, Neurobiology of Trauma, and Psychiatric Genomics."
       }
     },
     {
@@ -2551,7 +2478,7 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Psychiatric Genomics; The abstracts clearly indicate research in psychiatric genomics, focusing on the genetic risk factors and epigenetic aging related to trauma exposure and depression, which aligns with the applicant's interest in Psychiatric Genomics and Neurobiology of Trauma & Stres"
+        "reason": "discipline=Psychiatric Genomics; Erin C. Dunn's work focuses on the genetic and epigenetic factors influencing depression and trauma exposure, aligning well with psychiatric genomics and neurobiology of trauma, and she holds faculty positions at Harvard Medical School and Massachusetts General Hospi"
       }
     },
     {
@@ -2566,7 +2493,7 @@
         "Computational Psychiatry & PTSD Prediction",
         "Neurobiology of Trauma & Stress"
       ],
-      "tier": "target",
+      "tier": "safety",
       "evidence": {
         "papers": [
           {
@@ -2633,13 +2560,13 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Genetics/Genomics; The abstracts clearly demonstrate work in psychiatric genomics, specifically PTSD and suicidal behavior, which aligns with the applicant's interest in 'Single-cell & Psychiatric Genomics' and 'Computational Psychiatry & PTSD Prediction'."
+        "reason": "discipline=Psychiatric Genomics; The abstracts clearly indicate research in psychiatric genomics, specifically focusing on PTSD and suicidal behavior, which aligns with the applicant's interest in 'Single-cell & Psychiatric Genomics' and 'Computational Psychiatry & PTSD Prediction'."
       }
     },
     {
       "supervisor_id": "A5049761062",
       "name": "Melanie E. Garrett﻿",
-      "institution": "Duke University",
+      "institution": "Duke Medical Center",
       "country": "United States",
       "contact_email": null,
       "research_focus": "Hemoglobinopathies and Related Disorders, Epigenetics and DNA Methylation, Genetic Associations and Epidemiology",
@@ -2648,7 +2575,7 @@
         "Computational Psychiatry & PTSD Prediction",
         "Neurobiology of Trauma & Stress"
       ],
-      "tier": "target",
+      "tier": "safety",
       "evidence": {
         "papers": [
           {
@@ -2697,11 +2624,11 @@
           }
         ]
       },
-      "why_match": "My interest in the neurobiology of trauma and chronic stress, particularly through a genomics lens, aligns well with your work. Your \"International meta-analysis of PTSD genome-wide association studies identifies sex- and ancestry-specific genetic risk loci\" paper is particularly exciting, as it directly addresses my goal of combining computational approaches with the molecular basis of trauma. I am eager to contribute to projects like those funded by your R01MH106595 grant, focusing on the genetic architecture of psychiatric disorders.",
+      "why_match": "My research interests in computational psychiatry and the neurobiology of trauma align with your work, particularly your R01MH106595 grant and the \"International meta-analysis of PTSD genome-wide association studies identifies sex- and ancestry-specific genetic risk loci\" paper. I am eager to contribute to projects that integrate large-scale genomic data with clinical outcomes in stress-related disorders, leveraging my background in quantitative methods and computational biology.",
       "linked_programs": [
         {
-          "name": "PhD programs at Duke University",
-          "url": "https://openalex.org/I170897317",
+          "name": "PhD programs at Duke Medical Center",
+          "url": "https://openalex.org/I4210126298",
           "eligibility_note": null
         }
       ],
@@ -2715,7 +2642,88 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Psychiatric Genomics; The abstracts clearly demonstrate expertise in psychiatric genomics, specifically focusing on PTSD and suicidal behavior, which aligns with the applicant's interest in Computational Psychiatry & PTSD Prediction and Single-cell & Psychiatric Genomics."
+        "reason": "discipline=Psychiatric Genomics; The abstracts clearly focus on psychiatric genomics, specifically PTSD and suicidal behavior, aligning with the applicant's interest in 'Single-cell & Psychiatric Genomics' and 'Computational Psychiatry & PTSD Prediction'."
+      }
+    },
+    {
+      "supervisor_id": "A5042511675",
+      "name": "Caroline L. Relton",
+      "institution": "University of Bristol",
+      "country": "United Kingdom",
+      "contact_email": null,
+      "research_focus": "Epigenetics and DNA Methylation, Birth, Development, and Health, Health, Environment, Cognitive Aging",
+      "matched_areas": [
+        "Single-cell & Psychiatric Genomics",
+        "Computational Psychiatry & PTSD Prediction"
+      ],
+      "tier": "target",
+      "evidence": {
+        "papers": [
+          {
+            "title": "The MR-Base platform supports systematic causal inference across the human phenome",
+            "year": 2018,
+            "doi": "https://doi.org/10.7554/elife.34408",
+            "url": "https://doi.org/10.7554/elife.34408",
+            "citations": 8361
+          },
+          {
+            "title": "DNA methylation aging clocks: challenges and recommendations",
+            "year": 2019,
+            "doi": "https://doi.org/10.1186/s13059-019-1824-y",
+            "url": "https://doi.org/10.1186/s13059-019-1824-y",
+            "citations": 1094
+          },
+          {
+            "title": "Guidelines for performing Mendelian randomization investigations: update for summer 2023",
+            "year": 2023,
+            "doi": "https://doi.org/10.12688/wellcomeopenres.15555.3",
+            "url": "https://doi.org/10.12688/wellcomeopenres.15555.3",
+            "citations": 691
+          }
+        ],
+        "grants": [
+          {
+            "title": "Medical Research Council award 102215",
+            "funder": "Medical Research Council",
+            "award_id": "102215",
+            "url": "https://openalex.org/F4320334626",
+            "is_personal_fellowship": false
+          },
+          {
+            "title": "Biotechnology and Biological Sciences Research Council award MC_UU_12013/8",
+            "funder": "Biotechnology and Biological Sciences Research Council",
+            "award_id": "MC_UU_12013/8",
+            "url": "https://openalex.org/F4320334629",
+            "is_personal_fellowship": false
+          },
+          {
+            "title": "National Institutes of Health award K01MH102403",
+            "funder": "National Institutes of Health",
+            "award_id": "K01MH102403",
+            "url": "https://openalex.org/F4320332161",
+            "is_personal_fellowship": false
+          }
+        ]
+      },
+      "why_match": "My research interests in computational psychiatry and PTSD treatment-outcome prediction align with your lab's focus on systematic causal inference, particularly as demonstrated in \"The MR-Base platform supports systematic causal inference across the human phenome.\" I am particularly drawn to how your work on Mendelian randomization, including your 2023 guidelines, could be applied to understanding the molecular and neurobiological underpinnings of trauma and stress, which is a key area of my PhD interest.",
+      "linked_programs": [
+        {
+          "name": "PhD programs at University of Bristol",
+          "url": "https://openalex.org/I36234482",
+          "eligibility_note": null
+        }
+      ],
+      "scores": {
+        "similarity": 0.7411,
+        "evidence": 1.0,
+        "final": 0.858
+      },
+      "verification": {
+        "domain_match": true,
+        "region_match": true,
+        "is_pi": true,
+        "collision_checked": true,
+        "reason": "discipline=Epidemiology; The researcher's work focuses on epigenetic aging, genetic associations, and Mendelian randomization, which aligns with the broader field of genomics and could be relevant to understanding biological mechanisms underlying psychiatric conditions, particularly in the context o"
       }
     },
     {
@@ -2796,88 +2804,7 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Genomics; The abstracts clearly indicate work in psychiatric genomics, including single-cell transcriptomics, which directly aligns with the applicant's interest in Single-cell & Psychiatric Genomics."
-      }
-    },
-    {
-      "supervisor_id": "A5051228367",
-      "name": "Thomas Werge",
-      "institution": "University of North Carolina at Chapel Hill",
-      "country": "United States",
-      "contact_email": "thomas.werge@regionh.dk",
-      "research_focus": "Genetic Associations and Epidemiology, Genetics and Neurodevelopmental Disorders, Genomic variations and chromosomal abnormalities",
-      "matched_areas": [
-        "Single-cell & Psychiatric Genomics",
-        "Computational Psychiatry & PTSD Prediction"
-      ],
-      "tier": "reach",
-      "evidence": {
-        "papers": [
-          {
-            "title": "Identification of common genetic risk variants for autism spectrum disorder",
-            "year": 2019,
-            "doi": "https://doi.org/10.1038/s41588-019-0344-8",
-            "url": "https://doi.org/10.1038/s41588-019-0344-8",
-            "citations": 2615
-          },
-          {
-            "title": "Discovery of the first genome-wide significant risk loci for attention deficit/hyperactivity disorder",
-            "year": 2018,
-            "doi": "https://doi.org/10.1038/s41588-018-0269-7",
-            "url": "https://doi.org/10.1038/s41588-018-0269-7",
-            "citations": 2309
-          },
-          {
-            "title": "Common schizophrenia alleles are enriched in mutation-intolerant genes and in regions under strong background selection",
-            "year": 2018,
-            "doi": "https://doi.org/10.1038/s41588-018-0059-2",
-            "url": "https://doi.org/10.1038/s41588-018-0059-2",
-            "citations": 1724
-          }
-        ],
-        "grants": [
-          {
-            "title": "FP7 Health award 278367",
-            "funder": "FP7 Health",
-            "award_id": "278367",
-            "url": "https://openalex.org/F4320338377",
-            "is_personal_fellowship": false
-          },
-          {
-            "title": "Vetenskapsrådet award R01MH119084",
-            "funder": "Vetenskapsrådet",
-            "award_id": "R01MH119084",
-            "url": "https://openalex.org/F4320322581",
-            "is_personal_fellowship": false
-          },
-          {
-            "title": "National Institutes of Health award K01MH106675",
-            "funder": "National Institutes of Health",
-            "award_id": "K01MH106675",
-            "url": "https://openalex.org/F4320332161",
-            "is_personal_fellowship": false
-          }
-        ]
-      },
-      "why_match": "My interest in computational psychiatry and PTSD treatment-outcome prediction aligns with your group's work on identifying genetic risk variants for psychiatric disorders, as exemplified by your 2019 paper on autism spectrum disorder and your FP7 Health grant. I am particularly keen to explore how machine learning on clinical data can be integrated with the molecular and neurobiological insights from your psychiatric genomics research to advance our understanding of trauma and stress-related disorders.",
-      "linked_programs": [
-        {
-          "name": "PhD programs at University of North Carolina at Chapel Hill",
-          "url": "https://openalex.org/I114027177",
-          "eligibility_note": null
-        }
-      ],
-      "scores": {
-        "similarity": 0.7884,
-        "evidence": 1.0,
-        "final": 0.8567
-      },
-      "verification": {
-        "domain_match": true,
-        "region_match": true,
-        "is_pi": true,
-        "collision_checked": true,
-        "reason": "discipline=Genetics; The candidate's work heavily focuses on psychiatric genomics, genetic associations, and neurodevelopmental disorders, which aligns with the applicant's interest in 'Single-cell & Psychiatric Genomics'."
+        "reason": "discipline=Psychiatric Genomics; The abstracts clearly indicate work in psychiatric genomics, specifically focusing on genetic associations and molecular mechanisms of psychiatric disorders, which aligns with the applicant's interest in Single-cell & Psychiatric Genomics."
       }
     },
     {
@@ -2959,7 +2886,7 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Neuroscience; The abstracts directly discuss the neurobiology of PTSD and MDD, aligning with the Neurobiology of Trauma & Stress area, and the career signals indicate a principal investigator role."
+        "reason": "discipline=Neuroscience; The abstracts directly discuss synaptic loss in PTSD and MDD, aligning with the Neurobiology of Trauma & Stress area, and the career signals indicate a senior PI."
       }
     },
     {
@@ -3040,13 +2967,13 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Genetics and Genomics; Jaroslav Bendl's work focuses on genetic associations, epigenetics, bioinformatics, and single-cell transcriptomics in the context of psychiatric disorders, aligning well with the applicant's interest in Single-cell & Psychiatric Genomics."
+        "reason": "discipline=Genetics and Genomics; Jaroslav Bendl's work focuses on genetic associations, epigenetics, and single-cell transcriptomics in the context of psychiatric disorders, aligning with the applicant's interest in Single-cell & Psychiatric Genomics."
       }
     },
     {
       "supervisor_id": "A5046862823",
       "name": "Gabriel E. Hoffman",
-      "institution": "Allen Institute for Brain Science",
+      "institution": "Icahn School of Medicine at Mount Sinai",
       "country": "United States",
       "contact_email": null,
       "research_focus": "Genetic Associations and Epidemiology, Epigenetics and DNA Methylation, Single-cell and spatial transcriptomics",
@@ -3054,7 +2981,7 @@
         "Single-cell & Psychiatric Genomics",
         "Computational Psychiatry & PTSD Prediction"
       ],
-      "tier": "safety",
+      "tier": "target",
       "evidence": {
         "papers": [
           {
@@ -3103,11 +3030,11 @@
           }
         ]
       },
-      "why_match": "My research interests in computational psychiatry and the neurobiology of trauma align perfectly with your lab's focus. I am particularly drawn to your work on comprehensive functional genomic resources for the human brain, such as in your 2018 paper, and how this could be applied to understanding stress-related disorders. My goal is to integrate machine learning with molecular and neurobiological data to predict PTSD treatment outcomes, an area where your expertise in psychiatric genomics and computational approaches would be invaluable.",
+      "why_match": "My research interests in computational psychiatry and the neurobiology of trauma align perfectly with your lab's focus, particularly as demonstrated by your R01 MH105472 grant. I am especially drawn to your work on integrating genomic data, as exemplified by your \"Comprehensive functional genomic resource and integrative model for the human brain\" paper, and I am eager to apply similar approaches to understanding PTSD treatment-outcome prediction.",
       "linked_programs": [
         {
-          "name": "PhD programs at Allen Institute for Brain Science",
-          "url": "https://openalex.org/I1314596251",
+          "name": "PhD programs at Icahn School of Medicine at Mount Sinai",
+          "url": "https://openalex.org/I98704320",
           "eligibility_note": null
         }
       ],
@@ -3121,13 +3048,13 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Genomics; The abstracts clearly indicate work in psychiatric genomics and single-cell transcriptomics, aligning with the applicant's interest in 'Single-cell & Psychiatric Genomics'."
+        "reason": "discipline=Genomics; The abstracts clearly indicate work in psychiatric genomics, single-cell transcriptomics, and genetic associations for psychiatric disorders, aligning with the applicant's interest in Single-cell & Psychiatric Genomics."
       }
     },
     {
       "supervisor_id": "A5031482400",
       "name": "Karestan C. Koenen",
-      "institution": "Broad Institute",
+      "institution": "Harvard University",
       "country": "United States",
       "contact_email": "kkoenen@hsph.harvard.edu",
       "research_focus": "Posttraumatic Stress Disorder Research, Child Abuse and Trauma, Stress Responses and Cortisol",
@@ -3184,11 +3111,11 @@
           }
         ]
       },
-      "why_match": "My research interests in computational psychiatry and PTSD treatment-outcome prediction align well with your work. I am particularly interested in how your lab leverages computational approaches, as demonstrated in \"Estimating the risk of PTSD in recent trauma survivors: results of the International Consortium to Predict PTSD (ICPP)\", to understand and predict mental health outcomes. My background in combining machine learning with the molecular basis of trauma would be a strong asset to your research on the genomics of stress-related disorders, such as your epigenome-wide meta-analysis of PTSD.",
+      "why_match": "My research interests in computational psychiatry and PTSD treatment-outcome prediction align with your work, particularly your \"Estimating the risk of PTSD in recent trauma survivors: results of the International Consortium to Predict PTSD (ICPP)\" paper. I am also drawn to your epigenetic research, such as the \"Epigenome-wide meta-analysis of PTSD across 10 military and civilian cohorts identifies methylation changes in AHRR\" study, as I aim to integrate molecular and neurobiological insights with machine learning for mental health applications.",
       "linked_programs": [
         {
-          "name": "PhD programs at Broad Institute",
-          "url": "https://openalex.org/I107606265",
+          "name": "PhD programs at Harvard University",
+          "url": "https://openalex.org/I136199984",
           "eligibility_note": null
         }
       ],
@@ -3202,7 +3129,7 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Epidemiology; The abstracts clearly demonstrate work in PTSD prediction, neurobiology of trauma, and psychiatric genomics, aligning well with the applicant's interests."
+        "reason": "discipline=Epidemiology; The abstracts demonstrate expertise in PTSD prediction, trauma epidemiology, and epigenetic markers related to PTSD, aligning with the applicant's interests in Computational Psychiatry, Neurobiology of Trauma, and Psychiatric Genomics."
       }
     },
     {
@@ -3216,7 +3143,7 @@
         "Single-cell & Psychiatric Genomics",
         "Computational Psychiatry & PTSD Prediction"
       ],
-      "tier": "reach",
+      "tier": "target",
       "evidence": {
         "papers": [
           {
@@ -3298,7 +3225,7 @@
         "Computational Psychiatry & PTSD Prediction",
         "Neurobiology of Trauma & Stress"
       ],
-      "tier": "reach",
+      "tier": "target",
       "evidence": {
         "papers": [
           {
@@ -3365,7 +3292,7 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Genetics/Genomics; The candidate's work focuses on genetic associations, genomics, and polygenic risk scores, which aligns with the applicant's interest in 'Single-cell & Psychiatric Genomics', particularly the genomics aspect."
+        "reason": "discipline=Genomics; The abstracts clearly indicate a focus on human genomics, particularly in genetic associations, GWAS, and polygenic risk scores, which aligns with the 'Single-cell & Psychiatric Genomics' area, even if not explicitly psychiatric in these examples."
       }
     },
     {
@@ -3447,7 +3374,7 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Psychiatric Genomics; The abstracts clearly demonstrate expertise in psychiatric genomics, specifically focusing on PTSD genetics and genome-wide association studies, which aligns with the applicant's interest in 'Single-cell & Psychiatric Genomics' and 'Computational Psychiatry & PTSD Pr"
+        "reason": "discipline=Genetics/Genomics; The abstracts clearly demonstrate work in psychiatric genomics, specifically PTSD genetics, which aligns with the applicant's interest in Single-cell & Psychiatric Genomics and Computational Psychiatry & PTSD Prediction."
       }
     },
     {
@@ -3529,13 +3456,13 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Psychiatric Genomics; The abstracts clearly demonstrate expertise in psychiatric genomics, specifically focusing on PTSD genetics, which aligns with the applicant's interest in 'Single-cell & Psychiatric Genomics' and 'Computational Psychiatry & PTSD Prediction'."
+        "reason": "discipline=Psychiatric Genomics; The abstracts clearly indicate work in psychiatric genomics, specifically focusing on PTSD, which aligns with the applicant's interest in 'Single-cell & Psychiatric Genomics' and 'Computational Psychiatry & PTSD Prediction'."
       }
     },
     {
       "supervisor_id": "A5078032548",
       "name": "Jonathan R. I. Coleman",
-      "institution": "National Health Service",
+      "institution": "King's College London",
       "country": "United Kingdom",
       "contact_email": "jonathan.coleman@kcl.ac.uk",
       "research_focus": "Genetic Associations and Epidemiology, Cognitive Abilities and Testing, Child and Adolescent Psychosocial and Emotional Development",
@@ -3544,7 +3471,7 @@
         "Computational Psychiatry & PTSD Prediction",
         "Neurobiology of Trauma & Stress"
       ],
-      "tier": "safety",
+      "tier": "target",
       "evidence": {
         "papers": [
           {
@@ -3593,11 +3520,11 @@
           }
         ]
       },
-      "why_match": "My research interests in computational psychiatry and the neurobiology of trauma align well with your work. Specifically, your contributions to identifying genetic risk variants for major depression and bipolar disorder, as demonstrated in your 2018 and 2019 papers, resonate with my goal of integrating genomics with clinical data to predict treatment outcomes for stress-related disorders.",
+      "why_match": "My research interests in computational psychiatry and the neurobiology of trauma align perfectly with your lab's focus on the genetic architecture of mental health disorders. Specifically, your work on identifying risk variants for major depression, as demonstrated in your 2018 paper \"Genome-wide association analyses identify 44 risk variants and refine the genetic architecture of major depression,\" deeply resonates with my goal of integrating genomic insights with machine learning for PTSD treatment-outcome prediction.",
       "linked_programs": [
         {
-          "name": "PhD programs at National Health Service",
-          "url": "https://openalex.org/I125671874",
+          "name": "PhD programs at King's College London",
+          "url": "https://openalex.org/I183935753",
           "eligibility_note": null
         }
       ],
@@ -3611,177 +3538,13 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Psychiatric Genomics; The abstracts clearly demonstrate expertise in psychiatric genomics, including PTSD genetics and single-cell transcriptomics related to brain disorders, aligning with the applicant's interests."
-      }
-    },
-    {
-      "supervisor_id": "A5052121197",
-      "name": "Jonas Bybjerg‐Grauholm",
-      "institution": "National Institute of Mental Health",
-      "country": "United States",
-      "contact_email": null,
-      "research_focus": "Genetic Associations and Epidemiology, Genetics and Neurodevelopmental Disorders, Epigenetics and DNA Methylation",
-      "matched_areas": [
-        "Single-cell & Psychiatric Genomics",
-        "Computational Psychiatry & PTSD Prediction",
-        "Neurobiology of Trauma & Stress"
-      ],
-      "tier": "target",
-      "evidence": {
-        "papers": [
-          {
-            "title": "Genome-wide association analyses identify 44 risk variants and refine the genetic architecture of major depression",
-            "year": 2018,
-            "doi": "https://doi.org/10.1038/s41588-018-0090-3",
-            "url": "https://doi.org/10.1038/s41588-018-0090-3",
-            "citations": 3294
-          },
-          {
-            "title": "Identification of common genetic risk variants for autism spectrum disorder",
-            "year": 2019,
-            "doi": "https://doi.org/10.1038/s41588-019-0344-8",
-            "url": "https://doi.org/10.1038/s41588-019-0344-8",
-            "citations": 2615
-          },
-          {
-            "title": "Large-Scale Exome Sequencing Study Implicates Both Developmental and Functional Changes in the Neurobiology of Autism",
-            "year": 2020,
-            "doi": "https://doi.org/10.1016/j.cell.2019.12.036",
-            "url": "https://doi.org/10.1016/j.cell.2019.12.036",
-            "citations": 2430
-          }
-        ],
-        "grants": [
-          {
-            "title": "National Institute of Mental Health award U01 MH085520",
-            "funder": "National Institute of Mental Health",
-            "award_id": "U01 MH085520",
-            "url": "https://openalex.org/F4320337346",
-            "is_personal_fellowship": false
-          },
-          {
-            "title": "National Institute of Mental Health award U01 MH094421",
-            "funder": "National Institute of Mental Health",
-            "award_id": "U01 MH094421",
-            "url": "https://openalex.org/F4320337346",
-            "is_personal_fellowship": false
-          },
-          {
-            "title": "Medical Research Council award MR/S015132/1",
-            "funder": "Medical Research Council",
-            "award_id": "MR/S015132/1",
-            "url": "https://openalex.org/F4320334626",
-            "is_personal_fellowship": false
-          }
-        ]
-      },
-      "why_match": "My interest in the neurobiology of trauma and chronic stress, particularly through a genomics lens, aligns well with your work. Your contributions to understanding the genetic architecture of psychiatric disorders, as exemplified by \"Genome-wide association analyses identify 44 risk variants and refine the genetic architecture of major depression,\" resonate with my goal of applying computational approaches to unravel the molecular basis of stress-related conditions. I am eager to explore how these methods can be extended to PTSD treatment-outcome prediction, building on your lab's expertise in large-scale genetic studies.",
-      "linked_programs": [
-        {
-          "name": "PhD programs at National Institute of Mental Health",
-          "url": "https://openalex.org/I4210158500",
-          "eligibility_note": null
-        }
-      ],
-      "scores": {
-        "similarity": 0.7998,
-        "evidence": 1.0,
-        "final": 0.8499
-      },
-      "verification": {
-        "domain_match": true,
-        "region_match": true,
-        "is_pi": true,
-        "collision_checked": true,
-        "reason": "discipline=Psychiatric Genomics; The researcher's work directly aligns with psychiatric genomics, including PTSD genetics and bipolar disorder, which falls under the applicant's interest in Single-cell & Psychiatric Genomics and Computational Psychiatry & PTSD Prediction."
-      }
-    },
-    {
-      "supervisor_id": "A5019813526",
-      "name": "Marie Bækvad‐Hansen",
-      "institution": "National Institute of Mental Health",
-      "country": "United States",
-      "contact_email": null,
-      "research_focus": "Genetic Associations and Epidemiology, Epigenetics and DNA Methylation, Genetics and Neurodevelopmental Disorders",
-      "matched_areas": [
-        "Single-cell & Psychiatric Genomics",
-        "Computational Psychiatry & PTSD Prediction",
-        "Neurobiology of Trauma & Stress"
-      ],
-      "tier": "target",
-      "evidence": {
-        "papers": [
-          {
-            "title": "Genome-wide association analyses identify 44 risk variants and refine the genetic architecture of major depression",
-            "year": 2018,
-            "doi": "https://doi.org/10.1038/s41588-018-0090-3",
-            "url": "https://doi.org/10.1038/s41588-018-0090-3",
-            "citations": 3294
-          },
-          {
-            "title": "Identification of common genetic risk variants for autism spectrum disorder",
-            "year": 2019,
-            "doi": "https://doi.org/10.1038/s41588-019-0344-8",
-            "url": "https://doi.org/10.1038/s41588-019-0344-8",
-            "citations": 2615
-          },
-          {
-            "title": "Discovery of the first genome-wide significant risk loci for attention deficit/hyperactivity disorder",
-            "year": 2018,
-            "doi": "https://doi.org/10.1038/s41588-018-0269-7",
-            "url": "https://doi.org/10.1038/s41588-018-0269-7",
-            "citations": 2309
-          }
-        ],
-        "grants": [
-          {
-            "title": "National Institute of Mental Health award U01 MH085520",
-            "funder": "National Institute of Mental Health",
-            "award_id": "U01 MH085520",
-            "url": "https://openalex.org/F4320337346",
-            "is_personal_fellowship": false
-          },
-          {
-            "title": "National Institute of Mental Health award U01 MH094421",
-            "funder": "National Institute of Mental Health",
-            "award_id": "U01 MH094421",
-            "url": "https://openalex.org/F4320337346",
-            "is_personal_fellowship": false
-          },
-          {
-            "title": "Medical Research Council award MR/S015132/1",
-            "funder": "Medical Research Council",
-            "award_id": "MR/S015132/1",
-            "url": "https://openalex.org/F4320334626",
-            "is_personal_fellowship": false
-          }
-        ]
-      },
-      "why_match": "My interest in the neurobiology of trauma and stress, particularly through a genomics lens, aligns well with your work. Your contributions to identifying genetic risk variants for psychiatric disorders, such as in \"Genome-wide association analyses identify 44 risk variants and refine the genetic architecture of major depression\" (2018), directly resonate with my goal of integrating computational approaches with the molecular basis of stress-related disorders.",
-      "linked_programs": [
-        {
-          "name": "PhD programs at National Institute of Mental Health",
-          "url": "https://openalex.org/I4210158500",
-          "eligibility_note": null
-        }
-      ],
-      "scores": {
-        "similarity": 0.7998,
-        "evidence": 1.0,
-        "final": 0.8499
-      },
-      "verification": {
-        "domain_match": true,
-        "region_match": true,
-        "is_pi": true,
-        "collision_checked": true,
-        "reason": "discipline=Psychiatric Genomics; The abstracts directly address psychiatric genomics, including PTSD and bipolar disorder, aligning with the applicant's interest in Psychiatric Genomics and Computational Psychiatry."
+        "reason": "discipline=Psychiatric Genomics; The abstracts clearly demonstrate expertise in psychiatric genomics, including PTSD genetics and bipolar disorder, aligning with the applicant's interest in Single-cell & Psychiatric Genomics and PTSD Prediction."
       }
     },
     {
       "supervisor_id": "A5068434765",
       "name": "Scott D. Gordon",
-      "institution": "University of Wollongong",
+      "institution": "QIMR Berghofer Medical Research Institute",
       "country": "Australia",
       "contact_email": "scott.gordon@qimrberghofer.edu.au",
       "research_focus": "Genetic Associations and Epidemiology, Genetic Mapping and Diversity in Plants and Animals, Genetics and Neurodevelopmental Disorders",
@@ -3839,11 +3602,11 @@
           }
         ]
       },
-      "why_match": "My interest in the neurobiology of trauma and chronic stress, particularly in the context of computational psychiatry and PTSD treatment-outcome prediction, aligns well with your lab's focus. Your work on the genetic architecture of psychiatric disorders, as evidenced by papers like \"Genome-wide association analyses identify 44 risk variants and refine the genetic architecture of major depression,\" is particularly exciting to me. I am eager to explore how these genomic insights can be integrated with machine learning approaches to better understand and predict outcomes in stress-related disorders.",
+      "why_match": "My interest in the neurobiology of trauma and chronic stress, particularly through a genomics lens, aligns well with your work. Your contributions to understanding the genetic architecture of psychiatric disorders, as exemplified by the 'Genome-wide association analyses identify 44 risk variants and refine the genetic architecture of major depression' paper, are particularly exciting to me as I aim to integrate machine learning with molecular insights for PTSD treatment-outcome prediction.",
       "linked_programs": [
         {
-          "name": "PhD programs at University of Wollongong",
-          "url": "https://openalex.org/I204824540",
+          "name": "PhD programs at QIMR Berghofer Medical Research Institute",
+          "url": "https://openalex.org/I217937681",
           "eligibility_note": null
         }
       ],
@@ -3857,13 +3620,13 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Psychiatric Genomics; The abstracts clearly demonstrate expertise in psychiatric genomics, including bipolar disorder and PTSD, which aligns with the applicant's interest in Single-cell & Psychiatric Genomics and Computational Psychiatry & PTSD Prediction."
+        "reason": "discipline=Genetics and Computational Biology; The candidate's work directly aligns with psychiatric genomics, particularly PTSD genetics and bipolar disorder, and uses computational approaches relevant to the applicant's interests."
       }
     },
     {
       "supervisor_id": "A5024497692",
       "name": "Laramie E. Duncan",
-      "institution": "Neurosciences Institute",
+      "institution": "Stanford University",
       "country": "United States",
       "contact_email": "laramied@stanford.edu",
       "research_focus": "Genetic Associations and Epidemiology, Stress Responses and Cortisol, Genomics and Rare Diseases",
@@ -3872,7 +3635,7 @@
         "Computational Psychiatry & PTSD Prediction",
         "Neurobiology of Trauma & Stress"
       ],
-      "tier": "safety",
+      "tier": "reach",
       "evidence": {
         "papers": [
           {
@@ -3921,11 +3684,11 @@
           }
         ]
       },
-      "why_match": "My research interests in computational psychiatry and the neurobiology of trauma align well with your work. Specifically, your research on shared heritability in brain disorders, as evidenced in \"Analysis of shared heritability in common disorders of the brain\" (2018), resonates with my goal of integrating machine learning with the molecular basis of trauma and stress. I am particularly interested in how your lab's genomic approaches could be applied to PTSD treatment-outcome prediction.",
+      "why_match": "My research interests in computational psychiatry and the neurobiology of trauma align perfectly with your work. Specifically, your genomic studies, such as \"Genomic Relationships, Novel Loci, and Pleiotropic Mechanisms across Eight Psychiatric Disorders,\" directly relate to my goal of integrating machine learning with the molecular basis of stress-related disorders, particularly in PTSD treatment-outcome prediction.",
       "linked_programs": [
         {
-          "name": "PhD programs at Neurosciences Institute",
-          "url": "https://openalex.org/I186667990",
+          "name": "PhD programs at Stanford University",
+          "url": "https://openalex.org/I97018004",
           "eligibility_note": null
         }
       ],
@@ -3939,7 +3702,7 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Psychiatric Genomics; The abstracts clearly demonstrate expertise in psychiatric genomics, genetic associations with brain disorders, and single-cell transcriptomics in the nervous system, which aligns with the applicant's interest in Single-cell & Psychiatric Genomics."
+        "reason": "discipline=Psychiatric Genomics; The abstracts clearly demonstrate expertise in psychiatric genomics, genetic associations, and cell-type specific analyses relevant to brain disorders, aligning with the applicant's interest in Single-cell & Psychiatric Genomics."
       }
     },
     {
@@ -4021,13 +3784,13 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Psychiatric Genomics; The candidate's work heavily focuses on psychiatric genomics, including PTSD genetics, which aligns well with the applicant's interest in Single-cell & Psychiatric Genomics and Computational Psychiatry & PTSD Prediction."
+        "reason": "discipline=Psychiatric Genomics; The abstracts clearly demonstrate expertise in psychiatric genomics, including PTSD, bipolar disorder, and major depression, aligning with the applicant's interest in Single-cell & Psychiatric Genomics and Computational Psychiatry & PTSD Prediction."
       }
     },
     {
       "supervisor_id": "A5006025541",
       "name": "Laura M. Huckins",
-      "institution": "Allen Institute for Brain Science",
+      "institution": "Yale University",
       "country": "United States",
       "contact_email": null,
       "research_focus": "Genetic Associations and Epidemiology, Eating Disorders and Behaviors, Genetics and Neurodevelopmental Disorders",
@@ -4036,7 +3799,7 @@
         "Computational Psychiatry & PTSD Prediction",
         "Neurobiology of Trauma & Stress"
       ],
-      "tier": "safety",
+      "tier": "reach",
       "evidence": {
         "papers": [
           {
@@ -4085,11 +3848,11 @@
           }
         ]
       },
-      "why_match": "My interest in computational psychiatry and the neurobiology of trauma aligns with your work on the genetic underpinnings of psychiatric disorders. Specifically, your research, such as the 2021 genome-wide association study on bipolar disorder, demonstrates a rigorous approach to uncovering the biological basis of complex mental health conditions, which I aim to apply to PTSD treatment-outcome prediction.",
+      "why_match": "My research interests in computational psychiatry and the neurobiology of trauma align well with your lab's focus. I am particularly drawn to your work on psychiatric genomics, such as the \"Genome-wide association study of more than 40,000 bipolar disorder cases provides new insights into the underlying biology\" (2021), and am eager to explore how similar approaches can be applied to PTSD treatment-outcome prediction and the molecular underpinnings of stress-related disorders.",
       "linked_programs": [
         {
-          "name": "PhD programs at Allen Institute for Brain Science",
-          "url": "https://openalex.org/I1314596251",
+          "name": "PhD programs at Yale University",
+          "url": "https://openalex.org/I32971472",
           "eligibility_note": null
         }
       ],
@@ -4103,7 +3866,7 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Psychiatric Genomics; The abstracts clearly demonstrate expertise in psychiatric genomics, including PTSD, aligning with the applicant's interest in Single-cell & Psychiatric Genomics and Computational Psychiatry & PTSD Prediction."
+        "reason": "discipline=Psychiatric Genomics; The abstracts clearly demonstrate expertise in psychiatric genomics, including PTSD, aligning well with the applicant's interest in Single-cell & Psychiatric Genomics and Computational Psychiatry & PTSD Prediction."
       }
     },
     {
@@ -4185,177 +3948,13 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Psychiatric Genomics; The abstracts clearly demonstrate expertise in psychiatric genomics, including bipolar disorder and PTSD genetics, which aligns with the applicant's interest in Single-cell & Psychiatric Genomics and PTSD Prediction."
-      }
-    },
-    {
-      "supervisor_id": "A5089323585",
-      "name": "Jessica Johnson",
-      "institution": "University of North Carolina at Chapel Hill",
-      "country": "United States",
-      "contact_email": null,
-      "research_focus": "Genetic Associations and Epidemiology, Eating Disorders and Behaviors, Bioinformatics and Genomic Networks",
-      "matched_areas": [
-        "Single-cell & Psychiatric Genomics",
-        "Computational Psychiatry & PTSD Prediction",
-        "Neurobiology of Trauma & Stress"
-      ],
-      "tier": "reach",
-      "evidence": {
-        "papers": [
-          {
-            "title": "Genome-wide association study identifies 30 loci associated with bipolar disorder",
-            "year": 2019,
-            "doi": "https://doi.org/10.1038/s41588-019-0397-8",
-            "url": "https://doi.org/10.1038/s41588-019-0397-8",
-            "citations": 1625
-          },
-          {
-            "title": "Genome-wide association study of more than 40,000 bipolar disorder cases provides new insights into the underlying biology",
-            "year": 2021,
-            "doi": "https://doi.org/10.1038/s41588-021-00857-4",
-            "url": "https://doi.org/10.1038/s41588-021-00857-4",
-            "citations": 1578
-          },
-          {
-            "title": "Shared molecular neuropathology across major psychiatric disorders parallels polygenic overlap",
-            "year": 2018,
-            "doi": "https://doi.org/10.1126/science.aad6469",
-            "url": "https://doi.org/10.1126/science.aad6469",
-            "citations": 1149
-          }
-        ],
-        "grants": [
-          {
-            "title": "National Institute of Mental Health award U01 MH085520",
-            "funder": "National Institute of Mental Health",
-            "award_id": "U01 MH085520",
-            "url": "https://openalex.org/F4320337346",
-            "is_personal_fellowship": false
-          },
-          {
-            "title": "National Institute of Mental Health award U01 MH094421",
-            "funder": "National Institute of Mental Health",
-            "award_id": "U01 MH094421",
-            "url": "https://openalex.org/F4320337346",
-            "is_personal_fellowship": false
-          },
-          {
-            "title": "Medical Research Council award MR/S015132/1",
-            "funder": "Medical Research Council",
-            "award_id": "MR/S015132/1",
-            "url": "https://openalex.org/F4320334626",
-            "is_personal_fellowship": false
-          }
-        ]
-      },
-      "why_match": "My research interests in computational psychiatry and PTSD treatment-outcome prediction align well with your work. I am particularly drawn to your contributions to understanding the genetic architecture of psychiatric disorders, as exemplified by your \"Genome-wide association study identifies 30 loci associated with bipolar disorder\" (2019) paper, and your NIMH-funded research (U01 MH085520, U01 MH094421) on the neurobiology of stress and trauma.",
-      "linked_programs": [
-        {
-          "name": "PhD programs at University of North Carolina at Chapel Hill",
-          "url": "https://openalex.org/I114027177",
-          "eligibility_note": null
-        }
-      ],
-      "scores": {
-        "similarity": 0.7998,
-        "evidence": 1.0,
-        "final": 0.8499
-      },
-      "verification": {
-        "domain_match": true,
-        "region_match": true,
-        "is_pi": true,
-        "collision_checked": true,
-        "reason": "discipline=Psychiatric Genomics; The abstracts clearly demonstrate expertise in psychiatric genomics, including PTSD genetics, which aligns with the applicant's interest in Single-cell & Psychiatric Genomics and Neurobiology of Trauma & Stress."
-      }
-    },
-    {
-      "supervisor_id": "A5026771827",
-      "name": "Hailiang Huang",
-      "institution": "Broad Institute",
-      "country": "United States",
-      "contact_email": "hhuang@broadinstitute.org",
-      "research_focus": "Genetic Associations and Epidemiology, Genomics and Rare Diseases, Bioinformatics and Genomic Networks",
-      "matched_areas": [
-        "Single-cell & Psychiatric Genomics",
-        "Computational Psychiatry & PTSD Prediction",
-        "Neurobiology of Trauma & Stress"
-      ],
-      "tier": "reach",
-      "evidence": {
-        "papers": [
-          {
-            "title": "Identification of common genetic risk variants for autism spectrum disorder",
-            "year": 2019,
-            "doi": "https://doi.org/10.1038/s41588-019-0344-8",
-            "url": "https://doi.org/10.1038/s41588-019-0344-8",
-            "citations": 2615
-          },
-          {
-            "title": "Discovery of the first genome-wide significant risk loci for attention deficit/hyperactivity disorder",
-            "year": 2018,
-            "doi": "https://doi.org/10.1038/s41588-018-0269-7",
-            "url": "https://doi.org/10.1038/s41588-018-0269-7",
-            "citations": 2309
-          },
-          {
-            "title": "Genomic Relationships, Novel Loci, and Pleiotropic Mechanisms across Eight Psychiatric Disorders",
-            "year": 2019,
-            "doi": "https://doi.org/10.1016/j.cell.2019.11.020",
-            "url": "https://doi.org/10.1016/j.cell.2019.11.020",
-            "citations": 1483
-          }
-        ],
-        "grants": [
-          {
-            "title": "National Institutes of Health award R01MH106595",
-            "funder": "National Institutes of Health",
-            "award_id": "R01MH106595",
-            "url": "https://openalex.org/F4320332161",
-            "is_personal_fellowship": false
-          },
-          {
-            "title": "National Institute of Mental Health award R01MH106595",
-            "funder": "National Institute of Mental Health",
-            "award_id": "R01MH106595",
-            "url": "https://openalex.org/F4320337346",
-            "is_personal_fellowship": false
-          },
-          {
-            "title": "U.S. Department of Veterans Affairs award 14,15",
-            "funder": "U.S. Department of Veterans Affairs",
-            "award_id": "14,15",
-            "url": "https://openalex.org/F4320306127",
-            "is_personal_fellowship": false
-          }
-        ]
-      },
-      "why_match": "My research interests in computational psychiatry and the neurobiology of trauma align perfectly with your lab's focus on psychiatric genomics. Specifically, your work on identifying genetic risk variants across psychiatric disorders, as demonstrated in \"Genomic Relationships, Novel Loci, and Pleiotropic Mechanisms across Eight Psychiatric Disorders,\" deeply resonates with my goal of integrating machine learning with the molecular basis of stress-related conditions. I am particularly interested in how your methodologies could be applied to PTSD treatment-outcome prediction.",
-      "linked_programs": [
-        {
-          "name": "PhD programs at Broad Institute",
-          "url": "https://openalex.org/I107606265",
-          "eligibility_note": null
-        }
-      ],
-      "scores": {
-        "similarity": 0.7998,
-        "evidence": 1.0,
-        "final": 0.8499
-      },
-      "verification": {
-        "domain_match": true,
-        "region_match": true,
-        "is_pi": true,
-        "collision_checked": true,
-        "reason": "discipline=Psychiatric Genomics; The abstracts clearly demonstrate work in psychiatric genomics, specifically focusing on PTSD and other neuropsychiatric disorders, which aligns with the applicant's interest in 'Single-cell & Psychiatric Genomics' and 'Computational Psychiatry & PTSD Prediction'."
+        "reason": "discipline=Psychiatric Genomics; The abstracts clearly demonstrate expertise in psychiatric genomics, specifically in bipolar disorder and PTSD, which aligns with the applicant's interest in Single-cell & Psychiatric Genomics and PTSD Prediction."
       }
     },
     {
       "supervisor_id": "A5045051798",
       "name": "Lea K. Davis",
-      "institution": "Child Health and Development Institute",
+      "institution": "Vanderbilt University Medical Center",
       "country": "United States",
       "contact_email": null,
       "research_focus": "Genetic Associations and Epidemiology, Autism Spectrum Disorder Research, Obsessive-Compulsive Spectrum Disorders",
@@ -4413,11 +4012,11 @@
           }
         ]
       },
-      "why_match": "My interest in the genomics of stress-related disorders and PTSD treatment-outcome prediction aligns well with your work. Specifically, your R01MH106595 grant and studies like \"GWAS meta-analysis of over 29,000 people with epilepsy identifies 26 risk loci and subtype-specific genetic architecture\" demonstrate a strong foundation in psychiatric genomics that I am eager to build upon using computational approaches.",
+      "why_match": "My interest in computational psychiatry and the neurobiology of trauma aligns well with your lab's focus on identifying genetic architectures of complex disorders. Specifically, your work on large-scale genomic analyses, such as the \"GWAS meta-analysis of over 29,000 people with epilepsy,\" demonstrates the rigorous quantitative approach I aim to apply to PTSD treatment-outcome prediction and stress-related disorders.",
       "linked_programs": [
         {
-          "name": "PhD programs at Child Health and Development Institute",
-          "url": "https://openalex.org/I4210111958",
+          "name": "PhD programs at Vanderbilt University Medical Center",
+          "url": "https://openalex.org/I901861585",
           "eligibility_note": null
         }
       ],
@@ -4431,14 +4030,14 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Psychiatric Genomics; The abstracts clearly demonstrate expertise in psychiatric genomics, specifically focusing on PTSD genetics and multi-ancestry meta-analysis, which aligns with the applicant's interest in Single-cell & Psychiatric Genomics and Computational Psychiatry & PTSD Predicti"
+        "reason": "discipline=Psychiatric Genomics; The abstracts clearly demonstrate expertise in psychiatric genomics, specifically focusing on PTSD genetics and multi-ancestry meta-analysis, which aligns with the applicant's interest in 'Single-cell & Psychiatric Genomics' and 'Computational Psychiatry & PTSD Predi"
       }
     },
     {
       "supervisor_id": "A5006085107",
       "name": "Silviu‐Alin Bacanu",
-      "institution": "The University of Queensland",
-      "country": "Australia",
+      "institution": "Virginia Commonwealth University",
+      "country": "United States",
       "contact_email": "sabacanu@vcu.edu",
       "research_focus": "Genetic Associations and Epidemiology, Bioinformatics and Genomic Networks, Genetic Mapping and Diversity in Plants and Animals",
       "matched_areas": [
@@ -4446,7 +4045,7 @@
         "Computational Psychiatry & PTSD Prediction",
         "Neurobiology of Trauma & Stress"
       ],
-      "tier": "target",
+      "tier": "safety",
       "evidence": {
         "papers": [
           {
@@ -4495,11 +4094,11 @@
           }
         ]
       },
-      "why_match": "My interest in the neurobiology of trauma and chronic stress, particularly in the context of PTSD treatment-outcome prediction, aligns well with your work. Your research, such as the \"Genome-wide gene-environment analyses of major depressive disorder and reported lifetime traumatic experiences in UK Biobank\" paper, demonstrates a strong focus on understanding the genetic and environmental factors influencing mental health, which I aim to explore using computational approaches.",
+      "why_match": "My research interests in computational psychiatry and the neurobiology of trauma align perfectly with your lab's focus. Specifically, your work on the genetic architecture of major depression, as evidenced by your 2018 paper, and your NIH R01MH106595 grant, demonstrates a strong commitment to understanding the genomic underpinnings of psychiatric disorders, which I aim to integrate with machine learning for PTSD treatment-outcome prediction.",
       "linked_programs": [
         {
-          "name": "PhD programs at The University of Queensland",
-          "url": "https://openalex.org/I165143802",
+          "name": "PhD programs at Virginia Commonwealth University",
+          "url": "https://openalex.org/I184840846",
           "eligibility_note": null
         }
       ],
@@ -4595,13 +4194,13 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Genetics/Genomics; The abstracts clearly demonstrate work in psychiatric genomics, including PTSD genetics, which aligns with the applicant's interest in Single-cell & Psychiatric Genomics and Computational Psychiatry & PTSD Prediction."
+        "reason": "discipline=Genetics/Genomics; The abstracts clearly show work in psychiatric genomics, including PTSD genetics, which aligns with the applicant's interest in Single-cell & Psychiatric Genomics and Computational Psychiatry & PTSD Prediction."
       }
     },
     {
       "supervisor_id": "A5074969156",
       "name": "Murray B. Stein",
-      "institution": "University of North Carolina at Chapel Hill",
+      "institution": "University of California, San Diego",
       "country": "United States",
       "contact_email": null,
       "research_focus": "Anxiety, Depression, Psychometrics, Treatment, Cognitive Processes, Posttraumatic Stress Disorder Research, Child and Adolescent Psychosocial and Emotional Development",
@@ -4659,11 +4258,11 @@
           }
         ]
       },
-      "why_match": "My interest in the neurobiology of trauma and stress, particularly in PTSD treatment-outcome prediction, aligns with your work, such as the \"International meta-analysis of PTSD genome-wide association studies identifies sex- and ancestry-specific genetic risk loci\" paper. I am eager to contribute my quantitative skills to projects investigating the genetic underpinnings of stress-related disorders, building on your lab's expertise in psychiatric genomics and computational approaches to mental health.",
+      "why_match": "My research interests in computational psychiatry and the neurobiology of trauma align well with your work. I am particularly drawn to your contributions to understanding the genetic underpinnings of stress-related disorders, as exemplified by your 2019 meta-analysis on PTSD genome-wide association studies, and your NIH grant R01DA022720, which explores the molecular basis of trauma.",
       "linked_programs": [
         {
-          "name": "PhD programs at University of North Carolina at Chapel Hill",
-          "url": "https://openalex.org/I114027177",
+          "name": "PhD programs at University of California, San Diego",
+          "url": "https://openalex.org/I36258959",
           "eligibility_note": null
         }
       ],
@@ -4677,13 +4276,13 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Psychiatric Genomics; The abstracts clearly demonstrate work in psychiatric genomics, specifically epigenetic differences related to PTSD, which aligns with the applicant's interest in Single-cell & Psychiatric Genomics and Computational Psychiatry & PTSD Prediction."
+        "reason": "discipline=Psychiatry; The abstracts clearly demonstrate research in PTSD, epigenetics, and traumatic brain injury, aligning with the applicant's interest in Neurobiology of Trauma & Stress and Computational Psychiatry, and touching upon Psychiatric Genomics."
       }
     },
     {
       "supervisor_id": "A5024273553",
       "name": "John F. Fullard",
-      "institution": "Allen Institute for Brain Science",
+      "institution": "Icahn School of Medicine at Mount Sinai",
       "country": "United States",
       "contact_email": null,
       "research_focus": "Genetic Associations and Epidemiology, Epigenetics and DNA Methylation, Single-cell and spatial transcriptomics",
@@ -4691,7 +4290,7 @@
         "Single-cell & Psychiatric Genomics",
         "Computational Psychiatry & PTSD Prediction"
       ],
-      "tier": "safety",
+      "tier": "target",
       "evidence": {
         "papers": [
           {
@@ -4740,11 +4339,11 @@
           }
         ]
       },
-      "why_match": "My research interests lie at the intersection of computational psychiatry, PTSD treatment-outcome prediction, and the genomics of stress-related disorders. Dr. Fullard's work, particularly the \"Comprehensive functional genomic resource and integrative model for the human brain\" paper, aligns perfectly with my goal of integrating molecular and neurobiological data with machine learning approaches to understand trauma and stress.",
+      "why_match": "My research interests in computational psychiatry and the neurobiology of trauma align perfectly with your lab's focus. I am particularly drawn to your work on the \"Comprehensive functional genomic resource and integrative model for the human brain\" (2018) and the \"CommonMind Consortium provides transcriptomic and epigenomic data for Schizophrenia and Bipolar Disorder\" (2019), as I am keen to apply similar genomic and computational approaches to understanding PTSD and predicting treatment outcomes.",
       "linked_programs": [
         {
-          "name": "PhD programs at Allen Institute for Brain Science",
-          "url": "https://openalex.org/I1314596251",
+          "name": "PhD programs at Icahn School of Medicine at Mount Sinai",
+          "url": "https://openalex.org/I98704320",
           "eligibility_note": null
         }
       ],
@@ -4758,94 +4357,13 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Genomics; The abstracts clearly demonstrate expertise in psychiatric genomics, single-cell transcriptomics, and genetic associations with brain disorders, aligning well with the applicant's interest in 'Single-cell & Psychiatric Genomics'."
-      }
-    },
-    {
-      "supervisor_id": "A5035103174",
-      "name": "Bruce S. McEwen",
-      "institution": "Rockefeller University",
-      "country": "United States",
-      "contact_email": null,
-      "research_focus": "Stress Responses and Cortisol, Neuroendocrine regulation and behavior, Neuroscience and Neuropharmacology Research",
-      "matched_areas": [
-        "Neurobiology of Trauma & Stress",
-        "Single-cell & Psychiatric Genomics"
-      ],
-      "tier": "target",
-      "evidence": {
-        "papers": [
-          {
-            "title": "Revisiting the Stress Concept: Implications for Affective Disorders",
-            "year": 2020,
-            "doi": "https://doi.org/10.1523/jneurosci.0733-19.2019",
-            "url": "https://doi.org/10.1523/jneurosci.0733-19.2019",
-            "citations": 650
-          },
-          {
-            "title": "An energetic view of stress: Focus on mitochondria",
-            "year": 2018,
-            "doi": "https://doi.org/10.1016/j.yfrne.2018.01.001",
-            "url": "https://doi.org/10.1016/j.yfrne.2018.01.001",
-            "citations": 552
-          },
-          {
-            "title": "Aggression, Social Stress, and the Immune System in Humans and Animal Models",
-            "year": 2018,
-            "doi": "https://doi.org/10.3389/fnbeh.2018.00056",
-            "url": "https://doi.org/10.3389/fnbeh.2018.00056",
-            "citations": 233
-          }
-        ],
-        "grants": [
-          {
-            "title": "Office of Naval Research award N00014-12-1-0366",
-            "funder": "Office of Naval Research",
-            "award_id": "N00014-12-1-0366",
-            "url": "https://openalex.org/F4320337345",
-            "is_personal_fellowship": false
-          },
-          {
-            "title": "National Institute of Mental Health award MH41256",
-            "funder": "National Institute of Mental Health",
-            "award_id": "MH41256",
-            "url": "https://openalex.org/F4320337346",
-            "is_personal_fellowship": false
-          },
-          {
-            "title": "National Institutes of Health award MH41256",
-            "funder": "National Institutes of Health",
-            "award_id": "MH41256",
-            "url": "https://openalex.org/F4320332161",
-            "is_personal_fellowship": false
-          }
-        ]
-      },
-      "why_match": "My interest in the neurobiology of trauma and chronic stress aligns with your work, particularly your exploration of stress concepts in \"Revisiting the Stress Concept: Implications for Affective Disorders.\" I am also drawn to your research on the energetic view of stress, as detailed in \"An energetic view of stress: Focus on mitochondria,\" and its potential connections to the molecular underpinnings of stress-related disorders, which I aim to investigate using single-cell and psychiatric genomics approaches.",
-      "linked_programs": [
-        {
-          "name": "PhD programs at Rockefeller University",
-          "url": "https://openalex.org/I83399316",
-          "eligibility_note": null
-        }
-      ],
-      "scores": {
-        "similarity": 0.8256,
-        "evidence": 0.9544,
-        "final": 0.8491
-      },
-      "verification": {
-        "domain_match": true,
-        "region_match": true,
-        "is_pi": true,
-        "collision_checked": true,
-        "reason": "discipline=Neuroscience; The abstracts clearly focus on the neurobiology of stress and its impact on psychological problems, aligning well with the 'Neurobiology of Trauma & Stress' area."
+        "reason": "discipline=Genomics; The abstracts clearly demonstrate expertise in psychiatric genomics, single-cell transcriptomics, and genetic associations with brain disorders, aligning well with the applicant's interest in Single-cell & Psychiatric Genomics."
       }
     },
     {
       "supervisor_id": "A5048808978",
       "name": "Richard A. Bryant",
-      "institution": "The University of Sydney",
+      "institution": "UNSW Sydney",
       "country": "Australia",
       "contact_email": null,
       "research_focus": "Posttraumatic Stress Disorder Research, Migration, Health and Trauma, Traumatic Brain Injury Research",
@@ -4903,11 +4421,11 @@
           }
         ]
       },
-      "why_match": "My research interests in computational psychiatry and PTSD treatment-outcome prediction align perfectly with your work, particularly your contributions to the \"International Consortium to Predict PTSD (ICPP)\" and the \"International meta-analysis of PTSD genome-wide association studies.\" I am eager to apply my quantitative skills to integrate machine learning with the molecular and neurobiological underpinnings of trauma, building on the foundation of your group's advancements in identifying genetic risk loci and predicting PTSD risk.",
+      "why_match": "My research interests in computational psychiatry and the neurobiology of trauma align perfectly with your work, particularly your \"International meta-analysis of PTSD genome-wide association studies identifies sex- and ancestry-specific genetic risk loci\" paper. I am eager to contribute to projects that integrate machine learning with genomic data to predict PTSD treatment outcomes, building on the foundation of your R01MH106595 grant.",
       "linked_programs": [
         {
-          "name": "PhD programs at The University of Sydney",
-          "url": "https://openalex.org/I129604602",
+          "name": "PhD programs at UNSW Sydney",
+          "url": "https://openalex.org/I31746571",
           "eligibility_note": null
         }
       ],
@@ -4921,7 +4439,7 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Clinical Psychology; Richard A. Bryant's work directly aligns with the applicant's interest in PTSD prediction and neurobiology of trauma, with one abstract specifically mentioning PTSD genetics and another a PTSD risk estimate tool."
+        "reason": "discipline=Clinical Psychology; The abstracts demonstrate expertise in PTSD genetics, prediction, and psychological treatments, aligning with Computational Psychiatry and Neurobiology of Trauma, and touching on Psychiatric Genomics."
       }
     },
     {
@@ -5003,7 +4521,7 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Psychiatric Genomics; The abstracts clearly focus on the genetics of PTSD, including genome-wide association studies and multi-omic approaches, which directly aligns with the applicant's interest in Psychiatric Genomics and PTSD Prediction."
+        "reason": "discipline=Psychiatric Genomics; The abstracts clearly demonstrate work in psychiatric genomics, specifically focusing on PTSD genetics, which aligns with the applicant's interest in Single-cell & Psychiatric Genomics and Computational Psychiatry & PTSD Prediction."
       }
     },
     {
@@ -5018,7 +4536,7 @@
         "Computational Psychiatry & PTSD Prediction",
         "Neurobiology of Trauma & Stress"
       ],
-      "tier": "target",
+      "tier": "safety",
       "evidence": {
         "papers": [
           {
@@ -5167,7 +4685,7 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Neuroscience; The abstracts clearly demonstrate work in PTSD, traumatic brain injury, and stress responses, aligning with Neurobiology of Trauma & Stress, and also touch upon genomics relevant to PTSD."
+        "reason": "discipline=Neuroscience; The abstracts clearly demonstrate work in PTSD, traumatic brain injury, and genomics related to psychiatric disorders, aligning with the applicant's interests in Computational Psychiatry, Neurobiology of Trauma, and Psychiatric Genomics."
       }
     },
     {
@@ -5182,7 +4700,7 @@
         "Computational Psychiatry & PTSD Prediction",
         "Neurobiology of Trauma & Stress"
       ],
-      "tier": "reach",
+      "tier": "target",
       "evidence": {
         "papers": [
           {
@@ -5249,171 +4767,744 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Psychiatric Genomics; Stephan Ripke's work focuses on the genetic underpinnings of psychiatric disorders, including depression and suicidal behavior, which aligns with the applicant's interest in Single-cell & Psychiatric Genomics and Neurobiology of Trauma & Stress, particularly given th"
+        "reason": "discipline=Psychiatric Genomics; Stephan Ripke's work heavily involves psychiatric genomics, genetic associations with brain disorders, and the genetic underpinnings of conditions like suicidal behavior and depression, which aligns well with the applicant's interest in Single-cell & Psychiatric Geno"
       }
     },
     {
-      "supervisor_id": "A5023033718",
-      "name": "Emily A. Holmes",
-      "institution": "University of Cambridge",
+      "supervisor_id": "A5085171662",
+      "name": "Mark J. Adams",
+      "institution": "University of Edinburgh",
       "country": "United Kingdom",
-      "contact_email": null,
-      "research_focus": "Posttraumatic Stress Disorder Research, Anxiety, Depression, Psychometrics, Treatment, Cognitive Processes, Identity, Memory, and Therapy",
+      "contact_email": "mark.adams@ed.ac.uk",
+      "research_focus": "Genetic Associations and Epidemiology, Epigenetics and DNA Methylation, Health, Environment, Cognitive Aging",
       "matched_areas": [
+        "Single-cell & Psychiatric Genomics",
         "Computational Psychiatry & PTSD Prediction",
-        "Neurobiology of Trauma & Stress",
-        "Single-cell & Psychiatric Genomics"
+        "Neurobiology of Trauma & Stress"
       ],
-      "tier": "reach",
+      "tier": "target",
       "evidence": {
         "papers": [
           {
-            "title": "Multidisciplinary research priorities for the COVID-19 pandemic: a call for action for mental health science",
+            "title": "Genome-wide association analyses identify 44 risk variants and refine the genetic architecture of major depression",
+            "year": 2018,
+            "doi": "https://doi.org/10.1038/s41588-018-0090-3",
+            "url": "https://doi.org/10.1038/s41588-018-0090-3",
+            "citations": 3294
+          },
+          {
+            "title": "Genome-wide meta-analysis of depression identifies 102 independent variants and highlights the importance of the prefrontal brain regions",
+            "year": 2019,
+            "doi": "https://doi.org/10.1038/s41593-018-0326-7",
+            "url": "https://doi.org/10.1038/s41593-018-0326-7",
+            "citations": 2777
+          },
+          {
+            "title": "Mental health in UK Biobank – development, implementation and results from an online questionnaire completed by 157 366 participants: a reanalysis",
             "year": 2020,
-            "doi": "https://doi.org/10.1016/s2215-0366(20)30168-1",
-            "url": "https://doi.org/10.1016/s2215-0366(20)30168-1",
-            "citations": 6046
-          },
-          {
-            "title": "The Lancet Psychiatry Commission on psychological treatments research in tomorrow's science",
-            "year": 2018,
-            "doi": "https://doi.org/10.1016/s2215-0366(17)30513-8",
-            "url": "https://doi.org/10.1016/s2215-0366(17)30513-8",
-            "citations": 655
-          },
-          {
-            "title": "Intrusive memories of trauma: A target for research bridging cognitive science and its clinical application",
-            "year": 2018,
-            "doi": "https://doi.org/10.1016/j.cpr.2018.08.005",
-            "url": "https://doi.org/10.1016/j.cpr.2018.08.005",
-            "citations": 243
+            "doi": "https://doi.org/10.1192/bjo.2019.100",
+            "url": "https://doi.org/10.1192/bjo.2019.100",
+            "citations": 397
           }
         ],
         "grants": [
           {
-            "title": "Vetenskapsrådet award 2017-00957",
-            "funder": "Vetenskapsrådet",
-            "award_id": "2017-00957",
-            "url": "https://openalex.org/F4320322581",
+            "title": "National Institute of Mental Health award R01MH123619",
+            "funder": "National Institute of Mental Health",
+            "award_id": "R01MH123619",
+            "url": "https://openalex.org/F4320337346",
             "is_personal_fellowship": false
           },
           {
-            "title": "University of Cambridge award SUAG/013/RG91365",
-            "funder": "University of Cambridge",
-            "award_id": "SUAG/013/RG91365",
-            "url": "https://openalex.org/F4320320273",
+            "title": "National Cancer Institute award T32GM007347",
+            "funder": "National Cancer Institute",
+            "award_id": "T32GM007347",
+            "url": "https://openalex.org/F4320337351",
             "is_personal_fellowship": false
           },
           {
-            "title": "Schweizerischer Nationalfonds zur Förderung der Wissenschaftlichen Forschung award 32003B_172982",
-            "funder": "Schweizerischer Nationalfonds zur Förderung der Wissenschaftlichen Forschung",
-            "award_id": "32003B_172982",
-            "url": "https://openalex.org/F4320320924",
+            "title": "U.S. Department of Veterans Affairs award T32GM007347",
+            "funder": "U.S. Department of Veterans Affairs",
+            "award_id": "T32GM007347",
+            "url": "https://openalex.org/F4320306127",
             "is_personal_fellowship": false
           }
         ]
       },
-      "why_match": "My research interests in computational psychiatry and PTSD treatment-outcome prediction align well with your work. Specifically, I am drawn to your paper, \"Intrusive memories of trauma: A target for research bridging cognitive science and its clinical application,\" as it connects cognitive science with clinical applications, mirroring my goal to integrate machine learning with the neurobiological basis of trauma. I am eager to contribute to projects that leverage computational approaches to understand and predict outcomes in stress-related disorders.",
+      "why_match": "My research interests in computational psychiatry and PTSD treatment-outcome prediction align well with your work. I am particularly drawn to your contributions to understanding the genetic architecture of psychiatric disorders, as exemplified by your 2018 paper, \"Genome-wide association analyses identify 44 risk variants and refine the genetic architecture of major depression,\" and your ongoing R01MH123619 grant, which I believe could provide an excellent foundation for exploring the neurobiological basis of trauma and stress using genomic approaches.",
       "linked_programs": [
         {
-          "name": "PhD programs at University of Cambridge",
-          "url": "https://openalex.org/I241749",
+          "name": "PhD programs at University of Edinburgh",
+          "url": "https://openalex.org/I98677209",
           "eligibility_note": null
         }
       ],
       "scores": {
-        "similarity": 0.7639,
+        "similarity": 0.7943,
         "evidence": 1.0,
-        "final": 0.8445
+        "final": 0.8471
       },
       "verification": {
         "domain_match": true,
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Clinical Psychology; The abstracts clearly indicate research in clinical psychology, specifically focusing on PTSD, intrusive memories, and psychological treatments, which aligns with the applicant's interest in Computational Psychiatry and Neurobiology of Trauma & Stress."
+        "reason": "discipline=Psychiatric Genomics; The abstracts clearly demonstrate work in psychiatric genomics, including suicidal behavior, depression, and trauma exposure, aligning with the student's interest in Single-cell & Psychiatric Genomics."
       }
     },
     {
-      "supervisor_id": "A5056944189",
-      "name": "Christoph U. Correll",
-      "institution": "Feinstein Institute for Medical Research",
-      "country": "United States",
-      "contact_email": null,
-      "research_focus": "Schizophrenia research and treatment, Bipolar Disorder and Treatment, Treatment of Major Depression",
+      "supervisor_id": "A5027152344",
+      "name": "Valentina Escott‐Price",
+      "institution": "Cardiff University",
+      "country": "United Kingdom",
+      "contact_email": "EscottPriceV@cardiff.ac.uk",
+      "research_focus": "Genetic Associations and Epidemiology, Alzheimer's disease research and treatments, Bioinformatics and Genomic Networks",
       "matched_areas": [
+        "Single-cell & Psychiatric Genomics",
         "Computational Psychiatry & PTSD Prediction",
-        "Neurobiology of Trauma & Stress",
-        "Single-cell & Psychiatric Genomics"
+        "Neurobiology of Trauma & Stress"
       ],
       "tier": "safety",
       "evidence": {
         "papers": [
           {
-            "title": "Age at onset of mental disorders worldwide: large-scale meta-analysis of 192 epidemiological studies",
-            "year": 2021,
-            "doi": "https://doi.org/10.1038/s41380-021-01161-7",
-            "url": "https://doi.org/10.1038/s41380-021-01161-7",
-            "citations": 3541
+            "title": "Genome-wide association analyses identify 44 risk variants and refine the genetic architecture of major depression",
+            "year": 2018,
+            "doi": "https://doi.org/10.1038/s41588-018-0090-3",
+            "url": "https://doi.org/10.1038/s41588-018-0090-3",
+            "citations": 3294
           },
           {
-            "title": "How mental health care should change as a consequence of the COVID-19 pandemic",
-            "year": 2020,
-            "doi": "https://doi.org/10.1016/s2215-0366(20)30307-2",
-            "url": "https://doi.org/10.1016/s2215-0366(20)30307-2",
-            "citations": 1888
+            "title": "Analysis of shared heritability in common disorders of the brain",
+            "year": 2018,
+            "doi": "https://doi.org/10.1126/science.aap8757",
+            "url": "https://doi.org/10.1126/science.aap8757",
+            "citations": 2023
           },
           {
-            "title": "The Lancet Psychiatry Commission: a blueprint for protecting physical health in people with mental illness",
-            "year": 2019,
-            "doi": "https://doi.org/10.1016/s2215-0366(19)30132-4",
-            "url": "https://doi.org/10.1016/s2215-0366(19)30132-4",
-            "citations": 1494
+            "title": "Common schizophrenia alleles are enriched in mutation-intolerant genes and in regions under strong background selection",
+            "year": 2018,
+            "doi": "https://doi.org/10.1038/s41588-018-0059-2",
+            "url": "https://doi.org/10.1038/s41588-018-0059-2",
+            "citations": 1724
           }
         ],
         "grants": [
           {
-            "title": "Instituto de Salud Carlos III award PI16/",
-            "funder": "Instituto de Salud Carlos III",
-            "award_id": "PI16/",
-            "url": "https://openalex.org/F4320334923",
+            "title": "Medical Research Council award MR/L023784/2",
+            "funder": "Medical Research Council",
+            "award_id": "MR/L023784/2",
+            "url": "https://openalex.org/F4320334626",
             "is_personal_fellowship": false
           },
           {
-            "title": "Generalitat de Catalunya award 2017 SGR 1365",
-            "funder": "Generalitat de Catalunya",
-            "award_id": "2017 SGR 1365",
-            "url": "https://openalex.org/F4320321505",
+            "title": "Vetenskapsrådet award 538-2013-8864",
+            "funder": "Vetenskapsrådet",
+            "award_id": "538-2013-8864",
+            "url": "https://openalex.org/F4320322581",
             "is_personal_fellowship": false
           },
           {
-            "title": "King's College London award IS-BRC-1215-20018",
-            "funder": "King's College London",
-            "award_id": "IS-BRC-1215-20018",
-            "url": "https://openalex.org/F4320320285",
+            "title": "National Institute of Mental Health award R00MH101367",
+            "funder": "National Institute of Mental Health",
+            "award_id": "R00MH101367",
+            "url": "https://openalex.org/F4320337346",
             "is_personal_fellowship": false
           }
         ]
       },
-      "why_match": "Christoph U. Correll's work, including \"Age at onset of mental disorders worldwide: large-scale meta-analysis of 192 epidemiological studies\", aligns directly with the areas you want to pursue, making them a strong supervisor to approach at Feinstein Institute for Medical Research.",
+      "why_match": "My research interests in computational psychiatry and the neurobiology of trauma align well with your work. Specifically, your contributions to understanding the genetic architecture of psychiatric disorders, as exemplified by \"Genome-wide association analyses identify 44 risk variants and refine the genetic architecture of major depression\" (2018), resonate with my goal of integrating genomic insights with machine learning for PTSD treatment-outcome prediction.",
       "linked_programs": [
         {
-          "name": "PhD programs at Feinstein Institute for Medical Research",
-          "url": "https://openalex.org/I1327576362",
+          "name": "PhD programs at Cardiff University",
+          "url": "https://openalex.org/I79510175",
           "eligibility_note": null
         }
       ],
       "scores": {
-        "similarity": 0.7868,
+        "similarity": 0.7943,
         "evidence": 1.0,
-        "final": 0.8434
+        "final": 0.8471
       },
       "verification": {
         "domain_match": true,
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Psychiatry; The candidate's work focuses on psychiatric disorders, including bipolar disorder and mental health, which aligns with the applicant's interest in computational psychiatry and neurobiology of trauma and stress, particularly given the mention of 'multi-omic' measures and comput"
+        "reason": "discipline=Psychiatric Genomics; The abstracts clearly demonstrate expertise in psychiatric genomics, genetic associations, and the genetic underpinnings of brain disorders, which aligns with the applicant's interest in Single-cell & Psychiatric Genomics and Neurobiology of Trauma & Stress, particul"
+      }
+    },
+    {
+      "supervisor_id": "A5054693005",
+      "name": "Toni‐Kim Clarke",
+      "institution": "University of Edinburgh",
+      "country": "United Kingdom",
+      "contact_email": null,
+      "research_focus": "Genetic Associations and Epidemiology, Epigenetics and DNA Methylation, Alcohol Consumption and Health Effects",
+      "matched_areas": [
+        "Single-cell & Psychiatric Genomics",
+        "Computational Psychiatry & PTSD Prediction",
+        "Neurobiology of Trauma & Stress"
+      ],
+      "tier": "target",
+      "evidence": {
+        "papers": [
+          {
+            "title": "Genome-wide association analyses identify 44 risk variants and refine the genetic architecture of major depression",
+            "year": 2018,
+            "doi": "https://doi.org/10.1038/s41588-018-0090-3",
+            "url": "https://doi.org/10.1038/s41588-018-0090-3",
+            "citations": 3294
+          },
+          {
+            "title": "Genome-wide meta-analysis of depression identifies 102 independent variants and highlights the importance of the prefrontal brain regions",
+            "year": 2019,
+            "doi": "https://doi.org/10.1038/s41593-018-0326-7",
+            "url": "https://doi.org/10.1038/s41593-018-0326-7",
+            "citations": 2777
+          },
+          {
+            "title": "Genome-wide association study identifies 30 loci associated with bipolar disorder",
+            "year": 2019,
+            "doi": "https://doi.org/10.1038/s41588-019-0397-8",
+            "url": "https://doi.org/10.1038/s41588-019-0397-8",
+            "citations": 1625
+          }
+        ],
+        "grants": [
+          {
+            "title": "National Institute of Mental Health award U01 MH085520",
+            "funder": "National Institute of Mental Health",
+            "award_id": "U01 MH085520",
+            "url": "https://openalex.org/F4320337346",
+            "is_personal_fellowship": false
+          },
+          {
+            "title": "National Institute of Mental Health award U01 MH094421",
+            "funder": "National Institute of Mental Health",
+            "award_id": "U01 MH094421",
+            "url": "https://openalex.org/F4320337346",
+            "is_personal_fellowship": false
+          },
+          {
+            "title": "Medical Research Council award MR/S015132/1",
+            "funder": "Medical Research Council",
+            "award_id": "MR/S015132/1",
+            "url": "https://openalex.org/F4320334626",
+            "is_personal_fellowship": false
+          }
+        ]
+      },
+      "why_match": "My research interests in computational psychiatry and the neurobiology of trauma align perfectly with your lab's focus. I am particularly drawn to your work on the genetic architecture of psychiatric disorders, as exemplified by your 2018 paper, \"Genome-wide association analyses identify 44 risk variants and refine the genetic architecture of major depression.\" I am eager to apply my quantitative skills to integrate genomic insights with clinical data for PTSD treatment-outcome prediction, building on the foundational work your lab has established.",
+      "linked_programs": [
+        {
+          "name": "PhD programs at University of Edinburgh",
+          "url": "https://openalex.org/I98677209",
+          "eligibility_note": null
+        }
+      ],
+      "scores": {
+        "similarity": 0.7943,
+        "evidence": 1.0,
+        "final": 0.8471
+      },
+      "verification": {
+        "domain_match": true,
+        "region_match": true,
+        "is_pi": true,
+        "collision_checked": true,
+        "reason": "discipline=Psychiatric Genomics; The abstracts clearly demonstrate expertise in psychiatric genomics, specifically focusing on genetic associations with bipolar disorder and depression, which aligns with the applicant's interest in Single-cell & Psychiatric Genomics."
+      }
+    },
+    {
+      "supervisor_id": "A5084745044",
+      "name": "Niamh Mullins",
+      "institution": "Icahn School of Medicine at Mount Sinai",
+      "country": "United States",
+      "contact_email": null,
+      "research_focus": "Genetic Associations and Epidemiology, Suicide and Self-Harm Studies, Bipolar Disorder and Treatment",
+      "matched_areas": [
+        "Single-cell & Psychiatric Genomics",
+        "Computational Psychiatry & PTSD Prediction",
+        "Neurobiology of Trauma & Stress"
+      ],
+      "tier": "safety",
+      "evidence": {
+        "papers": [
+          {
+            "title": "Genome-wide association analyses identify 44 risk variants and refine the genetic architecture of major depression",
+            "year": 2018,
+            "doi": "https://doi.org/10.1038/s41588-018-0090-3",
+            "url": "https://doi.org/10.1038/s41588-018-0090-3",
+            "citations": 3294
+          },
+          {
+            "title": "Genome-wide association study of more than 40,000 bipolar disorder cases provides new insights into the underlying biology",
+            "year": 2021,
+            "doi": "https://doi.org/10.1038/s41588-021-00857-4",
+            "url": "https://doi.org/10.1038/s41588-021-00857-4",
+            "citations": 1578
+          },
+          {
+            "title": "Dissecting the Shared Genetic Architecture of Suicide Attempt, Psychiatric Disorders, and Known Risk Factors",
+            "year": 2021,
+            "doi": "https://doi.org/10.1016/j.biopsych.2021.05.029",
+            "url": "https://doi.org/10.1016/j.biopsych.2021.05.029",
+            "citations": 244
+          }
+        ],
+        "grants": [
+          {
+            "title": "National Institute of Mental Health award U01 MH085520",
+            "funder": "National Institute of Mental Health",
+            "award_id": "U01 MH085520",
+            "url": "https://openalex.org/F4320337346",
+            "is_personal_fellowship": false
+          },
+          {
+            "title": "National Institute of Mental Health award U01 MH094421",
+            "funder": "National Institute of Mental Health",
+            "award_id": "U01 MH094421",
+            "url": "https://openalex.org/F4320337346",
+            "is_personal_fellowship": false
+          },
+          {
+            "title": "Medical Research Council award MR/S015132/1",
+            "funder": "Medical Research Council",
+            "award_id": "MR/S015132/1",
+            "url": "https://openalex.org/F4320334626",
+            "is_personal_fellowship": false
+          }
+        ]
+      },
+      "why_match": "My research interests in computational psychiatry and the neurobiology of trauma align with your work. I am particularly interested in how your lab's approach to dissecting the shared genetic architecture of psychiatric disorders, as exemplified in your 2021 paper on suicide attempt, could be applied to understanding PTSD treatment-outcome prediction. I believe my background in quantitative research and machine learning would be a strong asset to your projects, including those supported by grants like U01 MH085520.",
+      "linked_programs": [
+        {
+          "name": "PhD programs at Icahn School of Medicine at Mount Sinai",
+          "url": "https://openalex.org/I98704320",
+          "eligibility_note": null
+        }
+      ],
+      "scores": {
+        "similarity": 0.7943,
+        "evidence": 1.0,
+        "final": 0.8471
+      },
+      "verification": {
+        "domain_match": true,
+        "region_match": true,
+        "is_pi": true,
+        "collision_checked": true,
+        "reason": "discipline=Psychiatric Genomics; The abstracts clearly show work in psychiatric genomics, specifically on bipolar disorder, suicidal behavior, and depression in relation to trauma exposure, which aligns with the applicant's interest in 'Single-cell & Psychiatric Genomics' and 'Neurobiology of Trauma"
+      }
+    },
+    {
+      "supervisor_id": "A5052411434",
+      "name": "Enda M. Byrne",
+      "institution": "The University of Queensland",
+      "country": "Australia",
+      "contact_email": "enda.byrne@uq.edu.au",
+      "research_focus": "Genetic Associations and Epidemiology, Sleep and related disorders, Cognitive Abilities and Testing",
+      "matched_areas": [
+        "Single-cell & Psychiatric Genomics",
+        "Computational Psychiatry & PTSD Prediction",
+        "Neurobiology of Trauma & Stress"
+      ],
+      "tier": "target",
+      "evidence": {
+        "papers": [
+          {
+            "title": "Genome-wide association analyses identify 44 risk variants and refine the genetic architecture of major depression",
+            "year": 2018,
+            "doi": "https://doi.org/10.1038/s41588-018-0090-3",
+            "url": "https://doi.org/10.1038/s41588-018-0090-3",
+            "citations": 3294
+          },
+          {
+            "title": "Genome-wide meta-analysis of depression identifies 102 independent variants and highlights the importance of the prefrontal brain regions",
+            "year": 2019,
+            "doi": "https://doi.org/10.1038/s41593-018-0326-7",
+            "url": "https://doi.org/10.1038/s41593-018-0326-7",
+            "citations": 2777
+          },
+          {
+            "title": "Common schizophrenia alleles are enriched in mutation-intolerant genes and in regions under strong background selection",
+            "year": 2018,
+            "doi": "https://doi.org/10.1038/s41588-018-0059-2",
+            "url": "https://doi.org/10.1038/s41588-018-0059-2",
+            "citations": 1724
+          }
+        ],
+        "grants": [
+          {
+            "title": "Medical Research Council award MR/M005070/1",
+            "funder": "Medical Research Council",
+            "award_id": "MR/M005070/1",
+            "url": "https://openalex.org/F4320334626",
+            "is_personal_fellowship": false
+          },
+          {
+            "title": "Medical Research Council award MC_UU_00011/6",
+            "funder": "Medical Research Council",
+            "award_id": "MC_UU_00011/6",
+            "url": "https://openalex.org/F4320334626",
+            "is_personal_fellowship": false
+          },
+          {
+            "title": "FP7 Ideas: European Research Council award 323195",
+            "funder": "FP7 Ideas: European Research Council",
+            "award_id": "323195",
+            "url": "https://openalex.org/F4320338352",
+            "is_personal_fellowship": false
+          }
+        ]
+      },
+      "why_match": "My research interests in computational psychiatry and the neurobiology of trauma align with your work on the genetic architecture of psychiatric disorders. I am particularly drawn to your contributions in identifying risk variants for major depression, as exemplified by your 2018 and 2019 genome-wide association studies, and I am keen to explore how these insights can be leveraged for PTSD treatment-outcome prediction.",
+      "linked_programs": [
+        {
+          "name": "PhD programs at The University of Queensland",
+          "url": "https://openalex.org/I165143802",
+          "eligibility_note": null
+        }
+      ],
+      "scores": {
+        "similarity": 0.7943,
+        "evidence": 1.0,
+        "final": 0.8471
+      },
+      "verification": {
+        "domain_match": true,
+        "region_match": true,
+        "is_pi": true,
+        "collision_checked": true,
+        "reason": "discipline=Psychiatric Genomics; The researcher's work focuses on genetic associations with psychiatric disorders like depression and sleep, which aligns with the applicant's interest in Psychiatric Genomics and Computational Psychiatry."
+      }
+    },
+    {
+      "supervisor_id": "A5011519020",
+      "name": "Sarah E. Medland",
+      "institution": "QIMR Berghofer Medical Research Institute",
+      "country": "Australia",
+      "contact_email": "Sarah.Medland@qimrberghofer.edu.au",
+      "research_focus": "Genetic Associations and Epidemiology, Cognitive Abilities and Testing, Genetic Mapping and Diversity in Plants and Animals",
+      "matched_areas": [
+        "Single-cell & Psychiatric Genomics",
+        "Computational Psychiatry & PTSD Prediction",
+        "Neurobiology of Trauma & Stress"
+      ],
+      "tier": "safety",
+      "evidence": {
+        "papers": [
+          {
+            "title": "Genome-wide association analyses identify 44 risk variants and refine the genetic architecture of major depression",
+            "year": 2018,
+            "doi": "https://doi.org/10.1038/s41588-018-0090-3",
+            "url": "https://doi.org/10.1038/s41588-018-0090-3",
+            "citations": 3294
+          },
+          {
+            "title": "Discovery of the first genome-wide significant risk loci for attention deficit/hyperactivity disorder",
+            "year": 2018,
+            "doi": "https://doi.org/10.1038/s41588-018-0269-7",
+            "url": "https://doi.org/10.1038/s41588-018-0269-7",
+            "citations": 2309
+          },
+          {
+            "title": "Association studies of up to 1.2 million individuals yield new insights into the genetic etiology of tobacco and alcohol use",
+            "year": 2019,
+            "doi": "https://doi.org/10.1038/s41588-018-0307-5",
+            "url": "https://doi.org/10.1038/s41588-018-0307-5",
+            "citations": 2136
+          }
+        ],
+        "grants": [
+          {
+            "title": "Medical Research Council award MR/L023784/2",
+            "funder": "Medical Research Council",
+            "award_id": "MR/L023784/2",
+            "url": "https://openalex.org/F4320334626",
+            "is_personal_fellowship": false
+          },
+          {
+            "title": "Medical Research Council award MC_PC_17209",
+            "funder": "Medical Research Council",
+            "award_id": "MC_PC_17209",
+            "url": "https://openalex.org/F4320334626",
+            "is_personal_fellowship": false
+          },
+          {
+            "title": "National Institute of Mental Health award T32MH017119",
+            "funder": "National Institute of Mental Health",
+            "award_id": "T32MH017119",
+            "url": "https://openalex.org/F4320337346",
+            "is_personal_fellowship": false
+          }
+        ]
+      },
+      "why_match": "My research interests in psychiatric genomics and computational psychiatry align with your work, particularly your contributions to understanding the genetic architecture of psychiatric disorders as demonstrated in \"Genome-wide association analyses identify 44 risk variants and refine the genetic architecture of major depression.\" I am eager to apply machine learning to clinical and EHR data to predict PTSD treatment outcomes, building on the genomic insights your lab has established in stress-related disorders.",
+      "linked_programs": [
+        {
+          "name": "PhD programs at QIMR Berghofer Medical Research Institute",
+          "url": "https://openalex.org/I217937681",
+          "eligibility_note": null
+        }
+      ],
+      "scores": {
+        "similarity": 0.7943,
+        "evidence": 1.0,
+        "final": 0.8471
+      },
+      "verification": {
+        "domain_match": true,
+        "region_match": true,
+        "is_pi": true,
+        "collision_checked": true,
+        "reason": "discipline=Psychiatric Genomics; The abstracts clearly demonstrate expertise in psychiatric genomics, particularly in relation to depression, trauma, and eating disorders, aligning with the applicant's interest in 'Single-cell & Psychiatric Genomics' and 'Computational Psychiatry & PTSD Prediction'."
+      }
+    },
+    {
+      "supervisor_id": "A5002951219",
+      "name": "Tim B. Bigdeli",
+      "institution": "SUNY Downstate Health Sciences University",
+      "country": "United States",
+      "contact_email": null,
+      "research_focus": "Genetic Associations and Epidemiology, Schizophrenia research and treatment, Genomics and Rare Diseases",
+      "matched_areas": [
+        "Single-cell & Psychiatric Genomics",
+        "Computational Psychiatry & PTSD Prediction",
+        "Neurobiology of Trauma & Stress"
+      ],
+      "tier": "safety",
+      "evidence": {
+        "papers": [
+          {
+            "title": "Genome-wide association analyses identify 44 risk variants and refine the genetic architecture of major depression",
+            "year": 2018,
+            "doi": "https://doi.org/10.1038/s41588-018-0090-3",
+            "url": "https://doi.org/10.1038/s41588-018-0090-3",
+            "citations": 3294
+          },
+          {
+            "title": "Genome-wide association study of more than 40,000 bipolar disorder cases provides new insights into the underlying biology",
+            "year": 2021,
+            "doi": "https://doi.org/10.1038/s41588-021-00857-4",
+            "url": "https://doi.org/10.1038/s41588-021-00857-4",
+            "citations": 1578
+          },
+          {
+            "title": "Dissecting the Shared Genetic Architecture of Suicide Attempt, Psychiatric Disorders, and Known Risk Factors",
+            "year": 2021,
+            "doi": "https://doi.org/10.1016/j.biopsych.2021.05.029",
+            "url": "https://doi.org/10.1016/j.biopsych.2021.05.029",
+            "citations": 244
+          }
+        ],
+        "grants": [
+          {
+            "title": "National Institute of Mental Health award U01 MH085520",
+            "funder": "National Institute of Mental Health",
+            "award_id": "U01 MH085520",
+            "url": "https://openalex.org/F4320337346",
+            "is_personal_fellowship": false
+          },
+          {
+            "title": "National Institute of Mental Health award U01 MH094421",
+            "funder": "National Institute of Mental Health",
+            "award_id": "U01 MH094421",
+            "url": "https://openalex.org/F4320337346",
+            "is_personal_fellowship": false
+          },
+          {
+            "title": "Medical Research Council award MR/S015132/1",
+            "funder": "Medical Research Council",
+            "award_id": "MR/S015132/1",
+            "url": "https://openalex.org/F4320334626",
+            "is_personal_fellowship": false
+          }
+        ]
+      },
+      "why_match": "My research interests in computational psychiatry and the neurobiology of trauma align perfectly with your lab's focus, particularly your work on the genetic architecture of psychiatric disorders. I am especially drawn to your contributions in \"Dissecting the Shared Genetic Architecture of Suicide Attempt, Psychiatric Disorders, and Known Risk Factors\" and your NIMH grants (e.g., U01 MH085520), which demonstrate a strong commitment to understanding the genetic underpinnings of complex mental health conditions relevant to PTSD treatment-outcome prediction.",
+      "linked_programs": [
+        {
+          "name": "PhD programs at SUNY Downstate Health Sciences University",
+          "url": "https://openalex.org/I181697535",
+          "eligibility_note": null
+        }
+      ],
+      "scores": {
+        "similarity": 0.7943,
+        "evidence": 1.0,
+        "final": 0.8471
+      },
+      "verification": {
+        "domain_match": true,
+        "region_match": true,
+        "is_pi": true,
+        "collision_checked": true,
+        "reason": "discipline=Psychiatric Genomics; The abstracts clearly demonstrate expertise in psychiatric genomics, specifically in bipolar disorder and depression, which aligns with the applicant's interest in Single-cell & Psychiatric Genomics and has relevance to PTSD prediction through genetic risk factors."
+      }
+    },
+    {
+      "supervisor_id": "A5049892384",
+      "name": "Ian J. Deary",
+      "institution": "University of Edinburgh",
+      "country": "United Kingdom",
+      "contact_email": "i.deary@ed.ac.uk",
+      "research_focus": "Cognitive Abilities and Testing, Genetic Associations and Epidemiology, Dementia and Cognitive Impairment Research",
+      "matched_areas": [
+        "Single-cell & Psychiatric Genomics",
+        "Computational Psychiatry & PTSD Prediction",
+        "Neurobiology of Trauma & Stress"
+      ],
+      "tier": "target",
+      "evidence": {
+        "papers": [
+          {
+            "title": "Genome-wide association analyses identify 44 risk variants and refine the genetic architecture of major depression",
+            "year": 2018,
+            "doi": "https://doi.org/10.1038/s41588-018-0090-3",
+            "url": "https://doi.org/10.1038/s41588-018-0090-3",
+            "citations": 3294
+          },
+          {
+            "title": "Genome-wide meta-analysis of depression identifies 102 independent variants and highlights the importance of the prefrontal brain regions",
+            "year": 2019,
+            "doi": "https://doi.org/10.1038/s41593-018-0326-7",
+            "url": "https://doi.org/10.1038/s41593-018-0326-7",
+            "citations": 2777
+          },
+          {
+            "title": "Genome-wide association meta-analysis in 269,867 individuals identifies new genetic and functional links to intelligence",
+            "year": 2018,
+            "doi": "https://doi.org/10.1038/s41588-018-0152-6",
+            "url": "https://doi.org/10.1038/s41588-018-0152-6",
+            "citations": 1408
+          }
+        ],
+        "grants": [
+          {
+            "title": "Medical Research Council award MR/L023784/2",
+            "funder": "Medical Research Council",
+            "award_id": "MR/L023784/2",
+            "url": "https://openalex.org/F4320334626",
+            "is_personal_fellowship": false
+          },
+          {
+            "title": "Medical Research Council award MC_PC_17209",
+            "funder": "Medical Research Council",
+            "award_id": "MC_PC_17209",
+            "url": "https://openalex.org/F4320334626",
+            "is_personal_fellowship": false
+          },
+          {
+            "title": "National Institute of Mental Health award T32MH017119",
+            "funder": "National Institute of Mental Health",
+            "award_id": "T32MH017119",
+            "url": "https://openalex.org/F4320337346",
+            "is_personal_fellowship": false
+          }
+        ]
+      },
+      "why_match": "My research interests in computational psychiatry and the neurobiology of trauma align well with your work. Specifically, your genome-wide association studies, such as \"Genome-wide association analyses identify 44 risk variants and refine the genetic architecture of major depression\" (2018), demonstrate a strong foundation in psychiatric genomics that I aim to integrate with machine learning for PTSD treatment-outcome prediction.",
+      "linked_programs": [
+        {
+          "name": "PhD programs at University of Edinburgh",
+          "url": "https://openalex.org/I98677209",
+          "eligibility_note": null
+        }
+      ],
+      "scores": {
+        "similarity": 0.7943,
+        "evidence": 1.0,
+        "final": 0.8471
+      },
+      "verification": {
+        "domain_match": true,
+        "region_match": true,
+        "is_pi": true,
+        "collision_checked": true,
+        "reason": "discipline=Psychiatric Genomics; The abstracts clearly demonstrate expertise in psychiatric genomics, specifically focusing on the genetic underpinnings of depression and its relationship with traumatic events, which aligns with the applicant's interest in Psychiatric Genomics."
+      }
+    },
+    {
+      "supervisor_id": "A5010651057",
+      "name": "Héléna A. Gaspar",
+      "institution": "King's College London",
+      "country": "United Kingdom",
+      "contact_email": null,
+      "research_focus": "Genetic Associations and Epidemiology, Computational Drug Discovery Methods, Bioinformatics and Genomic Networks",
+      "matched_areas": [
+        "Single-cell & Psychiatric Genomics",
+        "Computational Psychiatry & PTSD Prediction"
+      ],
+      "tier": "target",
+      "evidence": {
+        "papers": [
+          {
+            "title": "Genome-wide association analyses identify 44 risk variants and refine the genetic architecture of major depression",
+            "year": 2018,
+            "doi": "https://doi.org/10.1038/s41588-018-0090-3",
+            "url": "https://doi.org/10.1038/s41588-018-0090-3",
+            "citations": 3294
+          },
+          {
+            "title": "Genome-wide association study identifies 30 loci associated with bipolar disorder",
+            "year": 2019,
+            "doi": "https://doi.org/10.1038/s41588-019-0397-8",
+            "url": "https://doi.org/10.1038/s41588-019-0397-8",
+            "citations": 1625
+          },
+          {
+            "title": "Genome-wide association study identifies eight risk loci and implicates metabo-psychiatric origins for anorexia nervosa",
+            "year": 2019,
+            "doi": "https://doi.org/10.1038/s41588-019-0439-2",
+            "url": "https://doi.org/10.1038/s41588-019-0439-2",
+            "citations": 1178
+          }
+        ],
+        "grants": [
+          {
+            "title": "Cancerfonden award CAN 2016/572",
+            "funder": "Cancerfonden",
+            "award_id": "CAN 2016/572",
+            "url": "https://openalex.org/F4320321491",
+            "is_personal_fellowship": false
+          },
+          {
+            "title": "Vetenskapsrådet award 538-2013-8864",
+            "funder": "Vetenskapsrådet",
+            "award_id": "538-2013-8864",
+            "url": "https://openalex.org/F4320322581",
+            "is_personal_fellowship": false
+          },
+          {
+            "title": "National Institute of Mental Health award R01 MH077139",
+            "funder": "National Institute of Mental Health",
+            "award_id": "R01 MH077139",
+            "url": "https://openalex.org/F4320337346",
+            "is_personal_fellowship": false
+          }
+        ]
+      },
+      "why_match": "My interest in the genetic architecture of psychiatric disorders, particularly stress-related conditions, aligns with your work on major depression and bipolar disorder, as evidenced by your 2018 and 2019 genome-wide association studies. I am keen to explore how these genetic insights can be integrated with computational approaches for PTSD treatment-outcome prediction, building on your lab's expertise in psychiatric genomics.",
+      "linked_programs": [
+        {
+          "name": "PhD programs at King's College London",
+          "url": "https://openalex.org/I183935753",
+          "eligibility_note": null
+        }
+      ],
+      "scores": {
+        "similarity": 0.7943,
+        "evidence": 1.0,
+        "final": 0.8471
+      },
+      "verification": {
+        "domain_match": true,
+        "region_match": true,
+        "is_pi": true,
+        "collision_checked": true,
+        "reason": "discipline=Psychiatric Genomics; The abstracts clearly demonstrate work in psychiatric genomics, specifically linking genetic factors to brain disorders and trauma-related depression, which aligns with the applicant's interest in Single-cell & Psychiatric Genomics and Neurobiology of Trauma & Stress"
       }
     },
     {
@@ -5488,7 +5579,7 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Public Health; The abstract clearly indicates work in mental health treatment and posttraumatic stress in refugee populations, aligning with the applicant's interest in Neurobiology of Trauma & Stress and Computational Psychiatry & PTSD Prediction, particularly in a global context."
+        "reason": "discipline=Public Health; The abstract clearly indicates work on mental health interventions for posttraumatic stress in refugee camps, aligning with the Neurobiology of Trauma & Stress area, and the candidate's affiliation and career signals suggest a PI role."
       }
     },
     {
@@ -5570,7 +5661,7 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Neuroscience; The abstracts clearly indicate research in PTSD, suicidal behavior, and traumatic brain injury, aligning with the applicant's interest in Neurobiology of Trauma & Stress and Computational Psychiatry, and the career signals suggest a senior researcher."
+        "reason": "discipline=Neuroscience; The abstracts clearly demonstrate work in Neurobiology of Trauma and Stress, specifically focusing on PTSD and Traumatic Brain Injury, which aligns with the applicant's interests."
       }
     },
     {
@@ -5652,89 +5743,7 @@
         "region_match": true,
         "is_pi": true,
         "collision_checked": true,
-        "reason": "discipline=Neuroscience; The abstracts clearly indicate research in the neurobiology of trauma and stress, specifically focusing on PTSD, fear regulation, and epigenetic differences related to PTSD, which aligns with the applicant's interest in Neurobiology of Trauma & Stress."
-      }
-    },
-    {
-      "supervisor_id": "A5084063845",
-      "name": "John K. Yue",
-      "institution": "San Francisco General Hospital",
-      "country": "United States",
-      "contact_email": null,
-      "research_focus": "Traumatic Brain Injury and Neurovascular Disturbances, Traumatic Brain Injury Research, Trauma and Emergency Care Studies",
-      "matched_areas": [
-        "Neurobiology of Trauma & Stress",
-        "Computational Psychiatry & PTSD Prediction",
-        "Single-cell & Psychiatric Genomics"
-      ],
-      "tier": "safety",
-      "evidence": {
-        "papers": [
-          {
-            "title": "Traumatic brain injury: progress and challenges in prevention, clinical care, and research",
-            "year": 2022,
-            "doi": "https://doi.org/10.1016/s1474-4422(22)00309-x",
-            "url": "https://doi.org/10.1016/s1474-4422(22)00309-x",
-            "citations": 1322
-          },
-          {
-            "title": "Blood GFAP as an emerging biomarker in brain and spinal cord disorders",
-            "year": 2022,
-            "doi": "https://doi.org/10.1038/s41582-021-00616-3",
-            "url": "https://doi.org/10.1038/s41582-021-00616-3",
-            "citations": 806
-          },
-          {
-            "title": "Recovery After Mild Traumatic Brain Injury in Patients Presenting to US Level I Trauma Centers",
-            "year": 2019,
-            "doi": "https://doi.org/10.1001/jamaneurol.2019.1313",
-            "url": "https://doi.org/10.1001/jamaneurol.2019.1313",
-            "citations": 439
-          }
-        ],
-        "grants": [
-          {
-            "title": "National Institute of Neurological Disorders and Stroke award 3U01NS086090-02S2",
-            "funder": "National Institute of Neurological Disorders and Stroke",
-            "award_id": "3U01NS086090-02S2",
-            "url": "https://openalex.org/F4320337359",
-            "is_personal_fellowship": false
-          },
-          {
-            "title": "U.S. Department of Defense award W81XWH-13-1-0441",
-            "funder": "U.S. Department of Defense",
-            "award_id": "W81XWH-13-1-0441",
-            "url": "https://openalex.org/F4320306078",
-            "is_personal_fellowship": false
-          },
-          {
-            "title": "National Institute of Neurological Disorders and Stroke award 1RC2NS069409-01",
-            "funder": "National Institute of Neurological Disorders and Stroke",
-            "award_id": "1RC2NS069409-01",
-            "url": "https://openalex.org/F4320337359",
-            "is_personal_fellowship": false
-          }
-        ]
-      },
-      "why_match": "My research interests in computational psychiatry and PTSD treatment-outcome prediction align perfectly with your work. I am particularly drawn to your contributions to understanding traumatic brain injury, such as your 2022 paper, \"Traumatic brain injury: progress and challenges in prevention, clinical care, and research,\" and your grant from the National Institute of Neurological Disorders and Stroke (3U01NS086090-02S2), which I believe offers an exciting opportunity to apply machine learning to clinical data to predict outcomes and explore the neurobiological basis of trauma.",
-      "linked_programs": [
-        {
-          "name": "PhD programs at San Francisco General Hospital",
-          "url": "https://openalex.org/I1295908608",
-          "eligibility_note": null
-        }
-      ],
-      "scores": {
-        "similarity": 0.7559,
-        "evidence": 0.9907,
-        "final": 0.8252
-      },
-      "verification": {
-        "domain_match": true,
-        "region_match": true,
-        "is_pi": true,
-        "collision_checked": true,
-        "reason": "discipline=Neurotraumatology; The abstracts focus on traumatic brain injury (TBI) and its outcomes, which is a direct subfield of Neurobiology of Trauma & Stress, and the career signals suggest a principal investigator role."
+        "reason": "discipline=Neuroscience; The abstracts clearly indicate research in the neurobiology of trauma and stress, specifically PTSD, aligning with the applicant's interests."
       }
     }
   ]

@@ -42,6 +42,18 @@ def _load_adjustments(path: str | None) -> dict:
     return {}
 
 
+def _dedup_by_name(cands: list[Candidate]) -> list[Candidate]:
+    seen: set[str] = set()
+    out: list[Candidate] = []
+    for c in cands:
+        key = c.name.strip().lower().replace("‐", "-")
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append(c)
+    return out
+
+
 def _verify_pool(pool: list[Candidate], profile: StudentProfile) -> list[dict]:
     with ThreadPoolExecutor(max_workers=CONCURRENCY) as ex:
         return list(ex.map(lambda c: verify.verify_raw(c, profile), pool))
@@ -147,6 +159,7 @@ async def run_async(
     stats["dropped_low_similarity"] = before_sim - len(cands)
 
     cands.sort(key=lambda c: 0.6 * c.embedding_sim + 0.4 * rank.evidence_score(c), reverse=True)
+    cands = _dedup_by_name(cands)
     pool = cands[:VERIFY_LIMIT]
     stats["verified_pool"] = len(pool)
 
