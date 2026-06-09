@@ -11,8 +11,8 @@ def test_cache_hits_function_once(monkeypatch, tmp_path):
         return {"v": x * 2}
 
     assert expensive(3) == {"v": 6}
-    assert expensive(3) == {"v": 6}   # served from cache
-    assert calls["n"] == 1            # underlying fn ran only once
+    assert expensive(3) == {"v": 6}
+    assert calls["n"] == 1
 
 
 def test_cache_key_varies_with_args(monkeypatch, tmp_path):
@@ -26,7 +26,7 @@ def test_cache_key_varies_with_args(monkeypatch, tmp_path):
 
     f(1)
     f(2)
-    assert calls["n"] == 2            # different args -> different keys
+    assert calls["n"] == 2
 
 
 def test_cache_stores_none(monkeypatch, tmp_path):
@@ -40,4 +40,4 @@ def test_cache_stores_none(monkeypatch, tmp_path):
 
     assert maybe() is None
     assert maybe() is None
-    assert calls["n"] == 1            # None is cached via file existence
+    assert calls["n"] == 1

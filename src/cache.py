@@ -1,10 +1,3 @@
-"""Content-hash disk cache for API + LLM responses.
-
-Why: reproducibility (same input -> same output) and latency (warm re-runs in
-seconds). Every external call in this project is wrapped so a second run never
-re-hits the network or the LLM. `null` results are cached correctly via file
-existence (not value-is-None), so e.g. a "no email found" stays cached.
-"""
 from __future__ import annotations
 
 import functools
@@ -41,13 +34,6 @@ def put(namespace: str, key: str, value) -> None:
 
 
 def cached(namespace: str):
-    """Decorator: cache a function's return keyed by its (args, kwargs).
-
-    Works for both sync and async functions. Args must be JSON-serialisable
-    (strings/lists/dicts) — these caches wrap module-level API helpers, not
-    methods, so that holds.
-    """
-
     def deco(fn):
         if inspect.iscoroutinefunction(fn):
 

@@ -22,7 +22,7 @@ def test_supervisor_requires_evidence():
             institution="MIT",
             country="us",
             research_focus="x",
-            evidence=Evidence(),  # empty -> must fail
+            evidence=Evidence(),
         )
 
 

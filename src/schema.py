@@ -1,10 +1,3 @@
-"""Pydantic models: the student-profile input, the internal Candidate carried
-through the pipeline, and the documented output Shortlist.
-
-The output schema is the contract documented in schema.md. The key invariant —
-**evidence-or-drop** — is enforced here: a Supervisor cannot be constructed
-without at least one verifiable paper or grant.
-"""
 from __future__ import annotations
 
 from typing import Literal, Optional
@@ -12,15 +5,11 @@ from typing import Literal, Optional
 from pydantic import BaseModel, Field, model_validator
 
 
-# --------------------------------------------------------------------------
-# Input
-# --------------------------------------------------------------------------
 class Area(BaseModel):
-    """A normalised research area (one of the student's 3-5 stated interests)."""
     name: str
     query_terms: list[str] = Field(default_factory=list)
-    discipline: Optional[str] = None      # e.g. "clinical psychology"
-    region_hint: Optional[str] = None     # e.g. "global", "South Asia"
+    discipline: Optional[str] = None
+    region_hint: Optional[str] = None
 
 
 class Education(BaseModel):
@@ -45,13 +34,9 @@ class StudentProfile(BaseModel):
     target_intake: Optional[str] = None
     intro_call_summary: Optional[str] = None
     raw_resume: Optional[str] = None
-    # Filled in by profile.normalize_areas()
     areas: list[Area] = Field(default_factory=list)
 
 
-# --------------------------------------------------------------------------
-# Evidence + output sub-objects
-# --------------------------------------------------------------------------
 class PaperEvidence(BaseModel):
     title: str
     year: Optional[int] = None
@@ -94,7 +79,7 @@ class Verification(BaseModel):
 
 
 class Supervisor(BaseModel):
-    supervisor_id: str            # OpenAlex Author ID (A...), same ID space as bonus CSV
+    supervisor_id: str
     name: str
     institution: str
     country: str
@@ -141,23 +126,18 @@ class Shortlist(BaseModel):
         return self
 
 
-# --------------------------------------------------------------------------
-# Internal pipeline carrier (not part of the output contract)
-# --------------------------------------------------------------------------
 class Candidate(BaseModel):
-    """A potential supervisor as it flows through the filter cascade."""
     author_id: str
     name: str
     orcid: Optional[str] = None
     institution: str = ""
     institution_id: Optional[str] = None
-    country: str = ""               # ISO-2 lowercase
+    country: str = ""
     matched_areas: list[str] = Field(default_factory=list)
 
     papers: list[PaperEvidence] = Field(default_factory=list)
     grants: list[GrantEvidence] = Field(default_factory=list)
 
-    # Author meta used by filters
     works_count: int = 0
     h_index: int = 0
     first_pub_year: Optional[int] = None
@@ -169,7 +149,6 @@ class Candidate(BaseModel):
     primary_domain: Optional[str] = None
     abstracts: list[str] = Field(default_factory=list)
 
-    # Scoring / verification scratch
     embedding_sim: float = 0.0
     pi_score: float = 0.0
     inst_strength: float = 0.0

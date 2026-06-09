@@ -1,4 +1,3 @@
-"""Make `import src...` work from the repo root during tests."""
 import os
 import sys
 
