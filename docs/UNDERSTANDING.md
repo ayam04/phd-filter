@@ -1,15 +1,14 @@
 # PhD Shortlist Builder — Understanding & Decision Log
 
 This is the master rationale document. It explains **what** the system does, **why** every
-significant technical and business-logic choice was made, the **trade-offs** accepted, and how
-each decision maps to the way the assignment is graded. Source code carries no comments by design;
-all reasoning lives here.
+significant technical and product-logic choice was made, and the **trade-offs** accepted. Source code
+carries no comments by design; all reasoning lives here.
 
 ---
 
 ## 0. The problem in one paragraph
 
-Ambitio needs a personalised list of 50-200 PhD **supervisors** (principal investigators) for a
+The goal is a personalised list of 50-200 PhD **supervisors** (principal investigators) for a
 student, each with verifiable evidence and a personalised reason-to-contact, restricted to the
 student's target countries, with as few embarrassing mismatches as possible. The hard part is not
 calling an LLM — it is the **data**: finding the right humans, in the right field, at the right
@@ -17,9 +16,9 @@ career stage, in the right country, and proving it.
 
 ## 1. The governing principle: precision over recall
 
-The grader weights **contamination** (wrong-domain / wrong-person / non-PI picks) more heavily than
-coverage, and treats **country adherence** as a hard fail. The brief states plainly: an 80%-correct
-list of 60 beats a 60%-correct list of 150.
+A wrong pick (**contamination** — wrong-domain / wrong-person / non-PI) is far more damaging than a
+missed borderline-correct one, and **country adherence** is a hard requirement. The guiding rule of
+thumb: an 80%-correct list of 60 beats a 60%-correct list of 150.
 
 **Decision:** Every stage of the system is a *filter that prefers dropping a borderline-correct
 supervisor over admitting a wrong one.* We aim for the high end of mentor approval on a moderate
@@ -55,9 +54,9 @@ catastrophe — and cannot guarantee country adherence or a minimum count, nor r
 borrow web-style reasoning for the *eligibility text extractor*, never for sourcing.
 
 ### 2.3 Why OpenAlex is the backbone
-- The bonus-section CSV uses `supervisor_id` values like `A5031856973` — **that is an OpenAlex
-  Author ID.** The grader's own ID space is OpenAlex, so we adopt it; our `supervisor_id` lines up
-  with theirs.
+- The feedback outcomes CSV uses `supervisor_id` values like `A5031856973` — **that is an OpenAlex
+  Author ID.** Adopting that ID space means the shortlist's `supervisor_id` lines up directly with the
+  outcome stream used by the feedback loop.
 - Free (polite pool via `mailto`), no key, generous limits.
 - **Author disambiguation is built in** — we resolve stable Author IDs, never name strings (directly
   attacks the same-name-collision failure mode).
@@ -83,7 +82,7 @@ borrow web-style reasoning for the *eligibility text extractor*, never for sourc
 **Trade-off:** OpenAlex `grants` data is attached *directly to the PI's own papers*, so it carries
 **zero linking risk**. That is our primary grant-evidence path. The national grant APIs are
 enrichment; we deliberately avoid aggressive fuzzy name-matching across them because a wrong link is
-exactly the contamination the grader punishes.
+exactly the contamination the design is built to avoid.
 
 ### 2.5 LLM — Gemini 2.5 Flash via OpenRouter + local embeddings
 - The verification gate runs on ~150-250 candidates per shortlist; `why_match` on the survivors.
@@ -103,7 +102,7 @@ exactly the contamination the grader punishes.
 
 ### 2.6 Caching — content-hash disk cache on every external call
 Each OpenAlex/grant/ORCID/LLM/embedding result is written to `.cache/<namespace>/<hash>.json`. This
-buys two graded properties at once:
+buys two key properties at once:
 - **Reproducibility:** same input → same cached responses → same output.
 - **Latency:** a cold run hits each unique endpoint once; warm re-runs complete in seconds, keeping
   us well under the 15-minute budget. `null` results (e.g. "no public email") are cached via file
@@ -162,7 +161,7 @@ psychology; "DNA barcoding" single-cell work leaking into plant biology). Three 
    keywords) must clear a floor.
 3. **LLM verification gate** reads the PI's top abstracts and classifies discipline **and region**,
    explicitly rejecting keyword-collision matches.
-The four worked examples from the brief are encoded as regression tests that must be rejected.
+Four canonical real-world collision cases are encoded as regression tests that must be rejected.
 
 ### 3.5 Same-name-different-person (failure mode 6.1)
 We never resolve a person from a name string. We resolve an **OpenAlex Author ID** whose *aggregate*
@@ -209,16 +208,16 @@ an international student (3.6). It is swappable — drop the real profile at the
 
 ---
 
-## 4. How decisions map to the grading axes
+## 4. How decisions map to quality goals
 
-| Grading axis | The decisions that serve it |
+| Quality goal | The decisions that serve it |
 |---|---|
-| Contamination (heaviest) | 1, 2.2, 2.4, 3.3, 3.4, 3.5 — filter-first, conservative linking, multi-layer domain + career gates |
-| Country adherence (hard fail) | 3.2 — structural country filter |
-| Mentor-eye audit | 3.4, 3.5, 3.8 — domain/person verification + sensible tiering and personalised `why_match` |
-| Coverage | 3.8 — per-area quota balancing |
+| Low contamination (top priority) | 1, 2.2, 2.4, 3.3, 3.4, 3.5 — filter-first, conservative linking, multi-layer domain + career gates |
+| Country adherence (hard requirement) | 3.2 — structural country filter on the primary academic affiliation |
+| Expert-approval of picks | 3.4, 3.5, 3.8 — domain/person verification + sensible tiering and personalised `why_match` |
+| Coverage across areas | 3.8 — per-area quota balancing |
 | Latency | 2.6 — aggressive caching + cheap cascade before any LLM call |
-| Process quality | This document + `DECISIONS.md` with concrete examples from real output |
+| Transparency | This document + `DECISIONS.md` with concrete examples from real output |
 
 ---
 

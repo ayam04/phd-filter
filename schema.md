@@ -26,7 +26,7 @@ in `src/schema.py`; this document is the human-readable contract.
 
 | Field | Type | Notes |
 |---|---|---|
-| `supervisor_id` | string | **OpenAlex Author ID** (e.g. `A5031856973`) — same ID space as the bonus outcomes CSV. |
+| `supervisor_id` | string | **OpenAlex Author ID** (e.g. `A5031856973`) — same ID space as the feedback outcomes CSV. |
 | `name` | string | Display name. |
 | `institution` | string | Primary affiliation in a target country. |
 | `country` | string | Full country name (mapped from ISO code). |
