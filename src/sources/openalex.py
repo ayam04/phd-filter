@@ -105,14 +105,6 @@ def recent_works(author: dict, years: int) -> int:
     )
 
 
-def primary_affiliation(author: dict) -> dict:
-    affs = author.get("affiliations", [])
-    if not affs:
-        return {}
-    best = max(affs, key=lambda a: max(a.get("years", [0]) or [0]))
-    return best.get("institution", {})
-
-
 ACADEMIC_TYPES = {"education", "healthcare", "facility", "government", "nonprofit"}
 
 

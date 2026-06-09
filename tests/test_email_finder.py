@@ -4,11 +4,11 @@ from src.sources import email_finder as ef
 
 
 def test_find_email_none():
-    assert ef.find_email(None) == (None, False)
+    assert ef.find_email(None) is None
 
 
 def test_find_email_empty():
-    assert ef.find_email("") == (None, False)
+    assert ef.find_email("") is None
 
 
 def test_bare_orcid_from_url():
@@ -19,13 +19,5 @@ def test_bare_orcid_from_url():
 
 @pytest.mark.live
 def test_find_email_demo_orcid_shape():
-    email, is_guess = ef.find_email("0000-0002-1825-0097")
-    assert isinstance(is_guess, bool)
+    email = ef.find_email("0000-0002-1825-0097")
     assert email is None or isinstance(email, str)
-    assert is_guess is False
-
-
-@pytest.mark.live
-def test_orcid_role_title_demo():
-    title = ef.orcid_role_title("0000-0002-1825-0097")
-    assert title is None or (isinstance(title, str) and "Professor" in title)

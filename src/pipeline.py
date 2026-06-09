@@ -3,6 +3,7 @@ from __future__ import annotations
 import asyncio
 import datetime
 import json
+import math
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
@@ -68,15 +69,12 @@ def _fill_why_match(selected: list[Candidate], profile: StudentProfile) -> None:
 
 def _fill_emails(selected: list[Candidate]) -> None:
     with ThreadPoolExecutor(max_workers=CONCURRENCY) as ex:
-        results = list(ex.map(lambda c: find_email(c.orcid, c.name, c.institution), selected))
-    for c, (email, is_guess) in zip(selected, results):
+        results = list(ex.map(lambda c: find_email(c.orcid), selected))
+    for c, email in zip(selected, results):
         c.contact_email = email
-        c.email_is_guess = is_guess
 
 
 async def _enrich_institutions(cands: list[Candidate]) -> None:
-    import math
-
     ids = {c.institution_id for c in cands if c.institution_id}
     sem = asyncio.Semaphore(CONCURRENCY)
 

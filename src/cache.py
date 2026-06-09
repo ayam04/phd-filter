@@ -31,21 +31,6 @@ def _read(p: Path):
         return False, None
 
 
-def get(namespace: str, key: str):
-    p = _path(namespace, key)
-    if p.exists():
-        ok, val = _read(p)
-        if ok:
-            return val
-    return None
-
-
-def put(namespace: str, key: str, value) -> None:
-    _path(namespace, key).write_text(
-        json.dumps(value, ensure_ascii=False), encoding="utf-8"
-    )
-
-
 def cached(namespace: str):
     def deco(fn):
         if inspect.iscoroutinefunction(fn):

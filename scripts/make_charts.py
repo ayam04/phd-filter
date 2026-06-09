@@ -19,7 +19,6 @@ ACCENT = "#2f6f8f"
 ACCENT2 = "#c98a3a"
 GREEN = "#3f7d5a"
 RED = "#b5503f"
-GRID = "#e3e8ee"
 
 plt.rcParams.update({
     "font.family": "DejaVu Sans",

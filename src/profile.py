@@ -51,9 +51,9 @@ def normalize_areas(profile: StudentProfile) -> StudentProfile:
         areas.append(
             Area(
                 name=name,
-                discipline=(a.get("discipline") or None),
+                discipline=a.get("discipline"),
                 query_terms=terms or [name],
-                region_hint=(a.get("region_hint") or None),
+                region_hint=a.get("region_hint"),
             )
         )
     if not areas:

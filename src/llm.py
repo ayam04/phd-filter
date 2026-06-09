@@ -93,10 +93,6 @@ def embed(text: str) -> list[float]:
     return _embed_cached(EMBED_MODEL, text[:8000] if text else "")
 
 
-def embed_many(texts: list[str]) -> list[list[float]]:
-    return [embed(t) for t in texts]
-
-
 def cosine(a: list[float], b: list[float]) -> float:
     if not a or not b:
         return 0.0

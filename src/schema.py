@@ -153,7 +153,6 @@ class Candidate(BaseModel):
     pi_score: float = 0.0
     inst_strength: float = 0.0
     contact_email: Optional[str] = None
-    email_is_guess: bool = False
     verdict: Optional[Verification] = None
     research_focus: str = ""
     why_match: str = ""
