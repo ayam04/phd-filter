@@ -36,8 +36,10 @@ def normalize_areas(profile: StudentProfile) -> StudentProfile:
         ' "discipline": "<academic discipline, e.g. clinical psychology, computational biology / genomics, mechanical engineering>",'
         ' "query_terms": ["<3-5 specific multi-word literature-search phrases>"],'
         ' "region_hint": "<region if the area is geographically specific, else global>"}]}\n'
-        "One area per stated interest (merge near-duplicates). query_terms must be specific "
-        "multi-word phrases, never single generic words."
+        "Produce one area for each DISTINCT stated research interest (aim for 3-5 areas); only "
+        "merge interests that are essentially identical. Keep the areas close to the applicant's "
+        "own stated interests. query_terms must be specific multi-word phrases, never single "
+        "generic words."
     )
     out = llm.complete_json(_SYSTEM, user)
     areas: list[Area] = []

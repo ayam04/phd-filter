@@ -1,0 +1,48 @@
+{
+  "student_id": "106419",
+  "name": "Ananya Sharma",
+  "nationality": "Indian",
+  "education": [
+    {
+      "degree": "B.Tech",
+      "institution": "Indian Institute of Technology, Kanpur",
+      "field": "Computer Science and Engineering",
+      "grade": "8.9/10 CGPA",
+      "year": 2024,
+      "thesis": "Deep learning models for predicting treatment response from longitudinal clinical notes"
+    },
+    {
+      "degree": "M.S. (Research)",
+      "institution": "Indian Institute of Science, Bengaluru",
+      "field": "Computational and Data Sciences",
+      "grade": "9.1/10 CGPA",
+      "year": 2026,
+      "thesis": "Single-cell transcriptomic signatures of chronic stress in the rodent amygdala"
+    }
+  ],
+  "skills": [
+    "Python", "PyTorch", "scikit-learn", "R", "Bayesian modelling",
+    "single-cell RNA-seq analysis (Scanpy, Seurat)", "NLP for clinical text",
+    "causal inference", "mixed-effects models", "high-performance computing"
+  ],
+  "projects": [
+    "Predicting PTSD treatment response (prolonged exposure vs CPT) from electronic health records using transformer models",
+    "Single-cell atlas of stress-responsive cell types in the basolateral amygdala",
+    "Digital phenotyping of mood from smartphone keystroke dynamics",
+    "Polygenic risk score pipelines for stress-related psychiatric disorders"
+  ],
+  "publications": [
+    "Sharma A. et al. (2025), 'Transformer models for treatment-response prediction in trauma populations', Workshop on ML for Health (ML4H).",
+    "Sharma A., Rao K. (2026), 'Single-cell transcriptomic signatures of chronic stress', preprint (bioRxiv)."
+  ],
+  "research_interests": [
+    "Computational psychiatry and PTSD treatment-outcome prediction",
+    "Neurobiology of trauma and chronic stress",
+    "Single-cell and psychiatric genomics of stress-related disorders",
+    "Machine learning and digital phenotyping for mental health"
+  ],
+  "target_countries": ["United States", "United Kingdom", "Australia"],
+  "target_intake": "Fall 2027",
+  "intro_call_summary": "Ananya is a quantitative researcher bridging clinical psychology and computational biology. She wants a PhD where she can combine machine learning on clinical/EHR data with the molecular and neurobiological basis of trauma and stress. She is most excited about labs working on PTSD treatment-outcome prediction, computational psychiatry, and the genomics/neurobiology of stress. She is an international (Indian) applicant and needs programs/positions open to international students. She is open to reach schools but wants a realistic spread.",
+  "raw_resume": "ANANYA SHARMA — Bengaluru, India — Indian citizen. EDUCATION: M.S. (Research), Computational and Data Sciences, IISc Bengaluru (2026), thesis on single-cell transcriptomics of chronic stress in the amygdala; B.Tech CSE, IIT Kanpur (2024). RESEARCH: computational psychiatry, PTSD treatment-response prediction from EHR/clinical text, single-cell genomics of stress, digital phenotyping. SKILLS: Python, PyTorch, scikit-learn, R, single-cell RNA-seq (Scanpy/Seurat), clinical NLP, Bayesian and mixed-effects modelling. PUBLICATIONS: ML4H 2025 workshop paper on trauma treatment-response prediction; bioRxiv preprint on stress transcriptomics. AWARDS: IISc research fellowship; IIT Kanpur academic excellence. GOAL: PhD (Fall 2027) in the US, UK, or Australia combining machine learning with the neurobiology and genomics of trauma and stress; needs international-eligible programs."
+}

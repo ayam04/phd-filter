@@ -53,6 +53,7 @@ def _complete_raw(model: str, system: str, user: str, temperature: float) -> str
             {"role": "user", "content": user},
         ],
         temperature=temperature,
+        max_tokens=8000,
         response_format={"type": "json_object"},
     )
     return resp.choices[0].message.content or "{}"
@@ -68,7 +69,10 @@ def _complete_cached(model: str, system: str, user: str, temperature: float) -> 
 
 
 def complete_json(system: str, user: str, temperature: float = 0.0) -> dict:
-    return _complete_cached(LLM_MODEL, system, user, temperature)
+    try:
+        return _complete_cached(LLM_MODEL, system, user, temperature)
+    except Exception:
+        return {}
 
 
 @cached("embed")
