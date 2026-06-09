@@ -16,22 +16,22 @@ The hard part is not calling an LLM. It is the **data**: finding the right human
 
 ```mermaid
 flowchart TD
-    A[Student profile JSON] --> B[Profile normalization<br/>LLM: research areas, query terms, nationality]
-    B --> C[Candidate generation<br/>OpenAlex works, aggregate to authors]
-    C --> D[Country gate<br/>current primary academic home in target country]
-    D --> E[Career-stage gate<br/>is this a supervising PI?]
-    E --> F[Domain similarity<br/>local embeddings pre-filter]
-    F --> G[LLM verification gate<br/>reads real abstracts: domain, region, PI, name-collision]
-    G --> H[Rank, tier, per-area coverage balance]
-    H --> I[why_match generation<br/>cites specific papers / grants]
-    I --> J[(Shortlist JSON<br/>schema-validated)]
+    A["Student profile JSON"] --> B["Profile normalization (LLM): research areas, query terms, nationality"]
+    B --> C["Candidate generation: OpenAlex works, aggregate to authors"]
+    C --> D["Country gate: current primary academic home in target country"]
+    D --> E["Career-stage gate: is this a supervising PI?"]
+    E --> F["Domain similarity: local embeddings pre-filter"]
+    F --> G["LLM verification gate: reads real abstracts (domain, region, PI, name-collision)"]
+    G --> H["Rank, tier, per-area coverage balance"]
+    H --> I["why_match generation: cites specific papers and grants"]
+    I --> J["Shortlist JSON (schema-validated)"]
 
-    K[Outcomes CSV] --> L[Feedback learner<br/>suppression + success priors]
-    L -. adjustments.json .-> H
+    K["Outcomes CSV"] --> L["Feedback learner: suppression and success priors"]
+    L -.->|"adjustments.json"| H
 
-    OA[OpenAlex] -.-> C
-    GR[NIH / UKRI / OpenAIRE] -.-> I
-    OR[ORCID] -.-> I
+    OA["OpenAlex"] -.-> C
+    GR["NIH / UKRI / OpenAIRE"] -.-> I
+    OR["ORCID"] -.-> I
 
     classDef gate fill:#eef4f8,stroke:#2f6f8f,color:#1b2733;
     class D,E,F,G gate;
