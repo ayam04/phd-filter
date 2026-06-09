@@ -20,10 +20,23 @@ def _path(namespace: str, key: str) -> Path:
     return d / f"{key}.json"
 
 
+def _read(p: Path):
+    try:
+        return True, json.loads(p.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        try:
+            p.unlink()
+        except OSError:
+            pass
+        return False, None
+
+
 def get(namespace: str, key: str):
     p = _path(namespace, key)
     if p.exists():
-        return json.loads(p.read_text(encoding="utf-8"))
+        ok, val = _read(p)
+        if ok:
+            return val
     return None
 
 
@@ -42,7 +55,9 @@ def cached(namespace: str):
                 k = _key(args, kwargs)
                 p = _path(namespace, k)
                 if p.exists():
-                    return json.loads(p.read_text(encoding="utf-8"))
+                    ok, val = _read(p)
+                    if ok:
+                        return val
                 val = await fn(*args, **kwargs)
                 p.write_text(json.dumps(val, ensure_ascii=False), encoding="utf-8")
                 return val
@@ -54,7 +69,9 @@ def cached(namespace: str):
             k = _key(args, kwargs)
             p = _path(namespace, k)
             if p.exists():
-                return json.loads(p.read_text(encoding="utf-8"))
+                ok, val = _read(p)
+                if ok:
+                    return val
             val = fn(*args, **kwargs)
             p.write_text(json.dumps(val, ensure_ascii=False), encoding="utf-8")
             return val

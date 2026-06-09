@@ -83,10 +83,18 @@ def _aggregate(area_works: list[tuple[str, list[dict]]], countries: list[str]) -
                 if au.get("author_position") == "last":
                     rec["last_author"] += 1
                 if tgt:
-                    rec["target_insts"][tgt["id"]] = (
-                        tgt.get("display_name", ""),
-                        (tgt.get("country_code") or "").lower(),
+                    tid = tgt["id"]
+                    entry = rec["target_insts"].get(
+                        tid,
+                        {
+                            "name": tgt.get("display_name", ""),
+                            "country": (tgt.get("country_code") or "").lower(),
+                            "type": tgt.get("type"),
+                            "count": 0,
+                        },
                     )
+                    entry["count"] += 1
+                    rec["target_insts"][tid] = entry
                     raws = au.get("raw_affiliation_strings") or []
                     if raws and not rec["affiliation_raw"]:
                         rec["affiliation_raw"] = raws[0]
@@ -116,9 +124,23 @@ async def _enrich(top: list[tuple[str, dict]]) -> dict:
     return dict(pairs)
 
 
-def _build(aid: str, rec: dict, author: dict) -> Candidate:
-    inst_id = max(rec["target_insts"], key=lambda k: 1)
-    inst_name, inst_country = rec["target_insts"][inst_id]
+def _build(aid: str, rec: dict, author: dict, countries: list[str]) -> Candidate:
+    prim = openalex.best_affiliation(author, countries)
+    inst_id = prim.get("id")
+    inst_name = prim.get("display_name", "")
+    inst_country = (prim.get("country_code") or "").lower()
+    if not inst_id or inst_country not in countries:
+        academic = {
+            k: v
+            for k, v in rec["target_insts"].items()
+            if v.get("type") in openalex.ACADEMIC_TYPES
+        }
+        if academic:
+            inst_id = max(academic, key=lambda k: academic[k]["count"])
+            inst_name = academic[inst_id]["name"]
+            inst_country = academic[inst_id]["country"]
+        else:
+            inst_id, inst_name, inst_country = None, "", ""
 
     papers = sorted(rec["papers"].values(), key=lambda p: p.citations, reverse=True)[:MAX_PAPERS_PER_PI]
     grants = [
@@ -174,4 +196,4 @@ async def generate_candidates(profile: StudentProfile) -> list[Candidate]:
     )
     top = ordered[:ENRICH_LIMIT]
     details = await _enrich(top)
-    return [_build(aid, rec, details.get(aid, {})) for aid, rec in top]
+    return [_build(aid, rec, details.get(aid, {}), countries) for aid, rec in top]

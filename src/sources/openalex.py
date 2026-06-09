@@ -16,6 +16,20 @@ AUTHOR_SELECT = (
 INST_SELECT = "id,display_name,country_code,type,works_count,cited_by_count,summary_stats"
 
 
+_aclient: httpx.AsyncClient | None = None
+
+
+def _client() -> httpx.AsyncClient:
+    global _aclient
+    if _aclient is None or _aclient.is_closed:
+        _aclient = httpx.AsyncClient(
+            timeout=40.0,
+            limits=httpx.Limits(max_connections=20, max_keepalive_connections=20),
+            headers={"User-Agent": f"phd-shortlist-builder (mailto:{OPENALEX_MAILTO})"},
+        )
+    return _aclient
+
+
 def _params(extra: dict) -> dict:
     p = dict(extra)
     if OPENALEX_MAILTO:
@@ -25,10 +39,9 @@ def _params(extra: dict) -> dict:
 
 @retry(stop=stop_after_attempt(4), wait=wait_exponential(multiplier=1, min=1, max=15))
 async def _get(path: str, params: dict) -> dict:
-    async with httpx.AsyncClient(timeout=40.0) as c:
-        r = await c.get(f"{OPENALEX_BASE}{path}", params=_params(params))
-        r.raise_for_status()
-        return r.json()
+    r = await _client().get(f"{OPENALEX_BASE}{path}", params=_params(params))
+    r.raise_for_status()
+    return r.json()
 
 
 @cached("oa_works")
@@ -98,6 +111,22 @@ def primary_affiliation(author: dict) -> dict:
         return {}
     best = max(affs, key=lambda a: max(a.get("years", [0]) or [0]))
     return best.get("institution", {})
+
+
+ACADEMIC_TYPES = {"education", "healthcare", "facility", "government", "nonprofit"}
+
+
+def best_affiliation(author: dict, countries: list[str]) -> dict:
+    target_academic = []
+    for a in author.get("affiliations", []):
+        inst = a.get("institution", {})
+        cc = (inst.get("country_code") or "").lower()
+        if cc in countries and inst.get("type") in ACADEMIC_TYPES:
+            target_academic.append((max(a.get("years", [0]) or [0]), inst))
+    if not target_academic:
+        return {}
+    target_academic.sort(key=lambda t: t[0], reverse=True)
+    return target_academic[0][1]
 
 
 def h_index(author: dict) -> int:
